@@ -1,5 +1,5 @@
 # PII-UsinaEco-Cultural
-Trabalho do segundo semestre de Ciências da Computação e Sistema de Informação no qual foi feito um site para a Usina EcoCultural Vergueiro
+Projeto do segundo semestre de Ciências da Computação e Sistema de Informação no qual foi feito um site para a Usina EcoCultural Vergueiro
 
 # Desenvolvido por:
 - Ana Carolina Joaquim Januário RA: 23.95014-5
