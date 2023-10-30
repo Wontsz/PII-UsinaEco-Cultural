@@ -15,6 +15,35 @@ header {
     color: #fff; 
 }
 
+.separator{
+    width: 0px; 
+    height: 50px; 
+    transform-origin: 0 0; 
+    border: 1px black solid
+}
+
+.logo{
+    width: 233px; 
+    height: 233px; 
+    background: #ECECEC; 
+    border-radius: 150px; 
+    border: 5px rgba(0, 0, 0, 0.70) solid
+}
+
+.nav-text{
+    color: black; 
+    font-size: 20px; 
+    font-family: Bellota Text; 
+    font-weight: bold; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.titulo {
+    color:#FFFFFF;
+    text-shadow: 0px 2px 3px #000000;
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -63,7 +92,7 @@ nav {
     background: #ECECEC; 
     border-bottom: 2px solid #008000; 
     margin: 0;
-    padding: 2%;
+    padding: 5px;
     font-family: 'Raleway';
 }
 
@@ -83,9 +112,6 @@ nav {
     color: #fff;
     padding: 10px 20px;
 }
-
-
-
 
 .gray-bar {
     background-color: #ECECEC;
