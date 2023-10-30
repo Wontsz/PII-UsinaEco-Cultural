@@ -99,3 +99,16 @@ nav {
     font-family: 'Bellota Text';
     font-size: 30px;
 }
+.cabecalho{
+    color: black; 
+    font-size: 24px; 
+    font-family: Bellota 
+    Text; font-weight: 400; 
+    word-wrap: break-word
+}
+.borda-cabecalho{
+    width: 0px;
+    height: 50px; 
+    transform-origin: 0 0;
+    border: 1px black solid
+}
