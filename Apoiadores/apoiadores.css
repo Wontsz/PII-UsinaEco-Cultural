@@ -83,3 +83,35 @@ nav {
     color: #fff;
     padding: 10px 20px;
 }
+.especificacao{
+    position: absolute;
+    left: 41%;
+    top: 400px;
+    z-index: 1000;
+    width: 224px; 
+    height: 314px; 
+    background: #ECECEC; 
+    border-radius: 20px; 
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    text-align: center;
+    font-family: 'Bellota Text';
+    font-size: 30px;
+}
+.apoiadores-logo{
+    text-align: center;
+    height: 70%;
+}
+.apoiadores-texto{
+    font-family: 'Bellota Text';
+    font-size: 30px;
+}
+.direitos{
+    color: black;
+    font-size: 16px;
+    font-family: "IBM Plex Serif";
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 20px;
+}
