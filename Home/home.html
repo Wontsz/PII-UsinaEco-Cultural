@@ -5,33 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title>Usina Ecocultural Vergueiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <div class="logo">
-                <h1>Usina Ecocultural Vergueiro</h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Pesquisar...">
-                <button>Buscar</button>
+        <div class="container-fluid" class="header">
+            <div class="row p-1">
+                <h1 class="col p-1 titulo">Usina Ecocultural Vergueiro</h1>
+                <!--Pesquisa-->
+                <div class="col p-1 search-bar justify-content-end">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button>Buscar</button>            
+                </div>
             </div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">O Coletivo</a></li>
-                <li><a href="#">História</a></li>
-                <li><a href="#">Apoie a Usina</a></li>
-                <li><a href="#">Loja</a></li>
-                <li><a href="#">Apoiadores</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Notícias</a></li>
-            </ul>
-
-            
+        <div class="container-fluid">
+            <div class="row" style="background-color: #ECECEC;">
+                <div class="col-14 justify-content-around" style="align-items: center; display: inline-flex">
+                    <div class="col" style="height: 100%; position: relative">
+                        <div class="logo"></div>
+                        <img style="width: 184px; height: 174px; left: 35px; top: 16px; position: absolute" src="logo.png" />
+                    </div>
+                    <div class="nav-text">O Coletivo</div>
+                    <div class="separator"></div>
+                    <div class="nav-text">História</div>
+                    <div class="separator"></div>
+                    <div class="nav-text">Apoie a usina!</div>
+                    <div class="separator"></div>
+                    <div class="nav-text">Loja</div>
+                    <div class="separator"></div>
+                    <div class="nav-text">Apoiadores</div>
+                    <div class="separator"></div>
+                    <div class="nav-text">Eventos</div>
+                    <div class="separator"></div>
+                    <div class="nav-text">Notícias</div>
+                </div>
+            </div>
+        </div>
+        
         </nav>
     </header>
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
 
