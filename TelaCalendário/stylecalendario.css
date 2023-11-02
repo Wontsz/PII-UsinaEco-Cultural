@@ -112,14 +112,17 @@ nav {
     transform-origin: 0 0;
     border: 1px black solid
 }
-/* CARDS DOS EVENTOS */
+/*****************
+ CARDS DOS EVENTOS 
+ *****************/
+
 article {
     --img-scale: 1.001;
     --title-color: black;
     --link-icon-translate: -20px;
     --link-icon-opacity: 0;
     position: relative;
-    border-radius: 16px;
+    border-radius: 15px;
     box-shadow: none;
     background: #fff;
     transform-origin: center;
@@ -137,7 +140,7 @@ article {
   
   /* basic article elements styling */
   article h2 {
-    margin: 0 0 18px 0;
+    margin: 0 0 8px 0;
     font-family: serif;
     font-size: 1.9rem;
     letter-spacing: 0.06em;
@@ -146,10 +149,12 @@ article {
   }
   
   figure {
+    width: 500px;
     margin: 0;
     padding: 0;
     aspect-ratio: 16 / 9;
     overflow: hidden;
+    position: relative;
   }
   
   article img {
@@ -160,7 +165,7 @@ article {
   }
   
   .article-body {
-    padding: 24px;
+    padding: 20px;
   }
   
   article a {
@@ -171,7 +176,7 @@ article {
   }
   
   article a:focus {
-    outline: 1px dotted #28666e;
+    outline: 1px dotted #008000;
   }
   
   article a .icon {
@@ -187,7 +192,7 @@ article {
   /* using the has() relational pseudo selector to update our custom properties */
   article:has(:hover, :focus) {
     --img-scale: 1.1;
-    --title-color: #28666e;
+    --title-color: #008000;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -210,7 +215,7 @@ article {
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
+    gap: 35px;
     padding-bottom: 50px;
     padding-top: 50px;
   } 
@@ -223,8 +228,18 @@ article {
     white-space: nowrap; 
     width: 1px;
   }
-  .data-evento{
-    background-color: black;
-    width: 10px;
-    height: 10px;
+  .main-banner-content{
+    height: 80px;
+    width: 70px;
+    background: black;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  .control{
+    z-index: 0;
+    position: absolute;
   }
