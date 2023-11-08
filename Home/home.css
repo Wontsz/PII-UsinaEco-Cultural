@@ -55,66 +55,83 @@ header {
     flex: 1;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
+
+nav.navbar {
+    background-color: #69A625;
+    transition: box-shadow 0.3s; 
 }
 
-.search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 25px; 
-    font-size: 16px;
-    background:#ECECEC;
-    outline: none; 
+nav.navbar.shadow {
+    box-shadow: 0 5px 15px rgba(23, 150, 33, 0.2); 
 }
 
-.search-bar button {
-    background-color: #008000; 
+nav.navbar a.nav-link {
     color: #fff;
+    transition: font-size 0.3s; 
+}
+
+nav.navbar a.nav-link:hover {
+    background-color: #EA8356;
+    font-size: 18px;
+    color:white
+}
+
+img{
+    margin-left: 10px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #69A625; 
     border: none;
-    border-radius: 25px;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    animation: fadeIn 0.3s ease-in-out; 
+}
+
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #fff; 
     padding: 10px 20px;
-    margin-left: 10px; 
-    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
 }
 
 
-nav {
-    background-color: #ECECEC; 
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #4a802a; 
+    color: #fff; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-.menu {
-    align-items: center;
-    list-style: none;
-    display: flex;
-    font-weight: 600; 
-    background: #ECECEC; 
-    border-bottom: 2px solid #008000; 
-    margin: 0;
-    padding: 5px;
-    font-family: 'Raleway';
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
+.navbar .navbar-nav .nav-item-menu a {
+    color: #ffffff;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    display: inline-block;
     padding: 10px 20px;
-    transition: background-color 0.3s ease; 
+    transform: translateY(0);
+    opacity: 1;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, background-color 0.2s;
 }
 
-.menu a:hover {
-    background-color: #008000; 
-    color: #fff;
-    padding: 10px 20px;
+.navbar .navbar-nav .nav-item-menu {
+    text-align: center;
 }
 
-.gray-bar {
-    background-color: #ECECEC;
-    height: 10px; 
-    
+.navbar .navbar-nav .nav-item-menu a:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+    opacity: 0.8;
+    border-radius: 10px;
 }
