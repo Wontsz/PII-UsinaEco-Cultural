@@ -1,0 +1,34 @@
+.background-image {
+    background-image: url('fundo1.png');
+    background-size: cover;
+    background-position: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+
+.square {
+    position: absolute; /* Position elements relative to the parent .background-image */
+    top: 50%; /* Adjust vertical positioning */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    width: 150px; /* Largura do quadrado */
+    height: 185px; /* Altura do quadrado */
+    border: 5px solid black;
+    background-color: white; /* Borda preta */
+    border-radius: 20px; /* Borda arredondada */
+    text-align: center; /* Centraliza conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+  }
+  
+  img {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    border-radius: 50%; /* Bordas arredondadas para a imagem */
+  }
+  
+  p {
+    margin: 0; /* Remove margens padrão do parágrafo */
+  }
+  
