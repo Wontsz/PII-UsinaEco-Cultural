@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="apoiadores.css">
+    <link rel="stylesheet" href="esqueleto.css">
 
     <title>Usina EcoCultural - Parceiros</title>
 </head>
 <body>
     <header>
-        <div class="container-fluid p-4 border titulo">
+        <div class="container-fluid p-4 titulo">
             <div class="row">
                 <div class="title">
                     <h1>USINA ECOAMBIENTAL VERGUEIRO</h1>
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-4 border menu">
-            <nav class="navbar navbar-expand-xl border nav-fill">
+        <div class="container-fluid p-4 menu">
+            <nav class="navbar navbar-expand-xl nav-fill">
                 <a class="navbar-brand" href="#">
                     <picture>
-                        <img class="float-left" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F504443839%2F1531746591293%2F1%2Foriginal.20230501-044936?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1203%2C1203&s=879ea6ac09e91a66cf5c78485bc2e47e" alt="" style="width: 150px;">
+                        <img class="float-left" src="/imgs/usina_logo.png" alt="" style="width: 150px;">
                     </picture>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="container navbar-nav mr-auto border">
+                <div class="collapse navbar-collapse menu-opcoes" id="navbarSupportedContent">
+                    <ul class="container navbar-nav mr-auto">
                         <li class="nav-item mt-2"><a href="">O Coletivo</a></li>
                         <div class="borda-cabecalho d-none d-xl-block mt-2"></div>
                         <li class="nav-item mt-2"><a href="">História</a></li>
@@ -42,7 +42,6 @@
                         <!-- <div class="borda-cabecalho d-none d-xl-block"></div> -->
                         <li class="nav-item mt-2"><a href="">Eventos</a></li>
                         <div class="borda-cabecalho d-none d-xl-block mt-2"></div>
-                        <li class="nav-item mt-2"><a href="">Notícias</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Apoios
@@ -53,11 +52,24 @@
                             </div>
                         </li>
                         <div class="borda-cabecalho d-none d-xl-block mt-2"></div>
+                        <li class="nav-item mt-2"><a href="">Notícias</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
+        
     </header>
+    <main>
+        <div class="box-busca">
+            <div class="search-box">
+                
+                <form method="post" action="#">
+                    <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                    <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="container-fluid p-5 border text-center" style="background-color: #69A625;;">
             <div class="row">
