@@ -1,3 +1,12 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bellota Text';
+}
+.titulo{
+    background-color: #69A625;
+}
 .title{
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -10,7 +19,6 @@
 .logo{
     /* Ellipse 1 */
     box-sizing: border-box;
-
     position: absolute;
     width: 233px;
     height: 233px;
@@ -52,67 +60,73 @@ nav {
 .menu {
     align-items: center;
     list-style: none;
-    display: flex;
+    display: inline-block;
     font-weight: 600; 
     background: #ECECEC; 
-    border-bottom: 2px solid #008000; 
     margin: 0;
     padding: 2%;
     font-family: 'Raleway';
 }
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
+.menu-opcoes a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
+    padding: 10px;
     transition: background-color 0.3s ease; 
 }
 
-.menu a:hover {
+.menu-opcoes a:hover {
     background-color: #008000; 
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px ;
 }
-.especificacao{
-    position: absolute;
-    left: 41%;
-    top: 400px;
-    z-index: 1000;
-    width: 224px; 
-    height: 314px; 
-    background: #ECECEC; 
-    border-radius: 20px; 
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
+
+.apoiadores-logo{
     text-align: center;
+    height: 70%;
+}
+.apoiadores-texto{
     font-family: 'Bellota Text';
     font-size: 30px;
+}
+.direitos{
+    color: black;
+    font-size: 16px;
+    font-family: "IBM Plex Serif";
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 20px;
 }
 .cabecalho{
     color: black; 
     font-size: 24px; 
     font-family: Bellota 
     Text; font-weight: 400; 
-    word-wrap: break-word
+    word-wrap: break-word;
+    display: inline-flex;
 }
 .borda-cabecalho{
     width: 0px;
-    height: 50px; 
-    transform-origin: 0 0;
-    border: 1px black solid
+    height: 25px; 
+    border: 1px black solid;
+    display: inline-flex;
+    margin-top: 10px;
+}
+main{
+    background-color: #ECECEC;
+    font-size: 30px;
+}
+.navegacao-footer a{
+    color: white;
 }
 
+
+/* MEU */
 
 .fotoFlor{
     background: rgba(234, 131, 86, 0.51);
     width: 100%;
 }
-.titulo{
+.nosAjude{
     text-align: center;
     color: #000;
     font-family: Bellota Text;
