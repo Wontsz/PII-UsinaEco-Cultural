@@ -1,34 +1,43 @@
 .background-image {
-    background-image: url('fundo1.png');
-    background-size: cover;
-    background-position: center;
-    background-position: center top;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 75vh;
-    position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75vh;
+  position: relative;
 }
 
 .square {
-    position: absolute; /* Position elements relative to the parent .background-image */
-    top: 50%; /* Adjust vertical positioning */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    width: 150px; /* Largura do quadrado */
-    height: 185px; /* Altura do quadrado */
-    border: 5px solid black;
-    background-color: white; /* Borda preta */
-    border-radius: 20px; /* Borda arredondada */
-    text-align: center; /* Centraliza conteúdo horizontalmente */
-    padding: 20px; /* Espaçamento interno para o conteúdo */
-  }
+  position: absolute; /* Position elements relative to the parent .background-image */
+  top: 50%; /* Adjust vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  height: 200px; /* Altura do quadrado */
+  width: 175px; /* Largura do quadrado */
+  border: 5px solid black;
+  background-color: white; /* Borda preta */
+  border-radius: 20px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo horizontalmente */
+  padding: 20px; /* Espaçamento interno para o conteúdo */
+  scale: 150vh;
+}
+
+.square2{
+   height: 20%; /* Altura do quadrado */
+   width: 50%; /* Largura do quadrado */
+   background-color: #3A90C3; /* Borda preta */
+   /*Alinha todos os itens para o centro do div */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
   
-  img {
-    max-width: 100%; /* Garante que a imagem seja responsiva */
-    border-radius: 50%; /* Bordas arredondadas para a imagem */
-  }
+.logo_usina {
+   max-width: 100%; /* Garante que a imagem seja responsiva */
+   border-radius: 50%; /* Bordas arredondadas para a imagem */
+}
   
-  p {
-    margin: 0; /* Remove margens padrão do parágrafo */
-  }
+p{
+  margin: 0; /* Remove margens padrão do parágrafo */
+}
+
   
