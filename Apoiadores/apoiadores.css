@@ -67,23 +67,17 @@ nav {
     padding: 2%;
     font-family: 'Raleway';
 }
-
-.menu li {
-    margin-right: 25px;
-    margin-left: 25px;
-}
-
 .menu-opcoes a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 40px;
+    padding: 10px;
     transition: background-color 0.3s ease; 
 }
 
 .menu-opcoes a:hover {
     background-color: #008000; 
     color: #fff;
-    padding: 15px 50px;
+    padding: 15px ;
 }
 
 .apoiadores-logo{
