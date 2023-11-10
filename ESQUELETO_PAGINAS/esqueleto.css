@@ -74,6 +74,14 @@
     text-decoration: dashed;
 }
 
+.borda-cabecalho{
+    width: 0px;
+    height: 25px; 
+    border: 1px black solid;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
 /*footer*/
 
 .footer {
@@ -129,4 +137,8 @@ h4 {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
     color: white;
+}
+
+.direitos{
+    background-color: #E5DDD3;;
 }
