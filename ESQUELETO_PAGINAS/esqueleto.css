@@ -1,137 +1,132 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'arial';
-    text-decoration: none;
+/*barra de pesquisa e título, saiba mais*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-header{
-    background-color: #69A625; 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 64px;
-}
-
-body{
-    background-color: #ECECEC;
-}
-
-
-.separator{
-    width: 0px; 
-    height: 50px; 
-    transform-origin: 0 0; 
-    border: 1px black solid
-}
-
-.logo{
-    width: 233px; 
-    height: 233px; 
-    background: #ECECEC; 
-    border-radius: 150px; 
-    border: 5px rgba(0, 0, 0, 0.70) solid
-}
-
 
 .titulo {
-    color:#FFFFFF;
-    text-shadow: 0px 2px 3px #034a0e;
+    background-color: #69A625;
+    color: white;
 }
 
-/*nav bar*/
-nav {
-    background-color: #ECECEC; 
+.button-information {
+    display: inline-block; 
 }
+
+.button-saiba-mais {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-saiba-mais:hover {
+    background-color: #184c83;
+}
+
+
+.button-search {
+    background-color: #007bff;
+    color: aliceblue;
+    margin-left: 5%;
+    border: 1px solid #007bff; 
+    padding: 8px 20px;
+    cursor: pointer;
+    
+}
+
+.button-search:hover {
+    background-color: #184c83;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/*menu e logo - header*/
 
 .menu {
+    align-items: center;
     list-style: none;
     display: block;
-    background: #ECECEC; 
+    font-weight: normal; 
+    background: #ECECEC;
     margin: 0;
     padding: 2%;
-    font-family: 'Raleway';
-    font-size: 16px;
-}
-
-.menu li {
-    margin-right: 25px;
-    margin-left: 25px;
+    font-family: 'bellota text';
+    font-size: 18px;
 }
 
 .menu-opcoes a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px 40px;
-    transition: background-color 0.3s ease; 
-    margin-top: 2%;
-    border-radius: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
     
 }
 
 .menu-opcoes a:hover {
-    background-color: #eda950;
-    border-radius: 20px; 
-    color: #fff;
-    padding: 10px 20px;
-    display: block;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, background-color 0.1s;
-}
-
-
-
-/*barra de pesquisa*/
-.box-busca{ 
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #ECECEC;
-    font-size: 13px;
-    margin-left: 30%;
-}
-
-.search-box form {
-    display: flex;
-    border-radius: 50px;
-}
-
-.search-box:hover .search-box-input {
-    padding-left: 2em;
-    padding-right: 1em;
-    width: 200px;
-}
-
-.search-box-input {
-    outline: 0;
-    font-size: 1.2em;
-    color: rgb(0, 0, 0);
-    width: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    transition: .45s;
-    text-align: center;
-}
-.search-box-button {
-   display: flex;
-   border-radius: 50%;
-   width: 45px;
-   height: 45px;
-   background-color: #2980b9;
-   border: none;
-   cursor: pointer;
-   transition: .3s;
-}
-.search-box-button:active  {
-    transform: scale(.85);
-}
-.search-box-icone {
-    margin: auto;
-    color: rgb(0, 0, 0);
-}
-@media screen and (min-width: 400px){
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px;
     
-    .search-box:hover .search-box-input {
-        width: 360px;
-    }
+    text-decoration: dashed;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #69A625;
+    padding-top: 50px;
+}
+
+.footer img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.nav-item-footer:hover{
+    background-color: #007bff;
+    color: white;
+    
+}
+
+.nav-item-footer:hover{
+    background-color: #007bff;
+    color: white;
+    
+}
+
+
+.container {
+    margin-top: 20px; 
+}
+
+.col-lg-5 {
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.nav-item-footer a {
+    color: white;
+}
+
+.btn-assinar{
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-assinar:hover{
+    background-color: #184c83;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    color: white;
 }
