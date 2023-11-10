@@ -10,24 +10,6 @@
     color: white;
 }
 
-.button-information {
-    display: inline-block; 
-}
-
-.button-saiba-mais {
-    background-color: #007bff;
-    color: #fff;
-    padding: 8px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button-saiba-mais:hover {
-    background-color: #184c83;
-}
-
-
 .button-search {
     background-color: #007bff;
     color: aliceblue;
@@ -61,17 +43,17 @@
 .menu-opcoes a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px;
     transition: background-color 0.3s ease, color 0.3s ease; 
+    border-radius: 10px;
     
 }
 
 .menu-opcoes a:hover {
     background-color: #007bff;
     color: #ffffff;
-    padding: 15px;
-    
     text-decoration: dashed;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /*footer*/
@@ -85,19 +67,6 @@
     width: 100%;
     border-radius: 8px;
 }
-
-.nav-item-footer:hover{
-    background-color: #007bff;
-    color: white;
-    
-}
-
-.nav-item-footer:hover{
-    background-color: #007bff;
-    color: white;
-    
-}
-
 
 .container {
     margin-top: 20px; 
@@ -118,10 +87,10 @@ h4 {
 .btn-assinar{
     background-color: #007bff;
     color: #fff;
-    padding: 8px 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn-assinar:hover{
@@ -130,3 +99,21 @@ h4 {
     cursor: pointer;
     color: white;
 }
+
+
+.nav-item-footer:hover{
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.menu-vertical {
+    margin-top: 30px; 
+    margin-right: 90px;
+
+    
+}
+
+
+
