@@ -56,6 +56,14 @@
     border-radius: 10px;
 }
 
+.borda-cabecalho{
+    width: 0px;
+    height: 25px; 
+    border: 1px black solid;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
 /*footer*/
 
 .footer {
@@ -84,14 +92,7 @@ h4 {
     color: white;
 }
 
-.btn-assinar{
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: 10px;
-}
+
 
 .btn-assinar:hover{
     background-color: #184c83;
@@ -100,20 +101,6 @@ h4 {
     color: white;
 }
 
-
-.nav-item-footer:hover{
-    background-color: #007bff;
-    color: white;
-    border-radius: 10px;
-    
+.btn-contato:hover{
+    background-color: transparent;
 }
-
-.menu-vertical {
-    margin-top: 30px; 
-    margin-right: 90px;
-
-    
-}
-
-
-
