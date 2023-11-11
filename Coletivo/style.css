@@ -1,3 +1,138 @@
+/*barra de pesquisa e título, saiba mais*/
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  background-color: #69A625;
+  color: white;
+}
+
+.button-information {
+  display: inline-block; 
+}
+
+.button-saiba-mais {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-saiba-mais:hover {
+  background-color: #184c83;
+}
+
+
+.button-search {
+  background-color: #007bff;
+  color: aliceblue;
+  margin-left: 5%;
+  border: 1px solid #007bff; 
+  padding: 8px 20px;
+  cursor: pointer;
+  
+}
+
+.button-search:hover {
+  background-color: #184c83;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/*menu e logo - header*/
+
+.menu {
+  align-items: center;
+  list-style: none;
+  display: block;
+  font-weight: normal; 
+  background: #ECECEC;
+  margin: 0;
+  padding: 2%;
+  font-family: 'bellota text';
+  font-size: 18px;
+}
+
+.menu-opcoes a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  
+}
+
+.menu-opcoes a:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px;
+  
+  text-decoration: dashed;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #69A625;
+  padding-top: 50px;
+}
+
+.footer img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.nav-item-footer:hover{
+  background-color: #007bff;
+  color: white;
+  
+}
+
+.nav-item-footer:hover{
+  background-color: #007bff;
+  color: white;
+  
+}
+
+
+.container {
+  margin-top: 20px; 
+}
+
+.col-lg-5 {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.nav-item-footer a {
+  color: white;
+}
+
+.btn-assinar{
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-assinar:hover{
+  background-color: #184c83;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+
+/*CSS COLETIVO*/
 .background-image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,12 +148,12 @@
   transform: translate(-50%, -50%);
   height: 200px; /* Altura do quadrado */
   width: 175px; /* Largura do quadrado */
-  border: 5px solid black;
+  border: 8px solid black;
   background-color: white; /* Borda preta */
-  border-radius: 20px; /* Borda arredondada */
+  border-radius: 25px; /* Borda arredondada */
   text-align: center; /* Centraliza conteúdo horizontalmente */
-  padding: 20px; /* Espaçamento interno para o conteúdo */
-  scale: 150vh;
+  padding: 25px; /* Espaçamento interno para o conteúdo */
+  scale: 125%;
 }
 
 .square2{
@@ -26,9 +161,6 @@
    width: 50%; /* Largura do quadrado */
    background-color: #3A90C3; /* Borda preta */
    /*Alinha todos os itens para o centro do div */
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
   
 .logo_usina {

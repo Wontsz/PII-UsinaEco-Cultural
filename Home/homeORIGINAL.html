@@ -7,20 +7,6 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="home.css">
     
-    <style>
-       
-        #searchHistory {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            border: 1px solid #ccc;
-            max-height: 200px;
-            overflow-y: auto;
-            z-index: 999;
-        }
-    </style>
 
     <script>
         window.addEventListener("scroll", function () {
@@ -32,20 +18,20 @@
             }
         });
 
-        
+        //histórico de pesquisa
         function toggleSearchHistory() {
             const searchHistory = document.getElementById("searchHistory");
             searchHistory.style.display = searchHistory.style.display === "none" ? "block" : "none";
         }
 
-        /
+        //adicionar pesquisa ao histórico
         function addSearchToHistory() {
             const searchInput = document.getElementById("searchInput");
             const searchHistory = document.getElementById("searchHistory");
             const searchTerm = searchInput.value.trim();
 
             if (searchTerm) {
-                const listItem = document.createElement("li");
+                const listItem = document.createElement("ul");
                 listItem.textContent = searchTerm;
                 searchHistory.appendChild(listItem);
                 searchInput.value = "";
@@ -64,51 +50,59 @@
                 </div>
             </div>
         </div>
-        
-        
-        <div class="position-relative">
-            <input class="form-control mr-sm-2" type="text" id="searchInput" placeholder="Pesquisar" onclick="toggleSearchHistory()">
+       <div class="logo-header">
+            <a class="navbar-brand" href="#">
+                <picture>
+                    <img class="float-left rounded " src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F504443839%2F1531746591293%2F1%2Foriginal.20230501-044936?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1203%2C1203&s=879ea6ac09e91a66cf5c78485bc2e47e" alt="" style="width: 150px;">
+                </picture>
+            </a>
+       </div>
+        <!--barra de pesquisa e atributos do js -->
+        <div id="searchLogoContainer">
+            <input class="form-control" type="text" id="searchInput" placeholder="Pesquisar" onclick="toggleSearchHistory()">
+            <button id="searchButton" onclick="addSearchToHistory()">Pesquisar</button>
             <div id="searchHistory">
                 <ul>
-                    
+                  
                 </ul>
             </div>
         </div>
         
-        <nav class="navbar navbar-expand-xl border nav-fill">
-            <a class="navbar-brand" href="#">
-                <picture class="image-logo-header">
-                    <img class="float-left rounded" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F504443839%2F1531746591293%2F1%2Foriginal.20230501-044936?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1203%2C1203&s=879ea6ac09e91a66cf5c78485bc2e47e" alt="" style="width: 150px;">
-                </picture>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="container navbar-nav mr-auto border">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          O Coletivo
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Apoiadores</a>
-                          <a class="dropdown-item" href="#">Conheça o Coletivo</a>
-                          <a class="dropdown-item" href="#">Apoie a Usina</a>
-                        </div>
-                    </li>
-                    <li class="nav-item-menu"><a href="#">História</a></li>
-                    <li class="nav-item-menu"><a href="#">Loja</a></li>
-                    <li class="nav-item-menu"><a href="#">Eventos</a></li>
-                    <li class="nav-item-menu"><a href="#">Notícias</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container p-4 ">
+            <nav class="navbar navbar-expand-xl  nav-fill">
+                <a class="navbar-brand" href="#">
+                
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="container navbar-nav mr-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              O Coletivo
+                            </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Apoiadores</a>
+                                <a class="dropdown-item" href="#">Conheça o Coletivo</a>
+                                <a class="dropdown-item" href="#">Apoie a Usina</a>
+                                </div>
+                          </li>
+                      
+                            <li class="nav-item-menu mt-2"><a href="">História</a></li>
+                            <li class="nav-item-menu mt-2"><a href="">Loja</a></li>
+                            <li class="nav-item-menu mt-2"><a href="">Eventos</a></li>
+                            <li class="nav-item-menu mt-2"><a href="">Notícias</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
+
     <main>
 
     </main>
+
     <footer>
         <div class="container-fluid p-5 border text-center" style="background-color: #69A625;;">
             <div class="row">
@@ -119,9 +113,9 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
-                          </li>
+                        </li>
                         <li class="nav-item">
-                          <a class apropriado="nav-link" href="#">Coletivo</a>
+                          <a class="nav-link" href="#">Coletivo</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">História</a>
@@ -139,20 +133,21 @@
                     <h4>newsletter</h4>
                     <form action="form-inline">
                         <input class="form mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-sm-0" type="submit" onclick="addSearchToHistory()">Search</button>
+                        <button class="btn btn-outline-sucsess my-sm-0" type="button" onclick="addSearchToHistory()">Search</button>
                     </form>
                 </div>
                 <div class="col-lg-3 mt-5 p-4">
                     <img src="facebook_logo.png" alt="" style="width: 40px; margin-left: 15px;">
                     <img src="instagram_logo.png" alt="" style="width: 42px;">
                     <img src="youtube_logo.png" alt="" style="width: 40px;">
-                    <button class="btn btn-outline-success my-sm-0 d-block" type="submit">Contato</button>
+                    <button class="btn btn-outline-sucsess my-sm-0 d-block" type="submit">Contato</button>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzI
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzI">
+    </script>
 </body>
 </html>

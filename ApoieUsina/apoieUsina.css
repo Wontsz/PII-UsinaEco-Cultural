@@ -1,125 +1,135 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Bellota Text';
-}
-.titulo{
-    background-color: #69A625;
-}
-.title{
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Bellota Text';
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.logo{
-    /* Ellipse 1 */
-    box-sizing: border-box;
-    position: absolute;
-    width: 233px;
-    height: 233px;
-    border-radius: 150px;
-    background: #ECECEC;
-    border: 5px solid rgba(0, 0, 0, 0.7);
-}
-.top-bar{
-    background-color: #69A625;
-    color: #fff;
-}
+/*barra de pesquisa e título, saiba mais*/
 .search-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 25px; 
-    font-size: 16px;
-    background:#ECECEC;
-    outline: none; 
+.titulo {
+    background-color: #69A625;
+    color: white;
 }
 
-.search-bar button {
-    background-color: #008000; 
+.button-information {
+    display: inline-block; 
+}
+
+.button-saiba-mais {
+    background-color: #007bff;
     color: #fff;
+    padding: 8px 20px;
     border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin-left: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-saiba-mais:hover {
+    background-color: #184c83;
+}
+
+
+.button-search {
+    background-color: #007bff;
+    color: aliceblue;
+    margin-left: 5%;
+    border: 1px solid #007bff; 
+    padding: 8px 20px;
+    cursor: pointer;
+    
+}
+
+.button-search:hover {
+    background-color: #184c83;
+    transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
-nav {
-    background-color: #ECECEC; 
-}
+
+/*menu e logo - header*/
 
 .menu {
     align-items: center;
     list-style: none;
-    display: inline-block;
-    font-weight: 600; 
-    background: #ECECEC; 
+    display: block;
+    font-weight: normal; 
+    background: #ECECEC;
     margin: 0;
     padding: 2%;
-    font-family: 'Raleway';
+    font-family: 'bellota text';
+    font-size: 18px;
 }
+
 .menu-opcoes a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    
 }
 
 .menu-opcoes a:hover {
-    background-color: #008000; 
-    color: #fff;
-    padding: 15px ;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px;
+    
+    text-decoration: dashed;
 }
 
-.apoiadores-logo{
+/*footer*/
+
+.footer {
+    background-color: #69A625;
+    padding-top: 50px;
+}
+
+.footer img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.nav-item-footer:hover{
+    background-color: #007bff;
+    color: white;
+    
+}
+
+.nav-item-footer:hover{
+    background-color: #007bff;
+    color: white;
+    
+}
+
+
+.container {
+    margin-top: 20px; 
+}
+
+.col-lg-5 {
     text-align: center;
-    height: 70%;
 }
-.apoiadores-texto{
-    font-family: 'Bellota Text';
-    font-size: 30px;
+
+h4 {
+    margin-bottom: 10px;
 }
-.direitos{
-    color: black;
-    font-size: 16px;
-    font-family: "IBM Plex Serif";
-    font-weight: 400;
-    word-wrap: break-word;
-    margin-left: 20px;
-}
-.cabecalho{
-    color: black; 
-    font-size: 24px; 
-    font-family: Bellota 
-    Text; font-weight: 400; 
-    word-wrap: break-word;
-    display: inline-flex;
-}
-.borda-cabecalho{
-    width: 0px;
-    height: 25px; 
-    border: 1px black solid;
-    display: inline-flex;
-    margin-top: 10px;
-}
-main{
-    background-color: #ECECEC;
-    font-size: 30px;
-}
-.navegacao-footer a{
+
+.nav-item-footer a {
     color: white;
 }
 
+.btn-assinar{
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.btn-assinar:hover{
+    background-color: #184c83;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    color: white;
+}
 /* MEU */
 
 .fotoFlor{
