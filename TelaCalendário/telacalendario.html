@@ -273,26 +273,26 @@
     <script src="TelaCalendario/modalBox.js"></script>
 
 <script>
-// Get the modal
+//JS DO POP UP MODAL BOX
+
+//modal
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
+//botao
 var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
+//elemento <span> q fecha o modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// abre botao qnd clica no botao
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// qnd clica em X fecha
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+//qnd clica em qualquer lugar fora do modal ele fec
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
