@@ -265,9 +265,17 @@ article {
   border-radius: 20px;
   background-color: transparent;
   border: none;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-bottom: 40px;
-  width: 360px;
+  width: 660px;
+ }
+
+ p#leia-mais{ /* por algm motivo tem uma linha q nn exibe o botao*/
+  text-align: start;
+  padding-left: 20px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
  }
 
 /* Conteudo da modal box */
