@@ -160,7 +160,7 @@ h4 {
 
 @media (max-width: 600px) {
     .menu-vertical{
-        margin-left: 17%;
+        margin-left: 15%;
         margin-top: 10px;
     }
 }
@@ -233,17 +233,29 @@ h4 {
   MAPA FOOTER
   ***********/
 
-  .mapa-responsivo{
+.map-responsive{
     overflow:hidden;
-    padding-bottom: 300px;
+    padding-bottom:50.25%;
     position:relative;
     height:0;
 }
 
-.mapa-responsivo iframe{
-    left:0;
-    top:0;
-    height:300px;
+.map-responsive iframe{
+    height:100%;
     width:100%;
     position:absolute;
 }
+
+@media (min-width: 768px) {
+    #como-chegar {
+        width: 70%;
+    }
+}
+
+.square-holder {
+    align-items: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:200px
+  }
