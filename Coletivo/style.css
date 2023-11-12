@@ -10,50 +10,33 @@
   color: white;
 }
 
-.button-information {
-  display: inline-block; 
-}
-
-.button-saiba-mais {
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button-saiba-mais:hover {
-  background-color: #184c83;
-}
-
-
-.button-search {
+.btn-search {
   background-color: #007bff;
   color: aliceblue;
-  margin-left: 5%;
+  margin-right: 25px;
   border: 1px solid #007bff; 
   padding: 8px 20px;
   cursor: pointer;
+  border-radius: 10px;
   
 }
 
-.button-search:hover {
+.btn-search:hover {
   background-color: #184c83;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 /*menu e logo - header*/
 
 .menu {
   align-items: center;
-  list-style: none;
+  list-style: none; 
   display: block;
   font-weight: normal; 
   background: #ECECEC;
   margin: 0;
-  padding: 2%;
   font-family: 'bellota text';
   font-size: 18px;
 }
@@ -61,17 +44,43 @@
 .menu-opcoes a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  padding: 10px;
   transition: background-color 0.3s ease, color 0.3s ease; 
-  
+  border-radius: 10px;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.menu-opcoes li {
+  margin-top: 22px;
+}
+
+@media (max-width: 1200px) {
+  .menu-opcoes a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      transition: background-color 0.3s ease, color 0.3s ease; 
+      border-radius: 10px;
+      padding: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 2px;
+  }
 }
 
 .menu-opcoes a:hover {
   background-color: #007bff;
   color: #ffffff;
-  padding: 15px;
-  
   text-decoration: dashed;
+  border-radius: 10px;
+}
+
+.borda-cabecalho{
+  width: 0px;
+  height: 25px; 
+  border: 1px black solid;
+  display: inline-flex;
+  margin-top: 22px;
 }
 
 /*footer*/
@@ -85,19 +94,6 @@
   width: 100%;
   border-radius: 8px;
 }
-
-.nav-item-footer:hover{
-  background-color: #007bff;
-  color: white;
-  
-}
-
-.nav-item-footer:hover{
-  background-color: #007bff;
-  color: white;
-  
-}
-
 
 .container {
   margin-top: 20px; 
@@ -115,15 +111,6 @@ h4 {
   color: white;
 }
 
-.btn-assinar{
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 .btn-assinar:hover{
   background-color: #184c83;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -131,6 +118,147 @@ h4 {
   color: white;
 }
 
+.btn-contato {
+  background-color: #007bff;
+  color: white;
+  margin-right: 30px;
+  border-style: none;
+  border-radius: 15px;
+  padding: 10%;
+  margin-top: auto;
+}
+
+.btn-contato:hover {
+  background-color: #0056b3; 
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.btn-assinar {
+  padding: 1%;
+  margin-top: auto;
+  background-color: #28a745;
+  color: white
+}
+
+.btn-assinar:hover {
+  background-color: #d4edda; 
+  border-color: #28a745;
+  color: #218838; 
+}
+
+.menu-vertical {
+  top: 450px;  
+  width: 200px;
+  background-color: #218838;
+  color: white; 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .menu-vertical{
+      margin-left: 15%;
+      margin-top: 10px;
+  }
+}
+
+@media (max-height: 400px) {
+  .menu-vertical{
+      margin-left: 37%;
+      margin-top: 10px;
+  }
+}
+
+.image-footer-logo{
+  top: 480px; 
+  left: 150px; 
+}
+
+.wrapper{
+  top: 600px;
+  left: 1635px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-chegar{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #ff003b;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 10px;
+}
+
+.btn-chegar span{
+  position: relative;
+  z-index: 2;
+}
+
+.btn-chegar:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+  border-radius: 10px;
+  
+}
+
+.btn-chegar:hover{
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px lightblue;
+}
+
+.btn-chegar:hover:after{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/**********
+MAPA FOOTER
+***********/
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+@media (min-width: 768px) {
+  #como-chegar {
+      width: 70%;
+  }
+}
+
+.square-holder {
+  align-items: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:200px
+}
 
 /*CSS COLETIVO*/
 .background-image {
