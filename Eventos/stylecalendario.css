@@ -127,6 +127,9 @@ article {
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
   }
   
   article a::after {
@@ -195,7 +198,7 @@ article {
     --title-color: #008000;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
   
   
@@ -265,20 +268,19 @@ article {
   border-radius: 20px;
   background-color: transparent;
   border: none;
-  padding-left: 0px;
   padding-bottom: 40px;
-  width: 660px;
+  width: 100%;
+  height: 100%;
  }
 
- p#leia-mais{ /* por algm motivo tem uma linha q nn exibe o botao*/
-  /* text-align: start; */
+ p#leia-mais{
+  text-align: start;
   padding-left: 20px;
   margin: 0;
   /* transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
-    transition: all 0.3s; */
+    transition: all 0.3s;
  }
-
 /* Conteudo da modal box */
 .modal-content {
   justify-content: center;
@@ -290,6 +292,9 @@ article {
   border-radius: 20px;
   text-align: justify;
   animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+body.modal-open {
+  overflow: hidden;
 }
 
 .imgCont{
@@ -326,4 +331,4 @@ article {
     transform:scale(1) translateY(0px);
     opacity:1;
   }
-}
+}}
