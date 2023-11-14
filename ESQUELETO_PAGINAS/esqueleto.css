@@ -221,7 +221,17 @@ h4 {
     #como-chegar {
         width: 70%;
     }
+    .menu-vertical{
+        padding-left: 70px;
+    }
 }
+
+@media (max-width: 768px) {
+    .menu-vertical {
+        text-align: center;
+    }
+}
+
 
 .square-holder {
     align-items: center;
