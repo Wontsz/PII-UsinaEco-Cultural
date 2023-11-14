@@ -256,8 +256,6 @@ article {
   position: fixed; /* fica no lugar */
   z-index: 1; /* fica na frente de td? */
   padding-top: 10%; /* local da modal box */
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -280,36 +278,49 @@ article {
   /* transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
     transition: all 0.3s;
- }
+ 
 /* Conteudo da modal box */
+ }
 .modal-content {
-  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
   border: 4px solid #ECECEC;
   width: 60%;
+  height: 100%;
   border-radius: 20px;
-  text-align: justify;
+  justify-content: center;
   animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+.conteudo-text{
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
 }
 body.modal-open {
   overflow: hidden;
 }
 
 .imgCont{
-  padding-top: 20px;
-  width: 50%;
+  width: 85%;
 }
 
 /* Botao de fechar a modal */
 .close {
-  padding-bottom: 10px 10px;
   text-align: end;
   color: red;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .close:hover,
@@ -331,4 +342,4 @@ body.modal-open {
     transform:scale(1) translateY(0px);
     opacity:1;
   }
-}}
+}

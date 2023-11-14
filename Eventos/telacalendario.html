@@ -81,25 +81,22 @@
 
             <!-- ModalBox -->
             <div id="myModal" class="modal">
-
                 <!-- Conteudo -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <!-- <img  class = "imgCont" src="https://picsum.photos/id/1011/800/450" alt=""> -->
-                    <p>O CONTEUDO PRESENTE DENTRO DA MODAL BOX.</p>
-                    <p>O CONTEUDO PRESENTE DENTRO DA MODAL BOX.</p>
-                    <p>O CONTEUDO PRESENTE DENTRO DA MODAL BOX.</p>
-                    <p>O CONTEUDO PRESENTE DENTRO DA MODAL BOX.</p>
-                    <p>O CONTEUDO PRESENTE DENTRO DA MODAL BOX.</p>
-                    <p>O CONTEUDO PRESENTE DENTRO DA MODAL BOX.</p>
+                    <div class="conteudo-text">
+                        <!-- <img  class = "imgCont" src="https://picsum.photos/id/1011/800/450" alt=""> -->
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
+                        
+                    </div>
                 </div>
             </div>
         </article>
 
         <article>
-            <div class="article-wrapper">
+
                 <figure>
-                    <div class="main-banner-content">1</div>
+                <div class="main-banner-content">1</div>
                     <div class="control">
                         <img src="https://picsum.photos/id/1005/800/450" alt=""/>
                     </div>
@@ -124,13 +121,12 @@
                             clip-rule="evenodd"/>
                     </svg>
                 </a>
-            </div>
         </article>
 
         <article>
           <div class="article-wrapper">
-              <figure>
-                  <div class="main-banner-content">1</div>
+            <figure>
+                <div class="main-banner-content">1</div>
                   <div class="control">
                       <img src="https://picsum.photos/id/103/800/450" alt=""/>
                   </div>
@@ -292,6 +288,10 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+// modal.onclick = function(){
+//     modal.style.display = "flex"
+// }
 
 //qnd clica em qualquer lugar fora do modal ele fec
 window.onclick = function(event) {
