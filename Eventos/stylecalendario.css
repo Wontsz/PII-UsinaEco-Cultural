@@ -271,11 +271,12 @@ article {
  }
 
  p#leia-mais{ /* por algm motivo tem uma linha q nn exibe o botao*/
-  text-align: start;
+  /* text-align: start; */
   padding-left: 20px;
-  transform: translateX(var(--link-icon-translate));
+  margin: 0;
+  /* transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
-    transition: all 0.3s;
+    transition: all 0.3s; */
  }
 
 /* Conteudo da modal box */
