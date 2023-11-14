@@ -312,7 +312,7 @@ body.modal-open {
 }
 
 /* Botao de fechar a modal */
-.close {
+.close, .close2 {
   text-align: end;
   color: red;
   float: right;
