@@ -160,13 +160,13 @@ article {
     position: relative;
   }
   
-  article img {
+  figure img {
     max-width: 100%;
     transform-origin: center;
     transform: scale(var(--img-scale));
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .article-body {
     padding: 20px;
   }
@@ -283,15 +283,13 @@ article {
  }
 .modal-content {
   position: relative;
-  align-items: center;
   display: flex;
   background-color: #fefefe;
   margin: auto;
   border: 4px solid #ECECEC;
-  width: 60%;
+  width: 40%;
   height: 100%;
   border-radius: 20px;
-  justify-content: center;
   animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 .conteudo-text{
@@ -299,16 +297,21 @@ article {
   display: flex;
   width: 100%;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 body.modal-open {
   overflow: hidden;
 }
 
 .imgCont{
-  width: 85%;
+  width: 70%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Botao de fechar a modal */
