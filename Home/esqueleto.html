@@ -72,11 +72,28 @@
     </header>
 
     <main>
-        <section class="foto-e-peticao">
-            <div style="width: 100%; height: 40px; background:#69A625; flex-shrink: 0;"></div>
-            <div style="width: 100%; height: 25px; background:  #C3EE92; flex-shrink: 0;"></div>
-            <div class="container foto-peticao border p-5 mt-0">
 
+        <section class="como-chegar">
+            <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
+            <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+        </section>
+
+        <section class="foto-e-peticao background-image">
+            <div class="container foto-peticao  p-5 mt-0 petition-container">
+                <h2>Assine a Petição</h2>
+                <h3 style="font-size: 16px;">
+                    Para que o Incinerador Vergueiro vire centro cultural e ambiental.
+                </h3>
+                <button class="saiba-mais-peticao" href="https://secure.avaaz.org/community_petitions/po/prefeitura_municipal_de_sao_paulo_eu_apoio_incinerador_vergueiro_devera_ser_um_espaco_de_conscientizacao_ambiental_e_vida/">Saiba mais sobre</button>
+                <form action="processar_peticao.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required style="background-color: #ECECEC;  border-radius: 10px;">
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required style="background-color: #ECECEC;  border-radius: 10px;">
+    
+                    <button type="submit">Assinar Petição</button>
+                </form>
             </div>
         </section>
 
