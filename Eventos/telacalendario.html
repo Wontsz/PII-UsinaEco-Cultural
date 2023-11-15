@@ -87,14 +87,14 @@
                 sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
                 iaculis enim imperdiet egestas.</p>                          
             </div>
-            <p id="leia-mais">Leia mais</p>
+            <p id="leia-mais1">Leia mais</p>
             <button id="myBtn" class="botao"></button>
 
             <!-- ModalBox -->
             <div id="myModal" class="modal">
                 <!-- Conteudo -->
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close" id="close1">&times;</span>
                     <div class="conteudo-text">
                         <!-- <img  class = "imgCont" src="https://picsum.photos/id/1011/800/450" alt=""> -->
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
@@ -119,9 +119,7 @@
                 sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
                 iaculis enim imperdiet egestas.</p>                          
             </div>
-            <button id="myBtn2" class="botao">Leia mais
-                <p id="leia-mais">Leia mais</p>
-            </button>
+            <button id="myBtn2" class="botao">Leia mais</button>
 
             <!-- ModalBox -->
             <div id="myModal2" class="modal">
@@ -134,8 +132,7 @@
                     <div class="conteudo-text">
                         <p>OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
                         <p>Data: 1 de Março</p>
-                        <p>Endereço: bla bla bla, 123</p>
-                        
+                        <p>Endereço: bla bla bla, 123</p>    
                     </div>
                 </div>
             </div>
@@ -155,11 +152,9 @@
                       Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus
                       sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
                       iaculis enim imperdiet egestas.
-                  </p>
-                    <a href="#" id="leia-mais">
-                      Leia mais
+                  </p> Leia mais
+                    <a id="leia-mais3">                  
                         <button id="myBtn3" class="botao"></button>
-
                         <!-- ModalBox -->
                         <div id="myModal3" class="modal">
                             <!-- Conteudo -->
@@ -169,7 +164,7 @@
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s" alt="cat">
                                 </div>              
                                 <div class="conteudo-text">
-                                    <p>OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
+                                    <p>OUTRO OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
                                     <p>Data: 1 de Março</p>
                                                 
                                 </div>
@@ -367,8 +362,6 @@
             </div>
             
         </div>
-        
-  
     </div>
   
     <div class="container">
@@ -435,19 +428,19 @@ var modal = document.getElementById("myModal");
 //botao
 var btn = document.getElementById("myBtn");
 //elemento <span> q fecha o modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("close1");
 
 
 var modal2 = document.getElementById("myModal2");
 //botao
 var btn2 = document.getElementById("myBtn2");
 //elemento <span> q fecha o modal
-var span2 = document.getElementsByClassName("close2")[0];
+var span2 = document.getElementsByClassName("close2");
 
 
 var modal3 = document.getElementById("myModal3");
 //botao
-var btn3 = document.getElementById("leia-mais");
+var btn3 = document.getElementById("leia-mais3");
 //elemento <span> q fecha o modal
 var span3 = document.getElementsByClassName("close3")[0];
 
@@ -465,20 +458,20 @@ btn2.onclick = function(){
     modal2.style.display = "block"
 }
 span2.onclick = function(){
-    modal2.display = "none"
+    modal2.style.display = "none"
 }
 // BUTTON 3
 btn3.onclick = function(){
     modal3.style.display = "block"
 }
 span3.onclick = function(){
-    modal3.display = "none"
+    modal3.style.display = "none"
 }
 
 
-//qnd clica em qualquer lugar fora do modal ele fec
+//qnd clica em qualquer lugar fora do modal ele fecha
 window.onclick = function(event) {
-  if (event.target == modal || event.target == modal2) {
+  if (event.target == modal || event.target == modal2 || event.target == modal3) {
     modal.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";

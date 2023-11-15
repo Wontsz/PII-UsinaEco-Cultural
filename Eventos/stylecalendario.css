@@ -1027,7 +1027,8 @@ article {
   display: none; /* Escondido por padrao */
   position: fixed; /* fica no lugar */
   z-index: 1; /* fica na frente de td? */
-  padding-top: 10%; /* local da modal box */
+  padding-top: 5%; /* local da modal box */
+  padding-bottom: 5%;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -1043,7 +1044,7 @@ article {
   height: 100%;
  }
 
- p#leia-mais{
+ p#leia-mais1{
   text-align: start;
   padding-left: 20px;
   margin: 0;
@@ -1059,7 +1060,7 @@ article {
   background-color: #fefefe;
   margin: auto;
   border: 4px solid #ECECEC;
-  width: 40%;
+  width: 60%;
   height: 100%;
   border-radius: 20px;
   animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
@@ -1095,7 +1096,7 @@ body.modal-open {
 
 
 /* Botao de fechar a modal */
-.close, .close2 {
+.close, .close2, .close3 {
   text-align: end;
   color: red;
   float: right;
