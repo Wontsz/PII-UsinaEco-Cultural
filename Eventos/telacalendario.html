@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eventos</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="stylecalendario.css">
-        <link
-            href='https://fonts.googleapis.com/css?family=Bellota Text'
-            rel='stylesheet'>
-    </head>
-    <body>
-        <header>
-            <div class="top-bar container-fluid p-3 border">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="title">USINA ECOAMBIENTAL VERGUEIRO</div>
-                    </div>
-                    <img src="https://maua.br/images/instagram-logo.svg" style="width: 60px;">
-                    <div class="col-2">
-                        <div class="search-bar align-items-center">
-                            <input type="text" placeholder="Pesquisar...">
-                            <button>Buscar</button>
-                        </div>
-                    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylecalendario.css">
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+
+    <title>Usina EcoCultural Vergueiro</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-2 titulo">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 title" style="font-family: 'Bellota Text';">
+                    <h1>USINA ECOAMBIENTAL VERGUEIRO</h1>
                 </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row" style="background-color: #ECECEC; height: 113px;">
-                    <div class="col-2" style="height: 100%; position: relative">
-                        <div
-                            style="width: 233px; height: 233px; left: 0px; top: 0px; background: #ECECEC; border-radius: 9999px; border: 5px rgba(0, 0, 0, 0.70) solid"></div>
-                        <img
-                            style="width: 184px; height: 174px; left: 35px; top: 16px; position: absolute"
-                            src="/imgs/logo.png"/>
-                    </div>
-                    <div
-                        class="col-10"
-                        style="justify-content: flex-start; align-items: center; gap: 64px; display: inline-flex">
-                        <div class="cabecalho">O Coletivo</div>
-                        <div class="borda-cabecalho"></div>
-                        <div class="cabecalho">História</div>
-                        <div class="borda-cabecalho"></div>
-                        <div class="cabecalho">Apoie a usina!</div>
-                        <div class="borda-cabecalho"></div>
-                        <div class="cabecalho">Loja</div>
-                        <div class="borda-cabecalho"></div>
-                        <div class="cabecalho">Apoiadores</div>
-                        <div class="borda-cabecalho"></div>
-                        <div class="cabecalho">Eventos</div>
-                        <div class="borda-cabecalho"></div>
-                        <div class="cabecalho">Notícias</div>
-                    </div>
+
+                <div class="col-3 search-bar">
+                    <input type="text" style="background-color: #ECECEC; margin: 0; min-width: 150px;" placeholder="Pesquisar..." class="form-control">
+                    <button class="btn-search">Buscar</button>
                 </div>
+
+                
             </div>
         </div>
+
+        <div class="container-fluid menu">
+            <nav class="navbar navbar-expand-xl nav-fill">
+                <a class="navbar-brand position " href="/Home/esqueleto.html">
+                    <img src="/Home/usina_outralogo.png" alt="" style="background-color: #ECECEC;" height="150px"; width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu-opcoes" id="navbarSupportedContent">
+                    <ul class="container navbar-nav mr-auto">
+                        <li class="nav-item"><a href="/Coletivo/index.html">O Coletivo</a></li>
+                        <div class="borda-cabecalho d-none d-xl-block"></div>
+                        <li class="nav-item"><a href="/Historia/historia.html">História</a></li>
+                        <div class="borda-cabecalho d-none d-xl-block"></div>
+                        <li class="nav-item"><a href="/Loja/">Loja</a></li>
+                        <div class="borda-cabecalho d-none d-xl-block"></div>
+                        <li class="nav-item"><a href="/Eventos/telacalendario.html">Eventos</a></li>
+                        <div class="borda-cabecalho d-none d-xl-block"></div>
+                        <li class="nav-item dropdown mt-0" style="padding-left: 15px; padding-right: 15px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 60px; padding-right: 60px;">
+                              Apoios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ECECEC; box-shadow: 10px 10px lightblue;">
+                              <a class="dropdown-item" href="/Apoiadores/apoiadores_responsivo.html">Apoiadores</a>
+                              <a class="dropdown-item" href="/ApoieUsina/apoieUsina.html">Apoie a Usina</a>
+                            </div>
+                        </li>
+                        <div class="borda-cabecalho d-none d-xl-block"></div>
+                        <li class="nav-item"><a href="/Noticias/">Notícias</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
     </header>
-    
+    <section class="como-chegar">
+        <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
+        <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+    </section>
+
     <section class="articles">
         <article>
             <figure>
@@ -109,17 +119,22 @@
                 sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
                 iaculis enim imperdiet egestas.</p>                          
             </div>
-            <p id="leia-mais">Leia mais</p>
-            <button id="myBtn2" class="botao"></button>
+            <button id="myBtn2" class="botao">Leia mais
+                <p id="leia-mais">Leia mais</p>
+            </button>
 
             <!-- ModalBox -->
             <div id="myModal2" class="modal">
                 <!-- Conteudo -->
                 <div class="modal-content">
                     <span class="close2">&times;</span>
-                    <img class="imgCont" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s" alt="">
+                    <div class="imgCont">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s" alt="cat" width="80%">
+                    </div>              
                     <div class="conteudo-text">
                         <p>OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
+                        <p>Data: 1 de Março</p>
+                        <p>Endereço: bla bla bla, 123</p>
                         
                     </div>
                 </div>
@@ -141,20 +156,26 @@
                       sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
                       iaculis enim imperdiet egestas.
                   </p>
-                  <a href="#" class="leia-mais">
+                    <a href="#" id="leia-mais">
                       Leia mais
-                      <span class="sr-only"></span>
-                      <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="icon"
-                          viewbox="0 0 20 20"
-                          fill="currentColor">
-                          <path
-                              fill-rule="evenodd"
-                              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                              clip-rule="evenodd"/>
-                      </svg>
-                  </a>
+                        <button id="myBtn3" class="botao"></button>
+
+                        <!-- ModalBox -->
+                        <div id="myModal3" class="modal">
+                            <!-- Conteudo -->
+                            <div class="modal-content">
+                                <span class="close3">&times;</span>
+                                <div class="imgCont">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s" alt="cat">
+                                </div>              
+                                <div class="conteudo-text">
+                                    <p>OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.</p>
+                                    <p>Data: 1 de Março</p>
+                                                
+                                </div>
+                            </div>
+                        </div>
+                    </a>
               </div>
           </div>
         </article>
@@ -258,19 +279,153 @@
     </article>  
 </section>
 
-<footer>
-    <div class="container-xs">
-        <div style="width: 100%; height: 284px; background: #69A625"></div>
-        <div style="width: 100%; padding-left: 2%; height: 24px; background: #E5DDD3">
-            <p class="direitos">©Usina Ecocultural Vergueiro - Todos os direitos reservados</p>
+    <section class="como-chegar">
+        <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
+        <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+        <div class="container-sm p-3">
+           
+           
+            
         </div>
+    </section>
+
+    <section class="novidades">
+        <div style="width: 100%; height: 40px; background: #EA8356; flex-shrink: 0;"></div>
+        <div style="width: 100%; height: 25px; background: rgba(234, 131, 86, 0.49); flex-shrink: 0;"></div>
+        <div class="container border p-5 mt-0">
+
+        </div>
+        <div style="width: 100%; height: 25px; background: rgba(234, 131, 86, 0.49); flex-shrink: 0;"></div>
+        <div style="width: 100%; height: 40px; background: #EA8356; flex-shrink: 0;"></div>
+    </section>
+    
+    
+
+<footer class="footer">  
+    <div class="container">       
+      <div class="row">           
+        <div class="col-md-6 col-lg-4">              
+          <div class="footer-blog">          
+            <h3>Menu</h3>
+            <div>
+              <a href="/Coletivo/index.html">O coletivo</a>
+            </div>
+            <div>
+              <a href="/Historia/historia.html">História</a>
+            </div> 
+            <div>
+              <a href="/Mercado/">Loja</a>
+            </div>    
+            <div>
+              <a href="/ApoieUsina/apoieUsina.html">Apoie a Usina</a>
+            </div>
+            <div>
+                <a href="/Apoiadores/apoiadores_responsivo.html">Apoiadores</a>
+            </div>
+            <div>
+                <a href="/Eventos/telacalendario.html">Eventos</a>
+            </div>
+            <div>
+                <a href="/Noticias/">Notícias</a>
+            </div>   
+          </div>     
+        </div>  
+        
+  
+        <div class="col-md-6 col-lg-4">
+        
+          <div class="footer-tags">
+            <h3>Saiba mais + </h3>
+            <a href="https://linktr.ee/usinaecocultural">Link.tree</a>
+          </div>
+
+          <div class="footer-tags">
+            <h3>Reportagens sobre nós</h3>
+            <a href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão</a>
+            <a href="https://www.ipiranga22.com.br/2023/05/movimento-usina-eco-cultural-ganha-apoios-e-se-candidata-a-verba-de-r-6-milhoes/">Ipiranga 22</a>
+            <a href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara Municipal de São Paulo</a>
+          </div>
+
+
+          <div class="footer-tags">
+            <h3>Deseja agendar um evento?</h3>
+            <a href="https://www.eventbrite.com.br/o/usina-eco-cultural-65214406553">Clique aqui para agendar seu evento</a>
+          </div>
+
+        
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <h4 style="font-size: 15px; color: #ECECEC;">Newsletter nada mais é do que um jornal virtual que você irá receber em seu e-mail, sem custo, sobre a Usina</h4>
+                <form id="newsletterForm" class="form" onsubmit="enviarEmail(); return false;">
+                    <input class="campo" id="nomeInput" placeholder="Nome" required="">
+                    <input class="campo" id="emailInput" placeholder="E-mail" required="">
+                    <button type="submit" class="btn-assinar" id="assinarBtn">Assinar</button>
+                </form>
+            </div>
+            
+        </div>
+        
+  
     </div>
-</footer>
+  
+    <div class="container">
+      <div class="footer-contact">
+        <div class="row align-items-center">
+          
+  
+          <div class="col-md-6">
+            <h4>E-mail</h4>
+            <p>Uisnaecocultural@gmail.com</p>
+          </div>
+          
+          <div class="col-md-6">
+          
+            <h4>Redes Sociais</h4>
+            <a href="https://www.facebook.com/usinaecocultural/" src="Facebook_Logo_Secondary.png"><i class="fab fa-facebook-f">Facebook</i></a>
+            <a href="https://www.instagram.com/usinaecocultural/?hl=en" src="Instagram_Glyph_White.svg"><i class="fab fa-instagram">Instagram</i></a>
+            <a href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw" src="youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
+          
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="copyright">
+      <div class="container">
+      
+        <div class="row align-items-center">
+          
+          <div class="col-md-6">
+            <div class="copy-text">
+              <p>&copy; <a href="#">Usina EcoCultural Vergueiro</a> - Todos os Direitos Reservados.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="copy-menu">
+              <a href="">Termos de Uso</a>
+              <a href="privacidade.html">Privacidade</a>
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+    </div>
+  
+  </footer>
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
     <script src="TelaCalendario/modalBox.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script>
 //JS DO POP UP MODAL BOX
@@ -282,11 +437,19 @@ var btn = document.getElementById("myBtn");
 //elemento <span> q fecha o modal
 var span = document.getElementsByClassName("close")[0];
 
+
 var modal2 = document.getElementById("myModal2");
 //botao
 var btn2 = document.getElementById("myBtn2");
 //elemento <span> q fecha o modal
 var span2 = document.getElementsByClassName("close2")[0];
+
+
+var modal3 = document.getElementById("myModal3");
+//botao
+var btn3 = document.getElementById("leia-mais");
+//elemento <span> q fecha o modal
+var span3 = document.getElementsByClassName("close3")[0];
 
 // abre modal qnd clica no botao
 btn.onclick = function() {
@@ -304,13 +467,21 @@ btn2.onclick = function(){
 span2.onclick = function(){
     modal2.display = "none"
 }
+// BUTTON 3
+btn3.onclick = function(){
+    modal3.style.display = "block"
+}
+span3.onclick = function(){
+    modal3.display = "none"
+}
 
 
 //qnd clica em qualquer lugar fora do modal ele fec
 window.onclick = function(event) {
   if (event.target == modal || event.target == modal2) {
     modal.style.display = "none";
-    modal2.style.display = "none"
+    modal2.style.display = "none";
+    modal3.style.display = "none";
   }
 }
     </script>
