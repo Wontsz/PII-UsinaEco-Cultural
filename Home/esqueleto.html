@@ -8,6 +8,10 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="esqueleto.css">
     <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <title>Usina EcoCultural Vergueiro</title>
 
@@ -75,11 +79,11 @@
 
         <section class="como-chegar">
             <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
-            <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+            <div style="width: 100%; height: 30px; background: #69A625; flex-shrink: 0; position: relative;"></div>
         </section>
 
         <section class="foto-e-peticao background-image">
-            <div class="container foto-peticao  p-5 mt-0 petition-container">
+            <div class="container foto-peticao p-5 mt-0 petition-container">
                 <h2>Assine a Petição</h2>
                 <h3 style="font-size: 16px;">
                     Para que o Incinerador Vergueiro vire centro cultural e ambiental.
@@ -100,27 +104,76 @@
         <section class="como-chegar">
             <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
             <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
-            <div class="container-sm p-3">
-                <h2 class="mb-sm text-center" style="font-family: 'Bellota Text';">COMO CHEGAR</h2>
-                <div class="info">
-                    <p class="mb-0"><strong>Importante!</strong> A Usina fica em frente à estação Santos-Imigrantes da linha verde!</p>
-                </div>
-                <div class="map-responsive" style="margin-top: 10px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14625.238663597389!2d-46.62222311368996!3d-23.59322470604941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bf8fec09847%3A0x21fe6ebe5482bc4e!2sUsina%20Eco-Cultural!5e0!3m2!1spt-BR!2sbr!4v1699800994498!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="container p-1">
+               <h2 class="mb text-center" style="font-family: 'Bellota Text'; z-index: 3;">
+                  <i class="fas fa-map-marked-alt" style="margin-right: 10px;"></i> COMO CHEGAR
+               </h2>
+               <div class="info" style="background-color: #EA8356; border-radius: 10px; color:#ECECEC; padding: 10px; box-shadow: 5px 5px 10px rgba(255, 165, 0, 0.5); z-index: 2;">
+                  <p class="mb-0">
+                     <strong>Importante!</strong> A Usina fica em frente à estação Santos-Imigrantes da linha verde!
+                  </p>
+               </div>
+               <div class="map-responsive" style=" background-color: #C3EE92; border-radius: 10px; position: relative; z-index: 1;">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14625.238663597389!2d-46.62222311368996!3d-23.59322470604941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bf8fec09847%3A0x21fe6ebe5482bc4e!2sUsina%20Eco-Cultural!5e0!3m2!1spt-BR!2sbr!4v1699800994498!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; position: relative; z-index: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+               <div class="linhas-horizontais" style="z-index: 2; background-color: #C3EE92; border-radius: 10px; margin-bottom: 20px;">
+                  <hr class="linha-horizontal">
+                  <hr class="linha-horizontal">
+               </div>
+               <div class="botao-container" style="margin-top: 20px; z-index: 3;">
+                  <button class="btn-site" onclick="window.location.href='https://www.waze.com/pt-BR/live-map/'">
+                     <i class="fas fa-link"></i> Waze
+                  </button>
+                  <button class="btn-site" onclick="window.location.href='https://www.google.com/maps?ll=-23.596715,-46.621408&z=14&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=2449517011076824142'">
+                     <i class="fas fa-link"></i> Google Maps
+                  </button>
+                  <button class="btn-site" onclick="window.location.href='https://www.metro.sp.gov.br/sua-viagem/trajeto'">
+                     <i class="fas fa-link"></i> Metrô
+                  </button>
+                  <button class="btn-site" onclick="window.location.href='https://www.sptrans.com.br/busca-de-itinerarios/'">
+                     <i class="fas fa-link"></i> Ônibus
+                  </button>
+               </div>
             </div>
-        </section>
+         </section>
+         
+         
 
         <section class="novidades">
             <div style="width: 100%; height: 40px; background: #EA8356; flex-shrink: 0;"></div>
             <div style="width: 100%; height: 25px; background: rgba(234, 131, 86, 0.49); flex-shrink: 0;"></div>
-            <div class="container border p-5 mt-0">
-
+            <div class="p-5 mt-0" style="background-color: #ECECEC;">
+                <span style="text-align: center;">EVENTOS PRÓXIMOS</span>
+                <div class="swiper rounded" style="height: 590px; width: 590px; ">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="project-img">
+                          <img src="EVENTO1.png" alt="Foto 01">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img">
+                          <img src="EVENTO2.png" alt="Foto 02">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="project-img">
+                          <img src="EVENTO3.png" alt="Foto 03">
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <div class="swiper-button-next" ></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div style="width: 100%; height: 25px; background: rgba(234, 131, 86, 0.49); flex-shrink: 0;"></div>
             <div style="width: 100%; height: 40px; background: #EA8356; flex-shrink: 0;"></div>
         </section>
 
+
+        
         <section class="parceiros">
             <section class="section section-default mt-none mb-none" style="background-color: #ECECEC;">
                 <div class="container-fluid p-3 mt-0">
@@ -320,6 +373,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
