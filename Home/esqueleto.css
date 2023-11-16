@@ -106,9 +106,7 @@
   padding: 20px;
   box-shadow: 2px 7px 10px #69A625;
   width: 100%;
-  max-width: 400px;
-  margin: 20% auto; 
-  z-index: 2;
+  max-width: 400px; 
   position: relative;
 }
 
@@ -151,12 +149,10 @@ button:hover {
 }
 
 
-<<<<<<< HEAD
-=======
 img {
   width: 100%;
 }
->>>>>>> 9863006ca670884bbb6a2c31ad50d51d260dbf9d
+
 
 
 .container-cards {
@@ -182,7 +178,7 @@ img {
   left: 0px;
 }
 
-<<<<<<< HEAD
+
 .card:hover {
   transform: translateY(-20px);
   transition: 0.4s ease-out;
@@ -256,7 +252,6 @@ svg {
 }
 
 
-=======
 .square-holder {
   align-items: center;
   display:flex;
@@ -265,7 +260,7 @@ svg {
   width: 80%;
 }
 
->>>>>>> 9863006ca670884bbb6a2c31ad50d51d260dbf9d
+
 /*footer*/
 body {
     margin: 0;
