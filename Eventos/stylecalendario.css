@@ -86,19 +86,13 @@
   margin-top: 22px;
 }
 
-.como-chegar{
-  text-align: center;
-  background-color: #ECECEC;
-}
-
 .background-image {
-background-image: url('USINA_036.jpg');
+background-image: url('/Home/USINA_006.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 width: 100%;
-height: 500px; 
-position: relative;
+height: 300px; 
 }
 
 .petition-container {
@@ -1087,7 +1081,7 @@ body.modal-open {
 }
 
 .imgCont img{
-  /* width: 80%; */
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
