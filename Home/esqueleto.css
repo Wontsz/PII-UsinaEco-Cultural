@@ -104,7 +104,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 2px 7px 10px #69A625;
+  box-shadow: 10px 10px #69A625;
   width: 100%;
   max-width: 400px; 
   position: relative;
@@ -156,13 +156,11 @@ img {
 
 
 .container-cards {
-  height: 400px;
-  width: 800px;
-  top: 100px; 
-  left: calc(50% - 300px);
+  width: 100%; 
+  max-width: 300px; 
+  margin-left: 90%; 
   display: flex;
-  margin-left: 430px;
-  text-align: center;
+  flex-direction: column;
 }
 
 .card {
@@ -172,7 +170,7 @@ img {
   background-color: #ECECEC;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem rgb(129, 129, 129);
-  margin-left: -50px; /* Mudei o seletor para ser específico e removi a pseudo-classe ':not(:first-child)' */
+  margin-left: -50px; 
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -200,7 +198,7 @@ img {
 
 .bar {
   position: absolute;
-  top: 120px; /* Ajuste da posição para baixo */
+  top: 120px; 
   left: 20px;
   height: 5px;
   width: 150px;
@@ -228,11 +226,7 @@ img {
   transition: 0.4s ease-out;
 }
 
-.circle {
-  position: absolute;
-  top: 170px; /* Ajuste da posição para baixo */
-  left: calc(50% - 60px);
-}
+
 
 .stroke {
   stroke: white;
