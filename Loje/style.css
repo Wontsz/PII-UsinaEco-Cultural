@@ -151,122 +151,35 @@ button:hover {
   border-top: 1px solid #ddd;
 }
 
-
-<<<<<<< HEAD
-=======
-img {
-  width: 100%;
-}
->>>>>>> 9863006ca670884bbb6a2c31ad50d51d260dbf9d
-
-
-.container-cards {
-  height: 400px;
-  width: 800px;
-  top: 100px; 
-  left: calc(50% - 300px);
-  display: flex;
-  margin-left: 430px;
+span {
+  font-size: x-large;
   text-align: center;
 }
 
-.card {
-  display: flex;
-  height: 280px;
-  width: 200px;
-  background-color: #ECECEC;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem rgb(129, 129, 129);
-  margin-left: -50px; /* Mudei o seletor para ser específico e removi a pseudo-classe ':not(:first-child)' */
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
-
-<<<<<<< HEAD
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-}
-
-.title-card {
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
-
-.bar {
-  position: absolute;
-  top: 120px; /* Ajuste da posição para baixo */
-  left: 20px;
-  height: 5px;
-  width: 150px;
-}
-
-.emptybar {
-  background-color: #2e3033;
+img {
+  box-shadow: 0 1px 2px #0003;
   width: 100%;
-  height: 100%;
 }
 
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0, 154, 217);
-  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
-  transition: 0.6s ease-out;
+.swiper {
+  height: 500px;
 }
 
-.card:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 170px; /* Ajuste da posição para baixo */
-  left: calc(50% - 60px);
-}
-
-.stroke {
-  stroke: white;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-
-
-=======
-.square-holder {
-  align-items: center;
-  display:flex;
+.swiper-slide {
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  margin-bottom: 20px;
 }
 
->>>>>>> 9863006ca670884bbb6a2c31ad50d51d260dbf9d
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 270px;
+  }
+}
+
 /*footer*/
 body {
     margin: 0;
@@ -276,7 +189,6 @@ body {
   
   a {
     transition: .3s;
-    text-decoration: none;
   }
   
   a:hover,
