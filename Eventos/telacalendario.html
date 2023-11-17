@@ -152,7 +152,7 @@
         <article>
           <div class="article-wrapper">
             <figure>
-                <div class="main-banner-content">8  <br>Fev</div>
+                <div class="main-banner-content">8<br>Fev</div>
                   <div class="control">
                       <img src="https://picsum.photos/id/103/800/450" alt=""/>
                   </div>
@@ -170,7 +170,9 @@
                         <div id="myModal3" class="modal">
                             <!-- Conteudo -->
                             <div class="modal-content">
-                                <span class="close3">&times;</span>
+                                <button class="close-button3" aria-label="Close alert" data-close>
+                                    <span class="span-close3">&times;</span>
+                                </button>
                                 <div class="imgCont">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s" alt="cat">
                                 </div>              
@@ -189,10 +191,10 @@
 
         <article>
             <div class="article-wrapper">
-                <figure>
-                    <div class="main-banner-content">1</div>
+              <figure>
+                  <div class="main-banner-content">8<br>Fev</div>
                     <div class="control">
-                        <img src="https://picsum.photos/id/1011/800/450" alt=""/>
+                        <img src="https://picsum.photos/id/103/800/450" alt=""/>
                     </div>
                 </figure>
                 <div class="article-body">
@@ -201,24 +203,29 @@
                         Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus
                         sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
                         iaculis enim imperdiet egestas.
-                    </p>
-                    <a href="#" class="leia-mais">
-                        Leia mais
-                        <span class="sr-only"></span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="icon"
-                            viewbox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                fill-rule="evenodd"
-                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                clip-rule="evenodd"/>
-                        </svg>
-                    </a>
+                    </p> Leia mais
+                      <a id="leia-mais4">                  
+                          <button id="myBtn4" class="botao"></button>
+                          <!-- ModalBox -->
+                          <div id="myModal4" class="modal">
+                              <!-- Conteudo -->
+                              <div class="modal-content">
+                                  <span class="close4">&times;</span>
+                                  <div class="imgCont">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s" alt="cat">
+                                  </div>              
+                                  <div class="conteudo-text">
+                                      <p>OUTRO OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et saepe vitae eaque quaerat! In temporibus fuga, possimus nihil, nesciunt consequatur inventore, nam reprehenderit necessitatibus voluptatibus molestiae nemo magni doloribus.</p>
+                                      <p>Data: 8 de Fevereiro</p>
+                                      <p>Endereço: taltaltal, 345</p>
+                                                  
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
                 </div>
             </div>
-        </article>
+          </article>
 
         <article>
             <div class="article-wrapper">
@@ -411,7 +418,8 @@
 
 <script>
 //JS DO POP UP MODAL BOX
-var body = document.querySelector("body");
+var body = document.body;
+
 //modal
 var modal = document.getElementById("myModal");
 //botao
@@ -431,7 +439,13 @@ var modal3 = document.getElementById("myModal3");
 //botao
 var btn3 = document.getElementById("leia-mais3");
 //elemento <span> q fecha o modal
-var span3 = document.getElementsByClassName("close3")[0];
+var span3 = document.getElementsByClassName("button-close3");
+
+var modal4 = document.getElementById("myModal4");
+//botao
+var btn4 = document.getElementById("leia-mais4");
+//elemento <span> q fecha o modal
+var span4 = document.getElementsByClassName("close4")[0];
 
 // abre modal qnd clica no botao
 btn.onclick = function() {
@@ -462,14 +476,24 @@ span3.onclick = function(){
     modal3.style.display = "none";
     body.style.overflow = "auto";
 }
+// BUTTON 4
+btn4.onclick = function(){
+    modal4.style.display = "block";
+    body.style.overflow = "hidden";
+}
+span4.onclick = function(){
+    modal4.style.display = "none";
+    body.style.overflow = "auto";
+}
 
 
 //qnd clica em qualquer lugar fora do modal ele fecha
 window.onclick = function(event) {
-  if (event.target == modal || event.target == modal2 || event.target == modal3) {
+  if (event.target == modal || event.target == modal2 || event.target == modal3 || event.target == modal4) {
     modal.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
+    modal4.style.display = "none";
     body.style.overflow = "auto";
   }
 }
