@@ -156,11 +156,11 @@ img {
 
 
 .container-cards {
-  width: 100%; 
-  max-width: 300px; 
-  margin-left: 90%; 
+  width: 100%;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+  justify-content: space-around; /* Espaçamento uniforme entre os cards */
 }
 
 .card {
@@ -174,6 +174,8 @@ img {
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
+  flex: 1; 
+  margin: 10px;
 }
 
 
@@ -254,31 +256,92 @@ svg {
   width: 80%;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+@media (max-width: 600px) {
+  .card {
+    flex: 100%; 
+  }
+
+  .bar {
+    margin-top: 5px; 
+  }
 }
 
-/* Container de conteúdo */
-.content-container {
-  background-color: #ececec;
-  padding: 01px;
-  border-radius: 10px;
-  margin-right: 70%;
-  width: 600px;
-  height: 600px;
-  flex-direction: column;
-  box-shadow: -1rem 0 3rem rgb(129, 129, 129);
+.card-button {
+  background-color: #ECECEC;
+  margin-top: 90%;
+  color: #17141d;
+  border: none;
+  border-radius: 0 0 10px 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
 }
 
-.additional-content {
-    margin-bottom: 3000px;
-    width: 300px;
-    display: flex;
-    
+.card-button:hover{
+  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
+  transition: 0.6s ease-out;
+  box-shadow: 10px 10px rgb(190, 190, 190);
+  margin-top: 91%;
 }
 
+.bar {
+  margin-bottom: 10px;
+}
+
+
+.carousel-container {
+  width: 100%;
+  padding-block: 16px 16px; 
+  margin: 16px 0; 
+  overflow-x: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  flex-flow: row nowrap;
+  scroll-behavior: smooth;
+  background-color: #cccccc;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 14px;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #b1b3b399;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #0085ff;
+
+}
+
+.carousel-container::-webkit-scrollbar-track-piece:start {
+  background: #0085ff;
+}
+
+.carousel-slide {
+  flex: 1 0 30%;
+  aspect-ratio: 1;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 212, 226);
+  scroll-snap-align: center;
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    flex: 1 0 90%;
+  }
+
+  .carousel-container {
+    padding-block: 16px 8px; 
+    margin: 16px 0; 
+  }
+}
 
 
 
