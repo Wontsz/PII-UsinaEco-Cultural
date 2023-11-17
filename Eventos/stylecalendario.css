@@ -1059,6 +1059,14 @@ article {
   border-radius: 20px;
   animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
+
+@media screen and (max-width: 767px) {
+  .modal-content{
+    /* coloca o css q vc qr q fique no cell */
+    width: 100%;
+    height: 90%;
+  }
+}
 .conteudo-text{
   flex-direction: column;
   display: flex;
