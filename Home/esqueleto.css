@@ -299,7 +299,6 @@ svg {
   scroll-snap-type: x mandatory;
   flex-flow: row nowrap;
   scroll-behavior: smooth;
-  background-color: #cccccc;
 }
 
 .carousel-container::-webkit-scrollbar {
@@ -330,6 +329,30 @@ svg {
   align-items: center;
   background-color: rgb(216, 212, 226);
   scroll-snap-align: center;
+}
+
+.carousel-slide:nth-child(1) {
+  background-image: url('noticia1.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide:nth-child(2) {
+  background-image: url('noticia2.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide:nth-child(3) {
+  background-image: url('noticia3.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 600px) {
