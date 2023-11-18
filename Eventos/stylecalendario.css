@@ -583,6 +583,9 @@ article {
 /****************************
   MODAL POP UPS PARA OS CARDS
 *****************************/
+p {
+  text-indent: 3ch;
+}
 .modal {
   display: none; /* Escondido por padrao */
   position: fixed; /* fica no lugar */
