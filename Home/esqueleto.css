@@ -85,6 +85,11 @@
     margin-top: 22px;
 }
 
+.logo-usina{
+  height: 120px; 
+  width: 120px;
+}
+
 .como-chegar{
     text-align: center;
     background-color: #ECECEC;
