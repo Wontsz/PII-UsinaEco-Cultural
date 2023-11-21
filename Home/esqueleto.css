@@ -389,6 +389,32 @@ svg {
 }
 
 
+.journal-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 47%;
+}
+
+.journal-button:hover {
+  background-color: #69A625;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 47%;
+  margin-top: 1%;
+}
+
+
+.journal-icon {
+  width: 50px; 
+  height: 50px; 
+
+}
+
 /*footer*/
 body {
     margin: 0;
