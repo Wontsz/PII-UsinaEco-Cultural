@@ -89,6 +89,21 @@
 .apoiadores{
     font-size: 20px;
 }
+.apoiador{
+  border-bottom: 2px solid #c5c5c5;
+}
+.footerr {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.saiba-mais {
+  margin-right: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline black;
+  color: black;
+}
 
 /*footer*/
 body {
