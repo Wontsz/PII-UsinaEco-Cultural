@@ -550,9 +550,29 @@ body {
     }
   
   }
+/* MAIN */
+.main{
+  background-color: #C3EE92 ;
+}
+
+.square {
+  position: absolute; /* Position elements relative to the parent .background-image */
+  top: 50%; /* Adjust vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  height: 220px; /* Altura do quadrado */
+  width: 190px; /* Largura do quadrado */
+  border: 8px solid black;
+  background-color: white; /* Borda preta */
+  border-radius: 25px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo horizontalmente */
+  padding: 25px; /* Espaçamento interno para o conteúdo */
+  scale: 125%;
+}
 
   .title-page{
     text-align: center;
+    background-color: #ce744d;
     color: black;
     font-family: Bellota Text;
     font-size: 55px;
@@ -569,16 +589,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal
-  }
-
-  .title-page2{
-    text-align: center;
-    color: black;
-    font-family: Bellota Text;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
 
   .text-abandono{
