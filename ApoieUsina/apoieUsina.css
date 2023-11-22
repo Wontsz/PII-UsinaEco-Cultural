@@ -550,9 +550,19 @@ body {
   }
 /* MEU */
 
-.fotoFlor{
-    background: rgba(234, 131, 86, 0.51);
-    width: 100%;
+.square {
+  position: absolute; /* Position elements relative to the parent .background-image */
+  top: 50%; /* Adjust vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  height: 220px; /* Altura do quadrado */
+  width: 190px; /* Largura do quadrado */
+  border: 8px solid #3A90C3;
+  background-color: white; /* Borda preta */
+  border-radius: 25px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo horizontalmente */
+  padding: 25px; /* Espaçamento interno para o conteúdo */
+  scale: 125%;
 }
 .contribua{
     text-align: center;
@@ -568,13 +578,15 @@ body {
     background: #ECECEC;
 }
 .pix{
-    text-align: center;
-    color: #000;
-    font-family: Bellota Text;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  color: #000;
+  font-family: Bellota Text;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .img-fluid{
