@@ -552,7 +552,7 @@ body {
   }
 /* MAIN */
 .main{
-  background-color: #C3EE92 ;
+  background-color: ;
 }
 
 .square {
@@ -572,8 +572,8 @@ body {
 
   .title-page{
     text-align: center;
-    background-color: #ce744d;
-    color: black;
+    background-color: #EA8356;
+    color: white;
     font-family: Bellota Text;
     font-size: 55px;
     font-style: normal;
@@ -581,19 +581,9 @@ body {
     line-height: normal;
   }
 
-  .text-historia{
+  .text{
     text-align: center;
-    color: #000;
-    font-family: Bellota Text;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal
-  }
-
-  .text-abandono{
-    text-align: center;
-    color: #000;
+    color: black;
     font-family: Bellota Text;
     font-size: 30px;
     font-style: normal;
