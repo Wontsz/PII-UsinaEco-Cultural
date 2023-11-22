@@ -576,3 +576,9 @@ body {
     font-weight: 400;
     line-height: normal;
 }
+
+.img-fluid{
+  width: 40%;
+  margin: auto;
+  display: block;
+}
