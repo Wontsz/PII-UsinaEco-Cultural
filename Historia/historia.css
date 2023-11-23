@@ -551,9 +551,6 @@ body {
   
   }
 /* MAIN */
-.main{
-  background-color: ;
-}
 
 .square {
   position: absolute; /* Position elements relative to the parent .background-image */
@@ -571,11 +568,11 @@ body {
 }
 
   .title-page{
-    text-align: center;
+    text-align: right;
     background-color: #EA8356;
     color: white;
     font-family: Bellota Text;
-    font-size: 55px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -583,7 +580,7 @@ body {
 
   .text{
     text-align: center;
-    color: black;
+    color: white;
     font-family: Bellota Text;
     font-size: 30px;
     font-style: normal;
