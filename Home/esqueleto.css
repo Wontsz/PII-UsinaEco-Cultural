@@ -415,6 +415,33 @@ svg {
 
 }
 
+#form-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25% ;
+  background-color: #f8f8f8;
+}
+
+.abrir-forms{
+  padding: 10px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  margin-bottom: 1% ;
+}
+
+
 /*footer*/
 body {
     margin: 0;

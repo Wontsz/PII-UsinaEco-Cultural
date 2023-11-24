@@ -85,7 +85,7 @@
               <h3 style="font-size: 16px; margin-top: 20px; margin-bottom: 20px;">
                   Para que o Incinerador Vergueiro vire centro cultural e ambiental.
               </h3>
-              <button class="saiba-mais-peticao" href="https://secure.avaaz.org/community_petitions/po/prefeitura_municipal_de_sao_paulo_eu_apoio_incinerador_vergueiro_devera_ser_um_espaco_de_conscientizacao_ambiental_e_vida/">Clique aqui para assinar</button>
+              <button class="saiba-mais-peticao" onclick="window.location.href='https://secure.avaaz.org/community_petitions/po/prefeitura_municipal_de_sao_paulo_eu_apoio_incinerador_vergueiro_devera_ser_um_espaco_de_conscientizacao_ambiental_e_vida/'">Clique aqui para assinar</button>
              
           </div>
         </div>
@@ -107,16 +107,16 @@
                </div>
                
                <div class="botao-container" style="margin-top: 20px; z-index: 3; margin-bottom: 3%; ">
-                <button class="btn-site" onclick="window.location.href='https://www.waze.com/pt-BR/live-map/'" style="background-color: transparent; border-color: black;">
+                <button class="btn-site" onclick="window.location.href='https://www.waze.com/pt-BR/live-map/'" style="background-color: transparent; border:transparent;">
                    <img style="width: 50px; height: 50px;" src="waze.png" alt="Ícone Waze">
                 </button>
-                <button class="btn-site" style="background-color: transparent; border-color: black;" onclick="window.location.href='https://www.google.com/maps?ll=-23.596715,-46.621408&z=14&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=2449517011076824142'">
+                <button class="btn-site" style="background-color: transparent; border:transparent; " onclick="window.location.href='https://www.google.com/maps?ll=-23.596715,-46.621408&z=14&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=2449517011076824142'">
                    <img style="width: 50px; height: 50px;" src="google-maps.png" alt="Ícone Google Maps">
                 </button>
-                <button class="btn-site" style="background-color: transparent; border-color: black;" onclick="window.location.href='https://www.metro.sp.gov.br/sua-viagem/trajeto'">
+                <button class="btn-site" style="background-color: transparent; border:transparent;" onclick="window.location.href='https://www.metro.sp.gov.br/sua-viagem/trajeto'">
                    <img style="width: 50px; height: 50px;" src="train.png" alt="Ícone Metrô">
                 </button>
-                <button class="btn-site" style="background-color: transparent; border-color: black;" onclick="window.location.href='https://www.sptrans.com.br/busca-de-itinerarios/'">
+                <button class="btn-site" style="background-color: transparent; border:transparent;" onclick="window.location.href='https://www.sptrans.com.br/busca-de-itinerarios/'">
                    <img style="width: 50px; height: 50px;" src="bus-stop.png" alt="Ícone Ônibus">
                 </button>
              </div>
@@ -195,7 +195,29 @@
               <div class="carousel-slide"></div>
             </div>
 
+            <div id="form-container">
+              <h2>Formulário de eventos</h2>
+              <form>
+                  <label for="campo1">Campo 1:</label>
+                  <input type="text" id="campo1" name="campo1" required>
+      
+                  <label for="campo2">Campo 2:</label>
+                  <input type="text" id="campo2" name="campo2" required>
+      
+                  <button type="submit">Enviar</button>
+              </form>
+          </div>
+      
+          <button onclick="toggleForm()">Abrir Formulário</button>
+      
+          <script>
+              function toggleForm() {
+                  var formContainer = document.getElementById('form-container');
+                  formContainer.style.display = (formContainer.style.display === 'none' || formContainer.style.display === '') ? 'block' : 'none';
+              }
+          </script>
                 
+          </div>
             
             </div>
             <div style="width: 100%; height: 25px; background: rgba(234, 131, 86, 0.49); flex-shrink: 0;"></div>
@@ -344,7 +366,7 @@
                     <form id="newsletterForm" class="form" onsubmit="enviarEmail(); return false;">
                         <input class="campo" id="nomeInput" placeholder="Nome" required="">
                         <input class="campo" id="emailInput" placeholder="E-mail" required="">
-                        <button type="submit" class="btn" id="assinarBtn">Assinar</button>
+                        <button type="submit" class="btn" id="assinarBtn" onclick="alert('Assinado! Em breve você deve receber notícias sobre a Usina')">Assinar</button>
                     </form>
                 </div>
                 
@@ -389,7 +411,7 @@
               
               <div class="col-md-6">
                 <div class="copy-menu">
-                  <a href="">Termos de Uso</a>
+                  <a href="termosdeuso.html">Termos de Uso</a>
                   <a href="privacidade.html">Privacidade</a>
                 </div>
               </div>
