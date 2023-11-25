@@ -30,6 +30,33 @@
     box-shadow: 8px 8px lightblue;
 }
 
+.background-image {
+  background-image: url('/imgs/apoiadores/apoiadores_fundo.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.square {
+  position: absolute; /* Position elements relative to the parent .background-image */
+  top: 50%; /* Adjust vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  height: 220px; /* Altura do quadrado */
+  width: 190px; /* Largura do quadrado */
+  background-color: white; /* Borda preta */
+  border-radius: 25px; /* Borda arredondada */
+  text-align: center; /* Centraliza conteúdo horizontalmente */
+  padding: 25px; /* Espaçamento interno para o conteúdo */
+  scale: 125%;
+}
+@media (max-width: 1200px) {
+  .square {
+    left: 55%; /* Center horizontally */
+  }
+}
 /*menu e logo - header*/
 
 .menu {
