@@ -195,27 +195,43 @@
               <div class="carousel-slide"></div>
             </div>
 
-            <div id="form-container">
-              <h2>Formulário de eventos</h2>
-              <form>
-                  <label for="campo1">Campo 1:</label>
-                  <input type="text" id="campo1" name="campo1" required>
-      
-                  <label for="campo2">Campo 2:</label>
-                  <input type="text" id="campo2" name="campo2" required>
-      
-                  <button type="submit">Enviar</button>
+            <div class="row input-container" style="background-color: #fff; border-radius: 5px; box-shadow: 10px 10px 10px rgb(124, 123, 123);">
+              <h1 class="title_contato">Sugestão de eventos</h1>
+              
+              <form method="post" action="#">
+                  <div class="style-form-input full">
+                      <input type="text" name="nome" required />
+                      <label><i class="icon icon-user-1"></i>  Nome</label> 
+                  </div>
+                  
+                  <div class="style-form-input">
+                      <input type="text" name="email" required />
+                      <label><i class="icon icon-mail-1"></i> E-mail</label> 
+                  </div>
+                  
+                  <div class="style-form-input right">
+                      <input type="text" name="assunto" required />
+                      <label><i class="icon icon-info-circled"></i> Assunto</label> 
+                  </div>
+                  
+                  <div class="style-form-input full">
+                      <textarea name="mensagem" required></textarea>
+                      <label><i class="icon icon-comments"></i> Mensagem</label>
+                  </div>
+                  <div class="style-form-input full">
+                      <input type="hidden" name="acao" value="enviar">
+                      <button class="btn-submit">Enviar</button>
+                  
+                  </div>
               </form>
           </div>
+
+          <div style="text-align: center;" class="mt-3 mb-3">
+            <button href="https://www.eventbrite.com.br/o/usina-eco-cultural-65214406553">Agende seu evento</button>
+            <button href="https://docs.google.com/forms/d/e/1FAIpQLSeylWAQpSRKiyCCmsyQV17E9pVFGHpuufqjRAvohdHFqLJJ8w/viewform">Se inscreva para algum evento</button>
+          </div>
       
-          <button onclick="toggleForm()">Abrir Formulário</button>
-      
-          <script>
-              function toggleForm() {
-                  var formContainer = document.getElementById('form-container');
-                  formContainer.style.display = (formContainer.style.display === 'none' || formContainer.style.display === '') ? 'block' : 'none';
-              }
-          </script>
+          
                 
           </div>
             
@@ -343,12 +359,7 @@
                 <a href="https://linktr.ee/usinaecocultural">Link.tree</a>
               </div>
 
-              <div class="footer-tags">
-                <h3>Reportagens sobre nós</h3>
-                <a href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão</a>
-                <a href="https://www.ipiranga22.com.br/2023/05/movimento-usina-eco-cultural-ganha-apoios-e-se-candidata-a-verba-de-r-6-milhoes/">Ipiranga 22</a>
-                <a href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara Municipal de São Paulo</a>
-              </div>
+            
 
 
               <div class="footer-tags">
