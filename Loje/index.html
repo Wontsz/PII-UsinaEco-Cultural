@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
   <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
   <title>Usina EcoCultural Vergueiro</title>
 
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="front.js"></script>
 </head>
 
 <body>
@@ -37,7 +35,7 @@
     <div class="container-fluid menu">
       <nav class="navbar navbar-expand-xl nav-fill">
         <a class="navbar-brand position " href="/Home/esqueleto.html">
-          <img src="/imgs/usina_outralogo.png" alt="" style="background-color: #ECECEC;" height="150px" ; width="150px">
+          <img class="logo-usina" src="/Home/usina_outralogo.png" alt="" style="background-color: #ECECEC;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,12 +47,8 @@
             <div class="borda-cabecalho d-none d-xl-block"></div>
             <li class="nav-item"><a href="/Historia/historia.html">História</a></li>
             <div class="borda-cabecalho d-none d-xl-block"></div>
-            <!-- <li class="nav-item"><a href="">Apoie a Usina</a></li> -->
-            <!-- <div class="borda-cabecalho d-none d-xl-block"></div> -->
             <li class="nav-item"><a href="/Loja/">Loja</a></li>
             <div class="borda-cabecalho d-none d-xl-block"></div>
-            <!-- <li class="nav-item"><a href="">Apoiadores</a></li> -->
-            <!-- <div class="borda-cabecalho d-none d-xl-block"></div> -->
             <li class="nav-item"><a href="/Eventos/telacalendario.html">Eventos</a></li>
             <div class="borda-cabecalho d-none d-xl-block"></div>
             <li class="nav-item dropdown mt-0" style="padding-left: 15px; padding-right: 15px;">
@@ -76,318 +70,157 @@
     </div>
 
   </header>
+  <section class="como-chegar">
+    <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
+    <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+  </section>
 
-  <main>
+  <section>
+    <div>
+      <img class="background-image" src="/Home/USINA_006.jpg" alt="">
+    </div>
+  </section>
 
-    <body>
 
 
-      </header>
-      <section class="como-chegar">
-        <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
-        <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
-      </section>
+  <section>
+    <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
+    <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+    <div class="container-sm p-3"></div>
+  </section>
 
-      <section>
-        <div>
-          <img class="background-image" src="/Home/USINA_006.jpg" alt="">
+
+
+
+  <!--LOJA-->
+  <section class="articles">
+    <article>
+      <figure>
+        <div class="control">
+          <img src="/imgs/loje/caneca.webp" alt="Caneca" style="position: relative; top: -80px;" />
         </div>
-      </section>
+      </figure>
+      <div class="article-body">
+        <h2>Caneca</h2>
+        <p>Caneca da usina</p>
+      </div>
+      <p id="leia-mais1" style="text-decoration: underline; color: blue;">Leia mais</p>
+      <button id="myBtn" class="botao"></button>
 
-      <section>
-        <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
-        <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
-        <div class="container-sm p-3"></div>
-      </section>
-
-      <section class="articles">
-        <article>
-          <figure>
-            <div class="control">
-              <img src="/imgs/loje/caneca.webp" alt=""/>
-            </div>
-          </figure>
-          <div class="article-body">
-            <h2>Caneca</h2>
+      <!-- ModalBox -->
+      <div id="myModal" class="modal">
+        <!-- Conteudo -->
+        <div class="modal-content">
+          <span class="close" id="close1">&times;</span>
+          <div class="imgCont">
+            <img src="/imgs/loje/caneca.webp" alt="event">
+          </div>
+          <div class="conteudo-text">
+            <!-- <img  class = "imgCont" src="https://picsum.photos/id/1011/800/450" alt=""> -->
             <p>Caneca da usina</p>
           </div>
-          <p id="leia-mais1">Leia mais</p>
-          <button id="myBtn" class="botao"></button>
+        </div>
+      </div>
+    </article>
 
-          <!-- ModalBox -->
-          <div id="myModal" class="modal">
-            <!-- Conteudo -->
-            <div class="modal-content">
-              <span class="close" id="close1">&times;</span>
-              <div class="conteudo-text">
-                <img class="imgCont" src="/imgs/loje/caneca.webp" alt="">
-                <p>Conteudo do modal???</p>
-              </div>
-            </div>
+
+    <article>
+      <figure>
+        <div class="control">
+          <img src="/imgs/loje/camisa.webp" alt="Camisa" width="100%" style="position: relative; top: -80px;">
+        </div>
+      </figure>
+      <div class="article-body">
+        <h2>Camisa</h2>
+        <p>Camisa da usina</p>
+      </div>
+
+      <p id="leia-mais1" style="text-decoration: underline; color: blue;">Leia mais</p>
+      <button id="myBtn2" class="botao">
+      </button>
+
+      <!-- ModalBox -->
+      <div id="myModal2" class="modal">
+        <!-- Conteudo -->
+        <div class="modal-content">
+          <span class="close2">&times;</span>
+          <div class="imgCont">
+            <img src="/imgs/loje/camisa.webp" alt="event">
           </div>
-        </article>
-
-        <article>
-          <figure>
-            <div class="control">
-              <img
-                src="/imgs/loje/camisa.webp"
-                alt="" width="100%" />
-            </div>
-          </figure>
-          <div class="article-body">
-            <h2>Camisa</h2>
-            <p>Camisa da usina.</p>
+          <div class="conteudo-text">
+            <p>Camisa da usina</p>
           </div>
-          
-          <p id="leia-mais1">Leia mais</p>
-          <button id="myBtn2" class="botao"></button>
+        </div>
+      </div>
+    </article>
 
-          <!-- ModalBox -->
-          <div id="myModal2" class="modal">
-            <!-- Conteudo -->
-            <div class="modal-content">
-              <span class="close2">&times;</span>
-              <div class="imgCont">
-                <img
-                  src="/imgs/loje/camisa.webp"
-                  alt="camisa" width="10%">
-              </div>
-              <div class="conteudo-text">
-                <p>Conteudo do modal???.</p>
-                <p>Pq nao aparece</p>
-                <p>Meu deus</p>
-              </div>
-            </div>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <div class="control">
+            <img src="/imgs/loje/caneta.webp" alt="caneta" style="position: relative; top: -80px;">
           </div>
-        </article>
-
-        <article>
-          <div class="article-wrapper">
-            <figure>
-              <div class="main-banner-content">8<br>Fev</div>
-              <div class="control">
-                <img src="https://picsum.photos/id/103/800/450" alt="" />
-              </div>
-            </figure>
-            <div class="article-body">
-              <h2>Título do evento</h2>
-              <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus
-                sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
-                iaculis enim imperdiet egestas.
-              </p> Leia mais
-              <a id="leia-mais3">
-                <button id="myBtn3" class="botao"></button>
-                <!-- ModalBox -->
-                <div id="myModal3" class="modal">
-                  <!-- Conteudo -->
-                  <div class="modal-content">
-                    <button class="close-button3" aria-label="Close alert" data-close>
-                      <span class="span-close3">&times;</span>
-                    </button>
-                    <div class="imgCont">
-                      <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5c6Jr6bQDvDYZRHHl1tf4GW373TSsYCJgi9edx1du&s"
-                        alt="cat">
-                    </div>
-                    <div class="conteudo-text">
-                      <p>OUTRO OUTRO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam
-                        voluptatibus eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas
-                        pariatur? Unde, dolorem. Aliquam ea nobis sequi temporibus?.<br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et saepe vitae eaque quaerat!
-                          In temporibus fuga, possimus nihil, nesciunt consequatur inventore, nam reprehenderit
-                          necessitatibus voluptatibus molestiae nemo magni doloribus. </p>
-                        <p>Data: 8 de Fevereiro</p>
-                        <p>Endereço: taltaltal, 345</p>
-
-                    </div>
-                  </div>
+        </figure>
+        <div class="article-body">
+          <h2>Caneta</h2>
+          <p>Caneta da usina</p>
+          <p style="text-decoration: underline; color: blue;">Leia mais</p>
+          <a id="leia-mais3">
+            <button id="myBtn3" class="botao"></button>
+            <!-- ModalBox -->
+            <div id="myModal3" class="modal">
+              <!-- Conteudo -->
+              <div class="modal-content">
+                <button class="close-button3" aria-label="Close alert" data-close>
+                  <span class="span-close3">&times;</span>
+                </button>
+                <div class="imgCont">
+                  <img src="/imgs/loje/caneta.webp" alt="event">
                 </div>
-              </a>
+                <div class="conteudo-text">
+                  <p>Super mega caneta da usina</p>
+                </div>
+              </div>
             </div>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <div class="control">
+            <img src="/imgs/loje/botton.webp" alt="botton" style="position: relative; top: -80px;">/>
           </div>
-        </article>
-
-        <article>
-          <div class="article-wrapper">
-            <figure>
-              <div class="main-banner-content">17<br>Nov</div>
-              <div class="control">
-                <img src="/Home/noticia4.png" alt="" />
-              </div>
-            </figure>
-            <div class="article-body">
-              <h2>Título do evento</h2>
-              <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus
-                sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
-                iaculis enim imperdiet egestas.
-              </p> Leia mais
-              <a id="leia-mais4">
-                <button id="myBtn4" class="botao"></button>
-                <!-- ModalBox -->
-                <div id="myModal4" class="modal">
-                  <!-- Conteudo -->
-                  <div class="modal-content">
-                    <button class="close-button4" aria-label="Close alert" data-close>
-                      <span class="span-close4">&times;</span>
-                    </button>
-                    <div class="imgCont">
-                      <img src="/Home/noticia4.png" alt="cat">
-                    </div>
-                    <div class="conteudo-text">
-                      <p>QUARTO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam voluptatibus
-                        eum accusamus, doloribus blanditiis ab voluptas ea molestias, a ducimus quas pariatur? Unde,
-                        dolorem. Aliquam ea nobis sequi temporibus?.<br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et saepe vitae eaque quaerat!
-                          In temporibus fuga, possimus nihil, nesciunt consequatur inventore, nam reprehenderit
-                          necessitatibus voluptatibus molestiae nemo magni doloribus. </p>
-                        <p>Data: 17 de Novembro</p>
-                        <p>Endereço: taltaltal, 123</p>
-
-                    </div>
-                  </div>
+        </figure>
+        <div class="article-body">
+          <h2>Botton</h2>
+          <p>Botton</p>
+          <p style="text-decoration: underline; color: blue;">Leia mais</p>
+          <a id="leia-mais4">
+            <button id="myBtn4" class="botao"></button>
+            <!-- ModalBox -->
+            <div id="myModal4" class="modal">
+              <!-- Conteudo -->
+              <div class="modal-content">
+                <div class="main-banner-content">17<br>Nov</div>
+                <button class="close-button4" aria-label="Close alert" data-close>
+                  <span class="span-close4">&times;</span>
+                </button>
+                <div class="imgCont">
+                  <img src="/imgs/loje/botton.webp" alt="event">
                 </div>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <div class="article-wrapper">
-            <figure>
-              <div class="main-banner-content">1</div>
-              <div class="control">
-                <img src="https://picsum.photos/id/1005/800/450" alt="" />
-              </div>
-            </figure>
-            <div class="article-body">
-              <h2>Título do evento</h2>
-              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus
-              sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
-              iaculis enim imperdiet egestas.
-              </p>
-              <a href="#" class="leia-mais">
-                Leia mais
-                <span class="sr-only"></span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewbox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <div class="article-wrapper">
-            <figure>
-              <div class="main-banner-content">1</div>
-              <div class="control">
-                <img src="https://picsum.photos/id/103/800/450" alt="" />
-              </div>
-            </figure>
-            <div class="article-body">
-              <h2>Título do evento</h2>
-              <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus
-                sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices
-                iaculis enim imperdiet egestas.
-              </p>
-              <a href="#" class="leia-mais">
-                Leia mais
-                <span class="sr-only"></span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewbox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="parceiros">
-        <section class="section section-default mt-none mb-none" style="background-color: #ECECEC;">
-          <div class="container-fluid p-3 mt-0">
-            <h2 class="mb-sm text-center" style="font-family: 'Bellota Text';">NOSSOS PARCEIROS</h2>
-            <div class="row justify-content-center p-4">
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/casaamarela_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/cades_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/mudaipiranga_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/imt_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/casadascaldeiras_logo.png" />
-                </div>
-              </div>
-
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/chao_logo.png" />
+                <div class="conteudo-text">
+                  <h2>Botton</h2>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center p-2">
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/umapaz_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/paulofreire_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/saocamilo_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/casao_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/etecgv_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/sosabelhas_logo.png" />
-                </div>
-              </div>
-              <div class="col-6 col-md-3 col-lg">
-                <div class="square-holder">
-                  <img class="img-fluid" alt="" src="/imgs/missaoambiental_logo.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-  </main>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -421,7 +254,6 @@
 
 
         <div class="col-md-6 col-lg-4">
-
           <div class="footer-tags">
             <h3>Saiba mais + </h3>
             <a href="https://linktr.ee/usinaecocultural">Link.tree</a>
@@ -445,8 +277,6 @@
             <a href="https://www.eventbrite.com.br/o/usina-eco-cultural-65214406553">Clique aqui para agendar seu
               evento</a>
           </div>
-
-
         </div>
 
         <div class="col-md-6 col-lg-4">
@@ -457,20 +287,15 @@
             <form id="newsletterForm" class="form" onsubmit="enviarEmail(); return false;">
               <input class="campo" id="nomeInput" placeholder="Nome" required="">
               <input class="campo" id="emailInput" placeholder="E-mail" required="">
-              <button type="submit" class="btn" id="assinarBtn">Assinar</button>
+              <button type="submit" class="btn-assinar" id="assinarBtn">Assinar</button>
             </form>
           </div>
-
         </div>
-
-
       </div>
 
       <div class="container">
         <div class="footer-contact">
           <div class="row align-items-center">
-
-
             <div class="col-md-6">
               <h4>E-mail</h4>
               <p>Uisnaecocultural@gmail.com</p>
@@ -479,55 +304,45 @@
             <div class="col-md-6">
 
               <h4>Redes Sociais</h4>
-              <a href="https://www.facebook.com/usinaecocultural/" src="/imgs/Facebook_Logo_Secondary.png"><i
+              <a href="https://www.facebook.com/usinaecocultural/" src="Facebook_Logo_Secondary.png"><i
                   class="fab fa-facebook-f">Facebook</i></a>
-              <a href="https://www.instagram.com/usinaecocultural/?hl=en" src="/imgs/Instagram_Glyph_White.svg"><i
+              <a href="https://www.instagram.com/usinaecocultural/?hl=en" src="Instagram_Glyph_White.svg"><i
                   class="fab fa-instagram">Instagram</i></a>
               <a href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw"
-                src="/imgs/youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
-
+                src="youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
             </div>
-
           </div>
         </div>
       </div>
 
       <div class="copyright">
         <div class="container">
-
           <div class="row align-items-center">
-
             <div class="col-md-6">
               <div class="copy-text">
                 <p>&copy; <a href="#">Usina EcoCultural Vergueiro</a> - Todos os Direitos Reservados.</p>
               </div>
             </div>
-
             <div class="col-md-6">
               <div class="copy-menu">
                 <a href="">Termos de Uso</a>
                 <a href="privacidade.html">Privacidade</a>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
-
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="TelaCalendario/modalBox.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script>
   //JS DO POP UP MODAL BOX
@@ -611,5 +426,6 @@
     }
   }
 </script>
+</body>
 
 </html>
