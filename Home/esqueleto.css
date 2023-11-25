@@ -431,7 +431,7 @@ top: -11px;
 transition: all 0.225s ease;
 background: #EA8356;
 padding: 3px 8px;
-left: 25px;
+
 border-radius: 10px;
 }
 .style-form-input {
@@ -492,7 +492,7 @@ textarea {
   color: #fff;
   font-size: 1.2em;    
   text-align: center;
-  padding: 15px 35px;
+  padding: 10px 30px;
   border-radius: 10px;
   display: inline-block;
   background-color: #69A625;
@@ -503,10 +503,11 @@ textarea {
   border:none;
 }
 .btn-submit:hover {
-  
-  transform: translateY(1px);
+  background-color: green;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
   0 1px 1px 0 rgba(0,0,0,0.09);
+  box-shadow: 10px 10px #69A625;
+  transition: .3s;
 }
 @media (max-width: 768px) {
   
@@ -525,6 +526,13 @@ font-style: italic;
 input[type=checkbox]:checked + label {
 color: #f00;
 font-style: normal;
+}
+
+.foto-no-fundo {
+  background-image: url('Cópia\ de\ WhatsApp\ Image\ 2023-05-28\ at\ 11.30.31.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*footer*/
 body {
