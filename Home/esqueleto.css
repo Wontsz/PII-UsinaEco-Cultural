@@ -258,7 +258,7 @@ svg {
   display:flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 60%;
 }
 
 @media (max-width: 600px) {
