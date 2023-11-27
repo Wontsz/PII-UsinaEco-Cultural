@@ -11,15 +11,14 @@
 }
 
 .btn-search {
-  background-color: #007bff;
+  background-color: #3A90C3;
   color: aliceblue;
   margin-right: 25px;
-  border: 1px solid #007bff; 
+  border: 1px solid #3A90C3; 
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 10px;
   margin-left: 20px;
-  
 }
 
 .btn-search:hover {
@@ -72,10 +71,15 @@
 }
 
 .menu-opcoes a:hover {
-  background-color: #007bff;
   color: #ffffff;
   text-decoration: dashed;
   border-radius: 10px;
+  background-color: #3A90C3;
+  transition: 0.3s;
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 8px 8px lightblue;
+  text-align: center;
 }
 
 .borda-cabecalho{
@@ -98,8 +102,9 @@ body {
   background: #ffffff;
 }
 
-a {
+footer a {
   transition: .3s;
+  text-decoration: none;
 }
 
 a:hover,
@@ -256,10 +261,10 @@ a:focus {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #cccccc;
-  background: #0085ff;
+  color: #ffffff;
+  background: #3A90C3;
   border-radius: 0;
-  border: 1px solid #0085ff;
+  border: 1px solid #3A90C3;
   transition: .3s;
   border-radius: 10px;
 
@@ -380,45 +385,17 @@ a:focus {
   }
 
 }
-
 /*CSS COLETIVO*/
 .background-image {
+  background-image: url('/imgs/coletivo/fundo1.png');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 75vh;
+  height: 550px;
   position: relative;
 }
 
-.square {
-  position: absolute; /* Position elements relative to the parent .background-image */
-  top: 50%; /* Adjust vertical positioning */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%);
-  height: 200px; /* Altura do quadrado */
-  width: 175px; /* Largura do quadrado */
-  border: 8px solid black;
-  background-color: white; /* Borda preta */
-  border-radius: 25px; /* Borda arredondada */
-  text-align: center; /* Centraliza conteúdo horizontalmente */
-  padding: 25px; /* Espaçamento interno para o conteúdo */
-  scale: 125%;
-}
 
-.square2{
-   height: 20%; /* Altura do quadrado */
-   width: 50%; /* Largura do quadrado */
-   background-color: #3A90C3; /* Borda preta */
-   /*Alinha todos os itens para o centro do div */
-}
-  
-.logo_usina {
-   max-width: 100%; /* Garante que a imagem seja responsiva */
-   border-radius: 50%; /* Bordas arredondadas para a imagem */
-}
-  
-p{
-  margin: 0; /* Remove margens padrão do parágrafo */
-}
 
   
