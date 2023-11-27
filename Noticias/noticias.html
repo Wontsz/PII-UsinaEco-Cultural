@@ -2,122 +2,92 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="noticias.css">
-    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="noticias.css">
+  <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-    <title>Usina EcoCultural Vergueiro</title>
+  <title>Usina EcoCultural Vergueiro</title>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
   <header>
     <div class="container-fluid p-2 titulo">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 title" style="font-family: 'Bellota Text';">
-                <h1>USINA ECOCULTURAL VERGUEIRO</h1>
-            </div>
-
-            <div class="col-3 search-bar">
-                <input type="text" style="background-color: #ECECEC; margin: 0; min-width: 150px;" placeholder="Pesquisar..." class="form-control">
-                <button class="btn-search">Buscar</button>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 title" style="font-family: 'Bellota Text';">
+          <h1>USINA ECOCULTURAL VERGUEIRO</h1>
         </div>
+
+        <div class="col-3 search-bar">
+          <input type="text" style="background-color: #ECECEC; margin: 0; min-width: 150px;" placeholder="Pesquisar..."
+            class="form-control">
+          <button class="btn-search">Buscar</button>
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid menu">
-        <nav class="navbar navbar-expand-xl nav-fill">
-            <a class="navbar-brand position " href="/Home/esqueleto.html">
-                <img src="/imgs/usina_outralogo.png" alt="" style="background-color: #ECECEC;" height="150px"; width="150px">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse menu-opcoes" id="navbarSupportedContent" >
-                <ul class="container navbar-nav mr-auto">
-                    <li class="nav-item"><a href="/Coletivo/index.html">Coletivo</a></li>
-                    <div class="borda-cabecalho d-none d-xl-block"></div>
-                    <li class="nav-item"><a href="/Historia/hist.html">História</a></li>
-                    <div class="borda-cabecalho d-none d-xl-block"></div>
-                    <li class="nav-item"><a href="/Loje/index.html">Loja</a></li>
-                    <div class="borda-cabecalho d-none d-xl-block"></div>
-                    <li class="nav-item"><a href="/Eventos/telacalendario.html">Eventos</a></li>
-                    <div class="borda-cabecalho d-none d-xl-block"></div>
-                    <li class="nav-item dropdown mt-0" style="padding-left: 15px; padding-right: 15px;">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 60px; padding-right: 60px;">
-                          Apoios
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ECECEC;">
-                          <a class="dropdown-item" href="/Apoiadores/apoiadores_responsivo.html" style="font-size: 18px;">Apoiadores</a>
-                          <a class="dropdown-item" href="/ApoieUsina/apoieUsina.html" style="font-size: 18px;">Apoie a Usina</a>
-                        </div>
-                    </li>
-                    <div class="borda-cabecalho d-none d-xl-block"></div>
-                    <li class="nav-item"><a href="/Noticias/noticias.html">Notícias</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-xl nav-fill">
+        <a class="navbar-brand position " href="/Home/esqueleto.html">
+          <img src="/imgs/usina_outralogo.png" alt="" style="background-color: #ECECEC;" height="150px" ; width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-opcoes" id="navbarSupportedContent">
+          <ul class="container navbar-nav mr-auto">
+            <li class="nav-item"><a href="/Coletivo/index.html">Coletivo</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Historia/hist.html">História</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Loje/index.html">Loja</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Eventos/telacalendario.html">Eventos</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item dropdown mt-0" style="padding-left: 15px; padding-right: 15px;">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="padding-left: 60px; padding-right: 60px;">
+                Apoios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ECECEC;">
+                <a class="dropdown-item" href="/Apoiadores/apoiadores_responsivo.html"
+                  style="font-size: 18px;">Apoiadores</a>
+                <a class="dropdown-item" href="/ApoieUsina/apoieUsina.html" style="font-size: 18px;">Apoie a Usina</a>
+              </div>
+            </li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Noticias/noticias.html">Notícias</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    
+
   </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100 h-90 " src="fundo-noticias.png" alt="Primeiro Slide" style="text-align: center;">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="p-1" style="background-color: #ECECEC; border-radius: 10px; color: black;">Visita na Secretaria de Direitos Humanos</h5>
-            <p style="background-color: #ECECEC; border-radius: 10px; color: black;">Esse mês tivemos uma reunião importante na secretaria de Direitos Humanos, fomos recebidos diretamente pela Secretária Soninha Francine.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 h-90" src="fundo-noticias-2.png" alt="Segundo Slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="p-1" style="background-color: #ECECEC; border-radius: 10px; color: black;">Moradores fazem petição para que o Incinerador Vergueiro vire centro cultural e ambiental.</h5>
-            <p style="background-color: #ECECEC; border-radius: 10px; color: black;">O antigo Incinerador Vergueiro é um prédio abandonado desde 2002. Um grupo de pessoas do bairro e outras ligadas ao Conselho de Meio Ambiente, Desenvolvimento Sustentável e Cultura de Paz </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 h-90" src="fundo-usina.png" alt="Segundo Slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="p-1" style="background-color: #ECECEC; border-radius: 10px; color: black;">Subprefeitura pede reintegração de posse do antigo Incinerador Vergueiro</h5>
+  <div class="container-fluid p-0 background-image"></div>
+  <h1 style="text-align: center; background-color: #ECECEC;" class="mb-0 p-3">Notícias</h1>
+  <main class="main columns" style="background-color: #ECECEC;">
 
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-    </div>
-    <h1 style="text-align: center; background-color: #ECECEC;" class="mb-0 p-3">Notícias</h1> 
-    <main class="main columns" style="background-color: #ECECEC;">
-      
     <div class="vertical-menu">
       <a href="#" class="active">Na mídia</a>
       <a href="#">Aparecemos no <br> Estadão!</a>
       <a href="https://www.youtube.com/watch?app=desktop&v=ylQ0G0vBcXw&feature=share9">Usina na Globo</a>
       <a href="https://www.ipiranga22.com.br/2023/01/243/">Ipiranga 22</a>
-      <a href="https://www.redebrasilatual.com.br/cultura/festival-usina-lado-b-ocupa-antigo-incinerador-na-zona-sul-de-sp/">Rede Brasil Atual</a>
-      <a href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão São Paulo</a>
-      <a href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara Municipal de São Paulo</a>
+      <a
+        href="https://www.redebrasilatual.com.br/cultura/festival-usina-lado-b-ocupa-antigo-incinerador-na-zona-sul-de-sp/">Rede
+        Brasil Atual</a>
+      <a
+        href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão
+        São Paulo</a>
+      <a
+        href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara
+        Municipal de São Paulo</a>
       <img class="p-0 mt-0" src="2.png" href="#" style="cursor: pointer;">
       <a href="#" class="active">Vídeos</a>
       <a href="https://www.youtube.com/watch?v=WLkzlsk1YiA&ab_channel=CanalFutura">Contágio Cultural</a>
@@ -125,252 +95,323 @@
       <a href="https://youtu.be/q12dSGr1JIE">Vídeo explicativo</a>
       <a href="" class="active">Teatro na Usina</a>
       <img href="https://chat.whatsapp.com/JCWNMeeHNl2435G4k09h9w" src="3.png" style="cursor: pointer;">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP_Gq9lvKXEkUR93gOWtSpOi6zEUyJdZHZrPVEWwB6GpqZzQ/viewform">Incrição para oficina de teatro</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP_Gq9lvKXEkUR93gOWtSpOi6zEUyJdZHZrPVEWwB6GpqZzQ/viewform">Incrição
+        para oficina de teatro</a>
     </div>
-        
-      <section class="column main-column">
-        <a class="article  " href="https://www.instagram.com/p/CyzKlP2vlfl/?hl=en&img_index=1">
-          <figure class="article-image is-16by9">
-            <img style="width: 100%; height: 100%;" src="noticia2.png" alt="">
-          </figure>
 
-          <div class="article-body">
-            <h2 class="article-title">
-              A Usina Eco-Cultural esteve representada hoje por Susie Luna e Sílvia Soares no Grupo de Trabalho de Educação Ambiental e Cultura de Paz da Sociedade Civil para elaboração do Plano Municipal de Educação Ambiental da Cidade de São Paulo.
-            </h2>
-            <p class="article-content">
-             
-O coletivo da Usina entende que a educação socioambiental crítica e transformadora é fundamental para a conscientização e mudança de atitudes necessárias para o enfrentamento das mudanças climáticas, da degradação ambiental e humana e do próprio risco à nossa sobrevivência que marcam o "Capitaloceno" ou "Corporatoceno".
-<br>
-<br>
-Além de acontecer no ensino formal, precisa haver educação ambiental nos diferentes contextos e espaços da cidade, inclusive dentro da própria administração pública. É imprescindível que o poder público apoie e valorize as pessoas e coletivos da sociedade civil que promovem educação ambiental "informal" em São Paulo, permitindo que cada vez mais iniciativas possam espalhar reflexão, transformação e esperança pela cidade.
-            </p>
-            <p style="color: red; text-decoration: underline ;">Clique aqui para saber mais</p>
-            <footer class="article-info">
-              <span>Instagram Usina Eco-Cultural</span>
-              <span>3 semanas</span>
-            </footer>
-          </div>
-        </a>
-    
-        <a class="article" href="https://www.instagram.com/p/CxZESxNPOTz/?hl=en&img_index=1">
-          <figure class="article-image is-16by9">
-            <img src="racista-nao.png" alt="">
-          </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-              Dia histórico para nós da Usina Eco-Cultural e para a Cidade de São Paulo.
-            </h2>
-            <p class="article-content">
-              Por 47 votos a favor, 5 abstenções e NENHUM voto contra, as vereadoras e os vereadores da Câmara de SP cassaram o mandato, do agora ex-vereador Camilo Cristófaro por quebra de decoro parlamentar, após Camilo falar "é coisa de preto, né" durante a CPI dos aplicativos.
+    <section class="column main-column">
+      <a class="article  " href="https://www.instagram.com/p/CyzKlP2vlfl/?hl=en&img_index=1">
+        <figure class="article-image is-16by9">
+          <img style="width: 100%; height: 100%;" src="noticia2.png" alt="">
+        </figure>
 
-            </p>
-            <p style="color: red; text-decoration: underline ;">Clique aqui para saber mais</p>
-            <footer class="article-info">
-              <span>Instagram usina Eco-Cultural</span>
-              <span>8 semanas atrás</span>
-            </footer>
-          </div>
-        </a>
-      </section>
-    
-      <section class="column">
-        <a class="article" href="https://www.youtube.com/watch?v=WLkzlsk1YiA&ab_channel=CanalFutura">
-          <figure class="article-image is-3by3">
-            <img src="filme.png" alt="">
-          </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-              CONTÁGIO CULTURAL
-O Direito à Cidade 🎬🎥
+        <div class="article-body">
+          <h2 class="article-title">
+            A Usina Eco-Cultural esteve representada hoje por Susie Luna e Sílvia Soares no Grupo de Trabalho de
+            Educação Ambiental e Cultura de Paz da Sociedade Civil para elaboração do Plano Municipal de Educação
+            Ambiental da Cidade de São Paulo.
+          </h2>
+          <p class="article-content">
 
-            </h2>
-            <p class="article-content">
-              
-O curta-metragem narra a luta do Movimento Usina Eco Cultural, para transformar um antigo incinerador de lixo abandonado, no bairro do Ipiranga, em São Paulo, em um Centro Cultural Sustentável.
-            </p>
-            <p style="color: rgb(233, 21, 21); text-decoration: underline;">Clique para assistir</p>
-            <footer class="article-info">
-              <span>Instagram Usina Eco-Cultural</span>
-              <span>6 dias atrás</span>
-            </footer>
-          </div>
-        </a>
-        <a class="article" href="#">
-          <div class="article-body">
-            <h2 class="article-title">
-              Conheca a Usina no YouTube
-            </h2>
-            <p class="article-content">
-              Um vídeo para expor de forma rápida o que a mobilização da comunidade para preservação do espaço público e transformação de uso da área do antigo Incinerador Vergueiro, apelidado de Usina Verde.
-            </p>
-            <p style="color: red; text-decoration: underline ;">Clique aqui para assistir</p>
-            <figure class="article-image is-3by">
-              <img src="youtube-thumb.png" alt="" style="padding: 2%; background-color: transparent;">
-            </figure>
-            <footer class="article-info">
-              <span>YouTube</span>
-              <span>6 de setembro de 2022</span>
-            </footer>
-          </div>
-        </a>
-        <a class="article" href="https://chat.whatsapp.com/DSBg6nJHYBHEmTDmRaJaE0">
-          <div class="article-body">
-            <h2 class="article-title">
-             Alimentação orgânica
-            </h2>
-            <p class="article-content">
-              Grupo de consumo de alimentos orgânicos
-              - Alimentos que não utilizam hormônios
-              - Não faz uso de melhoramentos genéticos
-              <br>
-              De maneira geral, são aqueles produzidos dentro de um sistema que beneficie o ecossistema local, proteja os recursos naturais, respeite as características socioeconômicas e culturais da comunidade local, preserve os direitos dos trabalhadores envolvidos e não utilize organismos geneticamente modificados nem químicos sintéticos.
-
-Portanto, podemos concluir que uma alimentação orgânica é aquela que inclui alimentos produzidos de forma a diminuir os impactos ao meio ambiente, sem o cultivo de transgênicos e sem a utilização de agrotóxicos ou outras substâncias sintéticas, como hormônios, drogas veterinárias, adubos ou antibióticos.
-
-            </p>
-            <p style="color: red; text-decoration: underline ;">Clique aqui para entrar no grupo do WhatsApp</p>
-            <figure class="article-image is-2by">
-              <img src="Tudo-sobre-beneficios-alimentaccao-organica-saude.webp" alt="" style="padding: 2%; background-color: transparent;">
-            </figure>
-            <footer class="article-info">
-              <span>Instagram</span>
-              <span>6 de setembro de 2022</span>
-            </footer>
-          </div>
-        </a>
-      </section>
-    </main>
-    <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
-    <div style="width: 100%; height: 40px; background: #69A625; flex-shrink: 0; position: relative;"></div>
-
-
-
-
-    <footer class="footer">  
-        <div class="container">       
-          <div class="row">           
-            <div class="col-md-6 col-lg-4">              
-              <div class="footer-blog">          
-                <h3>Menu</h3>
-                <div>
-                  <a href="/Coletivo/index.html">O coletivo</a>
-                </div>
-                <div>
-                  <a href="/Historia/hist.html">História</a>
-                </div> 
-                <div>
-                  <a href="/Mercado/">Loja</a>
-                </div>    
-                <div>
-                  <a href="/ApoieUsina/apoieUsina.html">Apoie a Usina</a>
-                </div>
-                <div>
-                    <a href="/Apoiadores/apoiadores_responsivo.html">Apoiadores</a>
-                </div>
-                <div>
-                    <a href="/Eventos/telacalendario.html">Eventos</a>
-                </div>
-                <div>
-                    <a href="/Noticias/">Notícias</a>
-                </div>   
-              </div>     
-            </div>  
-            
-
-           
-      
-            <div class="col-md-6 col-lg-4">
-            
-              <div class="footer-tags">
-                <h3>Saiba mais + </h3>
-                <a href="https://linktr.ee/usinaecocultural">Link.tree</a>
-              </div>
-
-              <div class="footer-tags">
-                <h3>Reportagens sobre nós</h3>
-                <a href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão</a>
-                <a href="https://www.ipiranga22.com.br/2023/05/movimento-usina-eco-cultural-ganha-apoios-e-se-candidata-a-verba-de-r-6-milhoes/">Ipiranga 22</a>
-                <a href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara Municipal de São Paulo</a>
-              </div>
-
-
-              <div class="footer-tags">
-                <h3>Deseja agendar um evento?</h3>
-                <a href="https://www.eventbrite.com.br/o/usina-eco-cultural-65214406553">Clique aqui para agendar seu evento</a>
-              </div>
-
-            
-            </div>
-      
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <h4 style="font-size: 15px; color: #ECECEC;">Newsletter nada mais é do que um jornal virtual que você irá receber em seu e-mail, sem custo, sobre a Usina</h4>
-                    <form id="newsletterForm" class="form" onsubmit="enviarEmail(); return false;">
-                        <input class="campo" id="nomeInput" placeholder="Nome" required="">
-                        <input class="campo" id="emailInput" placeholder="E-mail" required="">
-                        <button type="submit" class="btn" id="assinarBtn">Assinar</button>
-                    </form>
-                </div>
-                
-            </div>
-            
-      
+            O coletivo da Usina entende que a educação socioambiental crítica e transformadora é fundamental para a
+            conscientização e mudança de atitudes necessárias para o enfrentamento das mudanças climáticas, da
+            degradação ambiental e humana e do próprio risco à nossa sobrevivência que marcam o "Capitaloceno" ou
+            "Corporatoceno".
+            <br>
+            <br>
+            Além de acontecer no ensino formal, precisa haver educação ambiental nos diferentes contextos e espaços da
+            cidade, inclusive dentro da própria administração pública. É imprescindível que o poder público apoie e
+            valorize as pessoas e coletivos da sociedade civil que promovem educação ambiental "informal" em São Paulo,
+            permitindo que cada vez mais iniciativas possam espalhar reflexão, transformação e esperança pela cidade.
+          </p>
+          <p style="color: red; text-decoration: underline ;">Clique aqui para saber mais</p>
+          <footer class="article-info">
+            <span>Instagram Usina Eco-Cultural</span>
+            <span>3 semanas</span>
+          </footer>
         </div>
-      
+      </a>
+
+      <a class="article" href="https://www.instagram.com/p/CxZESxNPOTz/?hl=en&img_index=1">
+        <figure class="article-image is-16by9">
+          <img src="racista-nao.png" alt="">
+        </figure>
+        <div class="article-body">
+          <h2 class="article-title">
+            Dia histórico para nós da Usina Eco-Cultural e para a Cidade de São Paulo.
+          </h2>
+          <p class="article-content">
+            Por 47 votos a favor, 5 abstenções e NENHUM voto contra, as vereadoras e os vereadores da Câmara de SP
+            cassaram o mandato, do agora ex-vereador Camilo Cristófaro por quebra de decoro parlamentar, após Camilo
+            falar "é coisa de preto, né" durante a CPI dos aplicativos.
+
+          </p>
+          <p style="color: red; text-decoration: underline ;">Clique aqui para saber mais</p>
+          <footer class="article-info">
+            <span>Instagram usina Eco-Cultural</span>
+            <span>8 semanas atrás</span>
+          </footer>
+        </div>
+      </a>
+    </section>
+
+    <section class="column">
+      <a class="article" href="https://www.youtube.com/watch?v=WLkzlsk1YiA&ab_channel=CanalFutura">
+        <figure class="article-image is-3by3">
+          <img src="filme.png" alt="">
+        </figure>
+        <div class="article-body">
+          <h2 class="article-title">
+            CONTÁGIO CULTURAL O Direito à Cidade 🎬🎥
+
+          </h2>
+          <p class="article-content">
+            O curta-metragem narra a luta do Movimento Usina Eco Cultural, para transformar um antigo incinerador de
+            lixo abandonado, no bairro do Ipiranga, em São Paulo, em um Centro Cultural Sustentável.
+          </p>
+          <p style="color: rgb(233, 21, 21); text-decoration: underline;">Clique para assistir</p>
+          <footer class="article-info">
+            <span>Instagram Usina Eco-Cultural</span>
+            <span>6 dias atrás</span>
+          </footer>
+        </div>
+      </a>
+      <a class="article" href="#">
+        <div class="article-body">
+          <h2 class="article-title">
+            Conheca a Usina no YouTube
+          </h2>
+          <p class="article-content">
+            Um vídeo para expor de forma rápida o que a mobilização da comunidade para preservação do espaço público e
+            transformação de uso da área do antigo Incinerador Vergueiro, apelidado de Usina Verde.
+          </p>
+          <p style="color: red; text-decoration: underline ;">Clique aqui para assistir</p>
+          <figure class="article-image is-3by">
+            <img src="youtube-thumb.png" alt="" style="padding: 2%; background-color: transparent;">
+          </figure>
+          <footer class="article-info">
+            <span>YouTube</span>
+            <span>6 de setembro de 2022</span>
+          </footer>
+        </div>
+      </a>
+      <a class="article" href="https://chat.whatsapp.com/DSBg6nJHYBHEmTDmRaJaE0">
+        <div class="article-body">
+          <h2 class="article-title">
+            Alimentação orgânica
+          </h2>
+          <p class="article-content">
+            Grupo de consumo de alimentos orgânicos
+            - Alimentos que não utilizam hormônios
+            - Não faz uso de melhoramentos genéticos
+            <br>
+            De maneira geral, são aqueles produzidos dentro de um sistema que beneficie o ecossistema local, proteja os
+            recursos naturais, respeite as características socioeconômicas e culturais da comunidade local, preserve os
+            direitos dos trabalhadores envolvidos e não utilize organismos geneticamente modificados nem químicos
+            sintéticos.
+
+            Portanto, podemos concluir que uma alimentação orgânica é aquela que inclui alimentos produzidos de forma a
+            diminuir os impactos ao meio ambiente, sem o cultivo de transgênicos e sem a utilização de agrotóxicos ou
+            outras substâncias sintéticas, como hormônios, drogas veterinárias, adubos ou antibióticos.
+
+          </p>
+          <p style="color: red; text-decoration: underline ;">Clique aqui para entrar no grupo do WhatsApp</p>
+          <figure class="article-image is-2by">
+            <img src="Tudo-sobre-beneficios-alimentaccao-organica-saude.webp" alt=""
+              style="padding: 2%; background-color: transparent;">
+          </figure>
+          <footer class="article-info">
+            <span>Instagram</span>
+            <span>6 de setembro de 2022</span>
+          </footer>
+        </div>
+      </a>
+    </section>
+    
+  </main>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 h-90 " src="fundo-noticias.png" alt="Primeiro Slide" style="text-align: center;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="p-1" style="background-color: #ECECEC; border-radius: 10px; color: black;">Visita na Secretaria de Direitos Humanos</h5>
+          <p style="background-color: #ECECEC; border-radius: 10px; color: black;">Esse mês tivemos uma reunião importante na secretaria de Direitos Humanos, fomos recebidos diretamente pela Secretária Soninha Francine.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 h-90" src="fundo-noticias-2.png" alt="Segundo Slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="p-1" style="background-color: #ECECEC; border-radius: 10px; color: black;">Moradores fazem petição para que o Incinerador Vergueiro vire centro cultural e ambiental.</h5>
+          <p style="background-color: #ECECEC; border-radius: 10px; color: black;">O antigo Incinerador Vergueiro é um prédio abandonado desde 2002. Um grupo de pessoas do bairro e outras ligadas ao Conselho de Meio Ambiente, Desenvolvimento Sustentável e Cultura de Paz </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 h-90" src="fundo-usina.png" alt="Segundo Slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="p-1" style="background-color: #ECECEC; border-radius: 10px; color: black;">Subprefeitura pede reintegração de posse do antigo Incinerador Vergueiro</h5>
+
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+
+
+
+
+
+  <footer class="footer mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-blog">
+            <h3>Menu</h3>
+            <div>
+              <a href="/Coletivo/index.html">O coletivo</a>
+            </div>
+            <div>
+              <a href="/Historia/hist.html">História</a>
+            </div>
+            <div>
+              <a href="/Mercado/">Loja</a>
+            </div>
+            <div>
+              <a href="/ApoieUsina/apoieUsina.html">Apoie a Usina</a>
+            </div>
+            <div>
+              <a href="/Apoiadores/apoiadores_responsivo.html">Apoiadores</a>
+            </div>
+            <div>
+              <a href="/Eventos/telacalendario.html">Eventos</a>
+            </div>
+            <div>
+              <a href="/Noticias/">Notícias</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="footer-tags">
+            <h3>Saiba mais + </h3>
+            <a href="https://linktr.ee/usinaecocultural">Link.tree</a>
+          </div>
+
+          <div class="footer-tags">
+            <h3>Reportagens sobre nós</h3>
+            <a
+              href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão</a>
+            <a
+              href="https://www.ipiranga22.com.br/2023/05/movimento-usina-eco-cultural-ganha-apoios-e-se-candidata-a-verba-de-r-6-milhoes/">Ipiranga
+              22</a>
+            <a
+              href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara
+              Municipal de São Paulo</a>
+          </div>
+
+
+          <div class="footer-tags">
+            <h3>Deseja agendar um evento?</h3>
+            <a href="https://www.eventbrite.com.br/o/usina-eco-cultural-65214406553">Clique aqui para agendar seu
+              evento</a>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <h4 style="font-size: 15px; color: #ECECEC;">Newsletter nada mais é do que um jornal virtual que você irá
+              receber em seu e-mail, sem custo, sobre a Usina</h4>
+            <form id="newsletterForm" class="form" onsubmit="enviarEmail(); return false;">
+              <input class="campo" id="nomeInput" placeholder="Nome" required="">
+              <input class="campo" id="emailInput" placeholder="E-mail" required="">
+              <button type="submit" class="btn" id="assinarBtn">Assinar</button>
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="container">
+        <div class="footer-contact">
+          <div class="row align-items-center">
+
+
+            <div class="col-md-6">
+              <h4>E-mail</h4>
+              <p>usinaecocultural@gmail.com</p>
+            </div>
+
+            <div class="col-md-6">
+
+              <h4>Redes Sociais</h4>
+              <a href="https://www.facebook.com/usinaecocultural/" src="Facebook_Logo_Secondary.png"><i
+                  class="fab fa-facebook-f">Facebook</i></a>
+              <a href="https://www.instagram.com/usinaecocultural/?hl=en" src="Instagram_Glyph_White.svg"><i
+                  class="fab fa-instagram">Instagram</i></a>
+              <a href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw"
+                src="youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
         <div class="container">
-          <div class="footer-contact">
-            <div class="row align-items-center">
-              
-      
-              <div class="col-md-6">
-                <h4>E-mail</h4>
-                <p>usinaecocultural@gmail.com</p>
+
+          <div class="row align-items-center">
+
+            <div class="col-md-6">
+              <div class="copy-text">
+                <p>&copy; <a href="#">Usina EcoCultural Vergueiro</a> - Todos os Direitos Reservados.</p>
               </div>
-              
-              <div class="col-md-6">
-              
-                <h4>Redes Sociais</h4>
-                <a href="https://www.facebook.com/usinaecocultural/" src="Facebook_Logo_Secondary.png"><i class="fab fa-facebook-f">Facebook</i></a>
-                <a href="https://www.instagram.com/usinaecocultural/?hl=en" src="Instagram_Glyph_White.svg"><i class="fab fa-instagram">Instagram</i></a>
-                <a href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw" src="youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
-              
-              </div>
-      
             </div>
-          </div>
-        </div>
-      
-        <div class="copyright">
-          <div class="container">
-          
-            <div class="row align-items-center">
-              
-              <div class="col-md-6">
-                <div class="copy-text">
-                  <p>&copy; <a href="#">Usina EcoCultural Vergueiro</a> - Todos os Direitos Reservados.</p>
-                </div>
+
+            <div class="col-md-6">
+              <div class="copy-menu">
+                <a href="">Termos de Uso</a>
+                <a href="privacidade.html">Privacidade</a>
               </div>
-              
-              <div class="col-md-6">
-                <div class="copy-menu">
-                  <a href="">Termos de Uso</a>
-                  <a href="privacidade.html">Privacidade</a>
-                </div>
-              </div>
-            
             </div>
-          
+
           </div>
+
         </div>
-      
-      </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+      </div>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
