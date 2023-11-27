@@ -1,4 +1,3 @@
-
 /*barra de pesquisa e título, saiba mais*/
 .search-bar {
   display: flex;
@@ -15,7 +14,7 @@
   background-color: #3A90C3;
   color: aliceblue;
   margin-right: 25px;
-  border: 1px solid #3A90C3; 
+  border: 1px solid #3A90C3;
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 10px;
@@ -35,9 +34,9 @@
 
 .menu {
   align-items: center;
-  list-style: none; 
+  list-style: none;
   display: block;
-  font-weight: normal; 
+  font-weight: normal;
   background: #ECECEC;
   margin: 0;
   font-family: 'bellota text';
@@ -47,7 +46,7 @@
 .menu-opcoes a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 10px;
   padding: 20px;
   padding-left: 60px;
@@ -60,14 +59,14 @@
 
 @media (max-width: 1200px) {
   .menu-opcoes a {
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      transition: background-color 0.3s ease, color 0.3s ease; 
-      border-radius: 10px;
-      padding: 10px;
-      padding-left: 60px;
-      padding-right: 60px;
-      margin-top: 2px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 2px;
   }
 }
 
@@ -83,15 +82,15 @@
   text-align: center;
 }
 
-.borda-cabecalho{
+.borda-cabecalho {
   width: 0px;
-  height: 25px; 
+  height: 25px;
   border: 1px black solid;
   display: inline-flex;
   margin-top: 22px;
 }
 
-.como-chegar{
+.como-chegar {
   text-align: center;
   background-color: #ECECEC;
 }
@@ -102,41 +101,41 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 550px; 
+  height: 550px;
   position: relative;
 }
 
 .petition-container {
-background-color: rgba(255, 255, 255, 0.9); 
-border-radius: 10px;
-padding: 20px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 100%;
-max-width: 400px;
-margin-top: -20%;
-z-index: 2;
-position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: -20%;
+  z-index: 2;
+  position: relative;
 }
 
 label {
-display: block;
-margin-bottom: 8px;
-margin-top: 8px;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 input,
 textarea {
-width: 100%;
-padding: 8px;
-margin-bottom: 16px;
-box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
 }
 
 button::not(.close-button3) {
-background-color: #007bff;
+  background-color: #007bff;
   color: aliceblue;
   margin-right: 25px;
-  border: 1px solid #007bff; 
+  border: 1px solid #007bff;
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 10px;
@@ -144,7 +143,7 @@ background-color: #007bff;
 }
 
 button:hover::not(.close-button3) {
-background-color: #184c83;
+  background-color: #184c83;
   transition: .3s;
   cursor: pointer;
   border-radius: 10px;
@@ -285,14 +284,14 @@ a:focus {
 }
 
 .footer .footer-newsletter .form {
-  
+
   position: relative;
   width: 100%;
 
 }
 
 .footer .footer-newsletter .campo {
-  
+
   width: 100%;
   height: 45px;
   float: left;
@@ -307,8 +306,8 @@ a:focus {
 }
 
 .footer .footer-newsletter .campo:focus {
-  
-  color:#cccccc!important;
+
+  color: #cccccc !important;
 
 }
 
@@ -435,6 +434,7 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
+
   .footer .copyright .copy-text,
   .footer .copyright .copy-menu {
     text-align: center;
@@ -445,142 +445,145 @@ a:focus {
   }
 
 }
+
 /*****************
  CARDS DOS EVENTOS 
  *****************/
 
 article {
-    --img-scale: 1.001;
-    --title-color: black;
-    --link-icon-translate: -20px;
-    --link-icon-opacity: 0;
-    position: relative;
-    border-radius: 15px;
-    background: #fff;
-    transform-origin: center;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
-    border-style: solid;
-    border-color: grey;
-    border-width: 3px;
-  }
-  
-  article a::after {
-    position: absolute;
-    inset-block: 0;
-    inset-inline: 0;
-    cursor: pointer;
-    content: "";
-  }
-  
-  /* basic article elements styling */
-  article h2 {
-    margin: 0 0 8px 0;
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 15px;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  border-style: solid;
+  border-color: grey;
+  border-width: 3px;
+}
 
-    font-family: serif;
-    font-size: 1.9rem;
-    letter-spacing: 0.0em;
-    color: var(--title-color);
-    transition: color 0.3s ease-out;
-  }
-  
-  figure {
-    width: relative;
-    margin: 0;
-    padding: 0;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  figure img {
-    max-width: 100%;
-    transform-origin: center;
-    transform: scale(var(--img-scale));
-    transition: transform 0.3s ease-in-out;
-  }
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
 
-  .article-body {
-    padding: 20px;
-  }
-  
-  article a {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #28666e;
-  }
-  
-  article a:focus {
-    outline: 1px dotted #008000;
-  }
-  
-  article a .icon {
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
-    transform: translateX(var(--link-icon-translate));
-    opacity: var(--link-icon-opacity);
-    transition: all 0.3s;
-  }
-  
-  /* using the has() relational pseudo selector to update our custom properties */
-  article:has(:hover, :focus) {
-    --img-scale: 1.1;
-    --title-color: #008000;
-    --link-icon-translate: 0;
-    --link-icon-opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  }
-  
-  
-  /************************ 
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 8px 0;
+
+  font-family: serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.0em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  width: relative;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-body {
+  padding: 20px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #008000;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #008000;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/************************ 
   Generic layout (demo looks)
   **************************/
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  .articles {
-    display: grid;
-    width: 80%;
-    margin-inline: auto;
-    padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 35px;
-    padding: 5%;
-  }
 
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap; 
-    width: 1px;
-  }
-  .main-banner-content{
-    height: 70px;
-    width: 70px;
-    background: rgba(65, 156, 8, 0.8);
-    border-radius: 10% 25%;
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-family: fantasy;
-  }
-  .control{
-    z-index: 0;
-    position: relative;
-  }
-  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.articles {
+  display: grid;
+  width: 80%;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 35px;
+  padding: 5%;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.main-banner-content {
+  height: 70px;
+  width: 70px;
+  background: rgba(65, 156, 8, 0.8);
+  border-radius: 10% 25%;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+.control {
+  z-index: 0;
+  position: relative;
+}
+
 /****************************
   MODAL POP UPS PARA OS CARDS
 *****************************/
@@ -588,36 +591,45 @@ p {
   text-indent: 3ch;
 
 }
+
 .modal {
-  display: none; /* Escondido por padrao */
-  position: fixed; /* fica no lugar */
-  z-index: 1; /* fica na frente de td? */
-  padding-top: 5%; /* local da modal box */
+  display: none;
+  /* Escondido por padrao */
+  position: fixed;
+  /* fica no lugar */
+  z-index: 1;
+  /* fica na frente de td? */
+  padding-top: 5%;
+  /* local da modal box */
   padding-bottom: 5%;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0, 0.4);
- }
- @media screen and (max-width: 767px) {
-  .modal{
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
     /* coloca o css q vc qr q fique no cell */
     padding-top: 20%;
   }
 }
 
- .botao{
+.botao {
   border-radius: 20px;
   background-color: transparent;
   border: none;
   padding-bottom: 40px;
   width: 100%;
   height: 100%;
- }
- 
- .close-button1, .close-button2, 
-  .close-button3, .close-button4,
-   .close-button5, .close-button6{
+}
+
+.close-button1,
+.close-button2,
+.close-button3,
+.close-button4,
+.close-button5,
+.close-button6 {
   background-color: transparent;
   width: 50px;
   height: 50px;
@@ -634,14 +646,18 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .close-button1, .close-button2, 
-  .close-button3, .close-button4,
-   .close-button5, .close-button6{
+
+  .close-button1,
+  .close-button2,
+  .close-button3,
+  .close-button4,
+  .close-button5,
+  .close-button6 {
     left: 90%;
   }
 }
 
- p#leia-mais1{
+p#leia-mais1 {
   text-align: start;
   padding-left: 20px;
   margin: 0;
@@ -650,7 +666,8 @@ p {
     transition: all 0.3s;
  
 /* Conteudo da modal box */
- }
+}
+
 .modal-content {
   background-color: #ECECEC;
   margin: auto;
@@ -662,22 +679,22 @@ p {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 767px){
-  .modal-content{
+@media screen and (max-width: 767px) {
+  .modal-content {
     width: 95%;
     height: 90%;
     justify-content: space-between
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1440px){
-  .modal-content{
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .modal-content {
     width: 30%;
     height: 115%;
   }
 }
 
-.conteudo-text{
+.conteudo-text {
   flex-direction: column;
   display: flex;
   width: 100%;
@@ -687,16 +704,17 @@ p {
   font-size: 16px;
 }
 
-@media screen and (max-width: 767px){
-  .conteudo-text{
+@media screen and (max-width: 767px) {
+  .conteudo-text {
     padding: 2px;
   }
 }
+
 body.modal-open {
   overflow: hidden;
 }
 
-.imgCont{
+.imgCont {
   padding-top: 10px;
   position: absolute;
   width: 120%;
@@ -707,7 +725,7 @@ body.modal-open {
   border-radius: 20px;
 }
 
-.imgCont img{
+.imgCont img {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -718,7 +736,12 @@ body.modal-open {
 
 
 /* Botao de fechar a modal */
-.close, .close2, .close3, .close4, .close5, .close6 {
+.close,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6 {
   text-align: end;
   color: red;
   float: right;
@@ -741,11 +764,12 @@ body.modal-open {
 **********************/
 @keyframes scaleUp {
   0% {
-    transform:scale(.1) translateY(1000px);
-    opacity:0;
+    transform: scale(.1) translateY(1000px);
+    opacity: 0;
   }
+
   100% {
-    transform:scale(1) translateY(0px);
-    opacity:1;
+    transform: scale(1) translateY(0px);
+    opacity: 1;
   }
 }
