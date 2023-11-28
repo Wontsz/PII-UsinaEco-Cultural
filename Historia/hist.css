@@ -556,27 +556,12 @@ a:focus {
   }
 
 }
+
+
 /* MAIN */
 
-
-
-.square {
-  position: absolute; /* Position elements relative to the parent .background-image */
-  top: 50%; /* Adjust vertical positioning */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%);
-  height: 220px; /* Altura do quadrado */
-  width: 190px; /* Largura do quadrado */
-  border: 8px solid black;
-  background-color: white; /* Borda preta */
-  border-radius: 25px; /* Borda arredondada */
-  text-align: center; /* Centraliza conteúdo horizontalmente */
-  padding: 25px; /* Espaçamento interno para o conteúdo */
-  scale: 125%;
-}
-
   .title-page{
-    text-align: right;
+    text-align: center;
     background-color: #EA8356;
     color: white;
     font-family: Bellota Text;
@@ -594,4 +579,9 @@ a:focus {
     font-style: normal;
     font-weight: 400;
     line-height: normal
+  }
+
+  .image{
+    text-align: center;
+    margin: 5%;
   }
