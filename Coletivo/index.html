@@ -73,48 +73,40 @@
     <!--AREA DA PETIÇÃO-->
     <main>
         <div class="container-fluid p-0 background-image"></div>
-        <div style="background-color: #C3EE92; padding: 50px">
+        <div style="background-color: #ECECEC; padding: 50px">
             <!--alinhar para centro -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center p-6">
-                        <p style="background-color: #3A90C3; font-size: 50px; color: white; border-radius: 10px;">Como começou</p>
-                        <p style="font-size: 20px;" class="p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec euismod, urna sed eleifend rutrum, neque risus viverra felis, et lobortis arcu elit
-                            sit amet nisl. Nulla facilisi. Nullam ut tincidunt odio. Cras et ex non est consequat
-                            mollis. </p>
-                    </div>
-                    <div class="col-12 text-center p-6">
-                        <p style="background-color: #3A90C3; font-size: 50px; color: white; border-radius: 10px;">Nossas propostas</p>
-                        <p style="font-size: 20px;" class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Sapiente ipsam earum est vitae fugiat fugit perferendis esse aut aperiam nulla mollitia
-                            dignissimos iusto, dolor numquam totam aspernatur laborum repellat labore?</p>
-                    </div>
+            <section>
+                <h2>Como começou?</h2>
+                <div class="expansible-text">
+                    <p>Texto básico de como a usina começou</p>
+                    
                 </div>
-            </div>
-
-            <!--linha horizontal que vai ate o fim desse <p>-->
-            <h2>PROGRAMA RUAS ABERTAS</h2>
-            <hr class="my-4" />
-            <p style="font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde dolor
-                excepturi. Provident, in! Dolorum sint, soluta ducimus veritatis vero, consequatur quod ipsam
-                consequuntur recusandae amet qui itaque, reprehenderit rerum?</p>
-
-            <br>
-
-            <h2>MUSEU DO MEIO AMBIENTE</h2>
-            <hr class="my-4" />
-            <p style="font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem
-                perspiciatis enim at illo voluptates eius laborum id esse, eum distinctio ducimus aut doloremque dolores
-                voluptatem accusantium nobis molestias beatae.</p>
-
-            <br>
-
-            <h2>POLO CULTURAL</h2>
-            <hr class="my-4" />
-            <p style="font-size: larger;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ut ullam
-                quasi aliquid ad cumque! Aliquam expedita, magni recusandae id eum soluta adipisci nesciunt voluptatum,
-                impedit doloremque ab assumenda. Nulla.</p>
+                <p class="expand-btn" onclick="expandText()">Leia mais</p>
+            </section>
+        
+            <section>
+                <h2>Nossas propostas</h2>
+                <div class="propostas-container">
+                    <button class="proposta-btn">Movimento ruas abertas</button>
+                    <button class="proposta-btn">Museu do meio ambiente</button>
+                    <button class="proposta-btn">Polo cultural</button>
+                </div>
+            </section>
+        
+            <script>
+                function expandText() {
+                    var textContainer = document.querySelector('.expansible-text');
+                    var btn = document.querySelector('.expand-btn');
+        
+                    if (textContainer.style.maxHeight) {
+                        textContainer.style.maxHeight = null;
+                        btn.innerHTML = 'Leia mais';
+                    } else {
+                        textContainer.style.maxHeight = textContainer.scrollHeight + 'px';
+                        btn.innerHTML = 'Leia menos';
+                    }
+                }
+            </script>
 
 
         </div>
