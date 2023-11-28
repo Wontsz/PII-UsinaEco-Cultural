@@ -95,6 +95,52 @@
   background-color: #ECECEC;
 }
 
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.expansible-text {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.expand-btn {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.propostas-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.proposta-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.proposta-btn:hover{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px lightblue;
+}
+
 /*footer*/
 body {
   margin: 0;

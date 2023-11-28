@@ -554,22 +554,9 @@ a:focus {
 
 }
 /* MEU */
-
-.square {
-  position: absolute; /* Position elements relative to the parent .background-image */
-  top: 50%; /* Adjust vertical positioning */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%);
-  height: 220px; /* Altura do quadrado */
-  width: 190px; /* Largura do quadrado */
-  border: 8px solid #3A90C3;
-  background-color: white; /* Borda preta */
-  border-radius: 25px; /* Borda arredondada */
-  text-align: center; /* Centraliza conteúdo horizontalmente */
-  padding: 25px; /* Espaçamento interno para o conteúdo */
-  scale: 125%;
+h1{
+  font-size: 50px;
 }
-
 .pix{
   margin-left: 10%;
   margin-right: 10%;
