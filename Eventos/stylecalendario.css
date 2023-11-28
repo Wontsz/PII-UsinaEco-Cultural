@@ -659,7 +659,7 @@ p {
 
 p#leia-mais1 {
   text-align: start;
-  padding-left: 20px;
+  padding-left: 10px;
   margin: 0;
   /* transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
@@ -702,6 +702,7 @@ p#leia-mais1 {
   text-align: justify;
   padding: 10px;
   font-size: 16px;
+  padding-bottom: 3px;
 }
 
 @media screen and (max-width: 767px) {
