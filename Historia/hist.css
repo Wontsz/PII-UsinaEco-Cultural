@@ -562,8 +562,7 @@ a:focus {
 
   .title-page{
     text-align: center;
-    background-color: #EA8356;
-    color: white;
+    color: black;
     font-family: Bellota Text;
     font-size: 50px;
     font-style: normal;
@@ -573,7 +572,7 @@ a:focus {
 
   .text{
     text-align: center;
-    color: white;
+    color: black;
     font-family: Bellota Text;
     font-size: 30px;
     font-style: normal;
@@ -582,6 +581,11 @@ a:focus {
   }
 
   .image{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
     margin: 5%;
+  
+
+    
   }
