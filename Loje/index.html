@@ -76,26 +76,25 @@
       <article>
         <figure>
           <div class="control">
-            <img src="/imgs/loje/caneca.webp" alt="Caneca" style="position: relative; top: -80px;" />
+            <img src="/imgs/loje/caneca.png" alt="Caneca" style="position: relative; top: -80px;" />
           </div>
         </figure>
         <div class="article-body">
-          <h2>Caneca</h2>
-          <p>Caneca da usina</p>
+          <h2 style="padding: 15px;">Caneca</h2>
+          <p>Caneca com logo da usina.</p>
+          <p style="font-weight: bold;">R$25,00</p>
         </div>
         <p id="leia-mais1" style="text-decoration: underline; color: blue;">Leia mais</p>
         <button id="myBtn" class="botao"></button>
 
         <!-- ModalBox -->
         <div id="myModal" class="modal">
-          <!-- Conteudo -->
           <div class="modal-content">
             <span class="close" id="close1">&times;</span>
             <div class="imgCont">
-              <img src="/imgs/loje/caneca.webp" alt="event">
+              <img src="/imgs/loje/caneca.png" alt="event">
             </div>
             <div class="conteudo-text">
-              <!-- <img  class = "imgCont" src="https://picsum.photos/id/1011/800/450" alt=""> -->
               <p>Caneca da usina</p>
             </div>
           </div>
@@ -106,12 +105,13 @@
       <article>
         <figure>
           <div class="control">
-            <img src="/imgs/loje/camisa.webp" alt="Camisa" width="100%" style="position: relative; top: -80px;">
+            <img src="/imgs/loje/camisa.png" alt="Camisa" width="100%" style="position: relative; top: -80px;">
           </div>
         </figure>
         <div class="article-body">
-          <h2>Camisa</h2>
-          <p>Camisa da usina</p>
+          <h2 style="padding: 15px;">Camisa</h2>
+          <p>Camisa com logo da usina.</p>
+          <p style="font-weight: bold;">R$50,00</p>
         </div>
 
         <p id="leia-mais1" style="text-decoration: underline; color: blue;">Leia mais</p>
@@ -122,12 +122,30 @@
         <div id="myModal2" class="modal">
           <!-- Conteudo -->
           <div class="modal-content">
-            <span class="close2">&times;</span>
+            <button class="close-button2" aria-label="Close alert" data-close>
+              <span class="span-close2">&times;</span>
+            </button>
             <div class="imgCont">
-              <img src="/imgs/loje/camisa.webp" alt="event">
+              <img style="padding: 10px;" src="/imgs/loje/camisa.png" alt="event">
             </div>
             <div class="conteudo-text">
-              <p>Camisa da usina</p>
+              <h2>Camisa</h2>
+              <p>Escolha seu tamanho.</p>
+              <div class="btn-group" role="group" data-bs-toggle="buttons">
+                <label class="btn btn-primary">
+                  <input type="checkbox" class="me-2" name="" id="" checked autocomplete="off"> P
+                </label>
+                <label class="btn btn-primary">
+                  <input type="checkbox" class="me-2" name="" id="" autocomplete="off"> M
+                </label>
+                <label class="btn btn-primary">
+                  <input type="checkbox" class="me-2" name="" id="" autocomplete="off"> G
+                </label>
+                <label class="btn btn-primary">
+                  <input type="checkbox" class="me-2" name="" id="" autocomplete="off"> GG
+                </label>
+              </div>
+              <button type="submit">Adicionar ao carrinho</button>
             </div>
           </div>
         </div>
@@ -141,8 +159,9 @@
             </div>
           </figure>
           <div class="article-body">
-            <h2>Caneta</h2>
-            <p>Caneta da usina</p>
+            <h2 style="padding: 15px;">Caneta</h2>
+            <p>Caneta com logo da usina.</p>
+            <p style="font-weight: bold;">R$7,50</p>
             <p style="text-decoration: underline; color: blue;">Leia mais</p>
             <a id="leia-mais3">
               <button id="myBtn3" class="botao"></button>
@@ -154,10 +173,25 @@
                     <span class="span-close3">&times;</span>
                   </button>
                   <div class="imgCont">
-                    <img src="/imgs/loje/caneta.webp" alt="event">
+                    <img style="padding: 10px;" src="/imgs/loje/caneta.webp" alt="event">
                   </div>
                   <div class="conteudo-text">
-                    <p>Super mega caneta da usina</p>
+                    <h2>Caneta</h2>
+                    <p>Escolha as cores desejadas.</p>
+                    <div class="btn-group" role="group" data-bs-toggle="buttons">
+                      <label class="btn btn-primary active">
+                        <input type="checkbox" class="me-2" name="" id="" checked autocomplete="off"> Azul
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="checkbox" class="me-2" name="" id="" autocomplete="off"> Vermelho
+                      </label>
+                      <label class="btn btn-primary">
+                        <input type="checkbox" class="me-2" name="" id="" autocomplete="off"> Preto
+                      </label>
+                    </div>
+
+                    <input style="width: 30%;" type="number" name="" id="quantidade">
+                    <button type="submit">Adicionar ao carrinho</button>
                   </div>
                 </div>
               </div>
@@ -174,16 +208,17 @@
             </div>
           </figure>
           <div class="article-body">
-            <h2>Botton</h2>
-            <p>Botton</p>
+            <h2 style="padding: 15px;">Botton</h2>
+            <p>Bottons variados da usina.</p>
+            <p style="font-weight: bold;">R$2,50 Cada</p>
             <p style="text-decoration: underline; color: blue;">Leia mais</p>
             <a id="leia-mais4">
               <button id="myBtn4" class="botao"></button>
+
               <!-- ModalBox -->
               <div id="myModal4" class="modal">
                 <!-- Conteudo -->
                 <div class="modal-content">
-                  <div class="main-banner-content">17<br>Nov</div>
                   <button class="close-button4" aria-label="Close alert" data-close>
                     <span class="span-close4">&times;</span>
                   </button>
@@ -192,6 +227,9 @@
                   </div>
                   <div class="conteudo-text">
                     <h2>Botton</h2>
+                    <p>Designs sortidos. Escolha a quantidade desejada.</p>
+                    <input style="width: 30%;" type="number" name="" id="quantidade">
+                    <button type="submit">Adicionar ao carrinho</button>
                   </div>
                 </div>
               </div>
