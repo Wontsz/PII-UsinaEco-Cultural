@@ -1,7 +1,5 @@
 /*barra de pesquisa e título, saiba mais*/
-main{
-  background-color: #ECECEC;
-}
+
 
 .search-bar {
   display: flex;
