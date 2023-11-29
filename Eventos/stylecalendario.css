@@ -96,7 +96,7 @@
 }
 
 .background-image {
-  background-image: url('/Eventos/IMG_1714.jpg');
+  background-image: url('/imgs/eventos-img/fundo_eventos.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -566,7 +566,7 @@ article:has(:hover, :focus) {
   width: 1px;
 }
 
-.main-banner-content {
+.main-banner-content-front, .main-banner-content-back {
   height: 70px;
   width: 70px;
   background: rgba(65, 156, 8, 0.8);
@@ -597,7 +597,7 @@ p {
   /* Escondido por padrao */
   position: fixed;
   /* fica no lugar */
-  z-index: 1;
+  z-index: 2;
   /* fica na frente de td? */
   padding-top: 5%;
   /* local da modal box */
