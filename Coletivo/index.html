@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -70,20 +70,23 @@
             </nav>
         </div>
     </header>
-    <!--AREA DA PETIÇÃO-->
     <main>
         <div class="container-fluid p-0 background-image"></div>
-        <div style="background-color: #ECECEC; padding: 50px">
+        <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
+        <div style="width: 100%; height: 30px; background: #69A625; flex-shrink: 0; position: relative;"></div>
+        <h1 style="text-align: center;" class="mb-0 p-3">Coletivo</h1>
+
+       
             <!--alinhar para centro -->
             <section>
                 <h2>Como começou?</h2>
                 <div class="expansible-text">
-                    <p>Texto básico de como a usina começou</p>
+                    <h4 style="text-align: left;">Com o solo contaminado e a área inutilizada, surgiu a necessidade de reerguer e dar visibilidade á um local com tanta história e tanto potêncial</h4>
                     
                 </div>
                 <p class="expand-btn" onclick="expandText()">Leia mais</p>
             </section>
-        
+
             <section>
                 <h2>Nossas propostas</h2>
                 <div class="propostas-container">
@@ -92,12 +95,12 @@
                     <button class="proposta-btn">Polo cultural</button>
                 </div>
             </section>
-        
+
             <script>
                 function expandText() {
                     var textContainer = document.querySelector('.expansible-text');
                     var btn = document.querySelector('.expand-btn');
-        
+
                     if (textContainer.style.maxHeight) {
                         textContainer.style.maxHeight = null;
                         btn.innerHTML = 'Leia mais';
@@ -106,58 +109,125 @@
                         btn.innerHTML = 'Leia menos';
                     }
                 }
-            </script>
+            </script>   
+            
+            <h1 style="text-align: center;">Slides informativos</h1>
+            <section class="slider">
+                <div class="seta arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
+                  <img src="slide1.png" alt="slide1.jpg">
+                  <img src="slide2.png" alt="slide2.jpg">
+                  <img src="slide3.png" alt="slide3.jpg">
+                  <img src="slide4.png" alt="slide4.jpg">
+                <div class="seta arrow-right"><i class="fas fa-chevron-circle-right"></i></div>
+                <div class="paginacao">
+              
+                  <div class="botao"> <i class="far fa-circle"></i> </div>
+                  <div class="botao"> <i class="far fa-circle"></i> </div>
+                  <div class="botao"> <i class="far fa-circle"></i> </div>
+                  <div class="botao"> <i class="far fa-circle"></i> </div>
+              
+                </div>
+              
+              </section><!--slider-->
 
+              <script>
+                const imgs = document.querySelectorAll(".slider img");
+                const dots = document.querySelectorAll(".botao i");
+                const leftArrow = document.querySelector(".arrow-left");
+                const rightArrow = document.querySelector(".arrow-right");
+                let currentIndex = 0;
+                let time = 7000; //Tempo padrão para apresentação de slides automática
+                const defClass = (startPos, index) => {
+                  for (let i = startPos; i < imgs.length; i++) {
+                    imgs[i].style.display = "none";
+                    dots[i].classList.remove("fa-dot-circle");
+                    dots[i].classList.add("fa-circle");
+                  }
+                  imgs[index].style.display = "block";
+                  dots[index].classList.add("fa-dot-circle");
+                };
+                defClass(1, 0);
+                leftArrow.addEventListener("click", function(){
+                  currentIndex <= 0 ? currentIndex = imgs.length-1 : currentIndex--;
+                  defClass(0, currentIndex);
+                });
+                rightArrow.addEventListener("click", function(){
+                  currentIndex >= imgs.length-1 ? currentIndex = 0 : currentIndex++;
+                  defClass(0, currentIndex);
+                });
+                const startAutoSlide = () => {
+                  setInterval(() => {
+                    currentIndex >= imgs.length-1 ? currentIndex = 0 : currentIndex++;
+                    defClass(0, currentIndex);
+                  }, time);
+                };
+                startAutoSlide(); 
+                </script>
 
         </div>
+
+        <h1 style="text-align: center; background-color: #ECECEC;">Nossos colaboradores</h1>
+        <div class="container p-3" style="text-align: center;">
+            <input type="radio" class="slide-controller" name="slide" checked />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+        
+            <div class="slide-show">
+                <ul class="slides-list rounded">
+                    <li class="slide p-2">
+                        <img src="foto-da-debora.png" alt="Débora Machado">
+                        <div>
+                            <h1>Débora Machado</h1>
+                            <h3>Arquiteta e Coordenadora da Casa Ó</h3>
+                            <p>Mais informações sobre Débora</p>
+                                <a href="https://www.facebook.com/" src="Facebook_Logo_Secondary.png"><i
+                                    class="fab fa-facebook-f">Instagram</i></a>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="slide-perfil">
+                        <img src="" alt="Imagem 1">
+                    </li>
+                    <li class="slide-perfil">
+                        <img src=" alt="Imagem 2">
+                    </li>
+                    <li class="slide-perfil">
+                        <img src="" alt="Imagem 3">
+                    </li>
+                </ul>
+            </div>
+    
     </main>
 
     <footer class="footer">
-
         <div class="container">
-
             <div class="row">
-
                 <div class="col-md-6 col-lg-4">
-
                     <div class="footer-blog">
-
                         <h3>Menu</h3>
-
                         <div>
-                            <a href="#">O coletivo</a>
+                            <a href="/Coletivo/index.html">O coletivo</a>
                         </div>
-
                         <div>
-                            <a href="#">História</a>
+                            <a href="/Historia/hist.html">História</a>
                         </div>
-
                         <div>
-                            <a href="#">Loja</a>
+                            <a href="/Loje/index.html">Loja</a>
                         </div>
-
                         <div>
-                            <a href="#">Apoie a Usina</a>
+                            <a href="/ApoieUsina/apoieUsina.html">Apoie a Usina</a>
                         </div>
-
                         <div>
-                            <a href="#">Apoiadores</a>
+                            <a href="/Apoiadores/apoiadores_responsivo.html">Apoiadores</a>
                         </div>
-
                         <div>
-                            <a href="#">Loja</a>
+                            <a href="/Eventos/telacalendario.html">Eventos</a>
                         </div>
-
                         <div>
-                            <a href="#">Eventos</a>
+                            <a href="/Noticias/noticias.html">Notícias</a>
                         </div>
-
-                        <div>
-                            <a href="#">Notícias</a>
-                        </div>
-
                     </div>
-
                 </div>
 
 
@@ -214,16 +284,18 @@
 
                         <div class="col-md-6">
                             <h4>E-mail</h4>
-                            <p>Uisnaecocultural@gmail.com</p>
+                            <p>usinaecocultural@gmail.com</p>
                         </div>
 
                         <div class="col-md-6">
 
                             <h4>Redes Sociais</h4>
-                            <a href="https://www.facebook.com/" src="Facebook_Logo_Secondary.png"><i
+                            <a href="https://www.facebook.com/usinaecocultural/" src="Facebook_Logo_Secondary.png"><i
                                     class="fab fa-facebook-f">Facebook</i></a>
-                            <a href="https://www.instagram.com/" src="Instagram_Glyph_White.svg"><i
-                                    class="fab fa-instagram">Instagram</i></a>
+                            <a href="https://www.instagram.com/usinaecocultural/?hl=en"
+                                src="Instagram_Glyph_White.svg"><i class="fab fa-instagram">Instagram</i></a>
+                            <a href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw"
+                                src="youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
 
                         </div>
 
@@ -238,15 +310,15 @@
 
                         <div class="col-md-6">
                             <div class="copy-text">
-                                <p>&copy; <a href="#">Usina EcoCultural Vergueiro</a> - Todos os Direitos Reservados.
-                                </p>
+                                <p>&copy; <a href="/Home/esqueleto.html">Usina EcoCultural Vergueiro</a> - Todos os
+                                    Direitos Reservados.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="copy-menu">
-                                <a href="#">Termos de Uso</a>
-                                <a href="termos.html">Privacidade</a>
+                                <a href="/Home/termosdeuso.html">Termos de Uso</a>
+                                <a href="/Home/privacidade.html">Privacidade</a>
                             </div>
                         </div>
 

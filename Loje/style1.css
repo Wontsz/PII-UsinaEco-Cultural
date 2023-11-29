@@ -756,3 +756,14 @@ body.modal-open {
     opacity:1;
   }
 }
+
+.carrinho {
+  background-color: white;
+  color: black;
+  border: 4px solid #69A625;
+  font-size: medium; /* Green */
+}
+
+.btn{
+  background-color: #69A625;
+}
