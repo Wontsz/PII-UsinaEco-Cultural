@@ -501,6 +501,7 @@ textarea {
   min-height: 10em;
 }
 .input-container {
+  padding: 8px;
   width: 650px;
   max-width: 100%;
   margin: 20px auto 25px auto;
