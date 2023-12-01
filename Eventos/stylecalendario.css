@@ -614,6 +614,11 @@ p {
     padding-top: 20%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .modal{
+    padding-top: 20%;
+  }
+}
 
 .botao {
   border-radius: 20px;
@@ -682,8 +687,15 @@ p#leia-mais1 {
 @media screen and (max-width: 767px) {
   .modal-content {
     width: 95%;
-    height: 90%;
+    height: 115%;
     justify-content: space-between
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .modal-content{
+    width: 80%;
+    height: 100%;
   }
 }
 
@@ -705,9 +717,19 @@ p#leia-mais1 {
   padding-bottom: 3px;
 }
 
+.conteudo-text h2{
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .conteudo-text {
-    padding: 2px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .conteudo-text{
+    font-size: 20px;
   }
 }
 
