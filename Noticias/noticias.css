@@ -166,8 +166,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  padding: 0;
-  margin: 0;
+  
   
 }
 
@@ -185,8 +184,7 @@ body {
   line-height: 1.5;
   font-size: 1.5rem;
   font-family: 'Inter', sans-serif;
-  padding-top: 9rem;
-  padding-bottom: 12rem;
+  
 }
 
 .container {
@@ -559,12 +557,6 @@ body {
  }
  
  
- /** end protect **/
- 
- 
- 
- /** cases section **/
- 
  .cases {
      background: #fff;
      padding: 0 30px 0 30px;
@@ -629,13 +621,184 @@ body {
      margin: 0 auto;
  }
  
- 
- /** end cases section **/
- 
- 
- /** doctors section **/
- 
- 
+ #comment{
+  padding-top:70px;
+padding-bottom:60px;
+  }
+.comment_left_inner h1{
+  font-size:24px;
+font-weight:700;
+color:#666666;
+text-align:center;
+  }
+.comment_left_inner .comment_tab{
+  display:block;
+  font-size:40px;
+font-weight:700;
+color:#000;
+margin-right:260px;
+line-height:10px;
+  }
+.comment_left_inner_2_left_inner  .card .card-image{
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.comment_left_inner_2_left_inner  .card .card-image img{
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+min-width:100%!important;
+height:100%!important;
+border:2px solid #FF0000;
+border-radius:5px;
+}
+
+.comment_left_inner_2_left_inner  .card .card-image:hover img{
+  -webkit-transform: scale(1.2) rotate(-7deg);
+  -moz-transform: scale(1.2) rotate(-7deg);
+  -ms-transform: scale(1.2) rotate(-7deg);
+  -o-transform: scale(1.2) rotate(-7deg);
+  transform: scale(1.2) rotate(-7deg);
+}
+.comment_left_inner_2{
+  padding-top:40px;
+padding-left:50px;
+  }
+.comment_left_inner_2_left{
+  padding:0;
+margin:0;
+   }
+.comment_left_inner_2_right_inner h4{
+  padding:0;
+margin:0; 
+  font-size:24px;
+font-weight:600;
+color:#666666;
+  }
+.comment_left_inner_2_right_inner .dating{
+  font-size:14px;
+font-weight:100;
+color:#999;
+   }
+.comment_left_inner_2_right_inner h5{
+  font-size:20px;
+padding-top:10px;
+padding-bottom:10px;
+line-height:30px;
+  }
+.comment_left_inner_2_right_inner p a{
+  padding:10px 25px;
+  font-size:20px;
+text-decoration:none;
+color:#0099CC;
+border:1px solid #CCCCCC;
+bprder-radius:10px;
+  }
+.comment_left_inner_2_right_inner p a:hover{
+  color:#FF0000;
+  }
+.comment_left_inner_2_right_inner p a i{
+  margin-left:10px;
+font-size:14px;
+  }
+.comment_left_inner_3{
+  background:#f0f0f0;
+margin-top:50px;
+margin-left:50px;
+padding-top:30px;
+padding-bottom:30px;
+padding-left:30px;
+border-radius:10px;
+  }
+.comment_right h2{
+  font-size:22px;
+font-weight:600;
+padding-bottom:50px;
+margin-left: 10%;
+
+  }
+.comment_right_inner .form-control_new_1{
+  height:120px;
+border:1px solid #ccc;
+border-radius:10px; 
+margin-bottom:60px;
+font-size:20px;
+margin-left: 10%;
+  }
+.comment_right_inner .form-control_new_2{
+  height:50px;
+border:1px solid #ccc;
+border-radius:10px; 
+margin-bottom:30px;
+font-size:20px;
+margin-left: 10%;
+  }
+.comment_right_inner .form-control_new_3{
+  height:50px;
+border:1px solid #e4e4e4;
+border-radius:10px; 
+margin-bottom:30px;
+font-size:20px;
+margin-left: 10%;
+  }
+.comment_right_inner p{
+  text-align:center;
+padding-top:30px;
+margin-left: 10%;
+  }
+.comment_right_inner p a{
+  padding:15px 35px;
+  font-size:24px;
+font-weight:600;
+text-decoration:none;
+border-radius:10px;
+background-color: #69A625;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    
+
+
+  }
+.comment_right_inner p a:hover{
+background:rgb(255, 255, 255);
+background-color: forestgreen;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 10px 10px lightblue;
+    color: white;
+  }
+.comment_left_inner_4 p{
+  text-align:center;
+padding-top:60px;
+  }
+.comment_left_inner_4 p a{
+  padding:13px 65px;
+  font-size:22px;
+font-weight:600;
+text-decoration:none;
+border-radius:10px;
+background:#3399FF;
+color:#fff;
+  }
+.comment_left_inner_4 p a:hover{
+background:#0099FF;
+  }
+.comment_left_inner_4 p a i{
+margin-left:10px;
+font-size:16px;
+  }
 /*footer */
 
 body {
