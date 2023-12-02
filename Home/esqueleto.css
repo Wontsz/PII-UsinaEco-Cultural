@@ -555,6 +555,35 @@ font-style: normal;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#serv{
+  padding-top:40px;
+  padding-bottom:40px;
+  background: #ececec;
+  margin-top:40px; 
+   }
+  .serv_2i1{
+  background:#fff;
+  padding:30px 20px 50px 20px; 
+   }
+  .serv_2i2i1 span a{
+  display:inline-block;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  line-height:50px;
+  background:#0085ff;
+  text-align:center;
+  font-size:22px;
+   }
+  .serv_2i2i1 span a:hover{
+  background:#05488a;
+  color:#fff;
+   }
+  .serv_2i2i1{
+  left:20px; 
+  top:-25px;
+   }
 /*footer*/
 body {
   margin: 0;
