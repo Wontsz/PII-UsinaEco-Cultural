@@ -102,7 +102,7 @@ section {
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .expansible-text {
@@ -251,7 +251,102 @@ section {
           }
         }
 
-
+        .prosp{
+          padding-top:40px;
+          padding-bottom:40px;
+          }
+          .prosp_1 h4:before {
+          display: inline-block;
+          width: 6%;
+          height: 2px;
+          background-color:#69A625;
+          vertical-align: middle;
+          margin-right: 1%;
+          content: "";
+          }
+          .prosp_1 h4:after {
+          display: inline-block;
+          width: 6%;
+          height: 2px;
+          background-color: #69A625;
+          vertical-align: middle;
+          margin-left: 1%;
+          content: "";
+          }
+          .prosp_2i h5 a:after {
+          display: inline-block;
+          width: 10%;
+          height: 2px;
+          background-color: #69A625;
+          vertical-align: middle;
+          margin-left: 2%;
+          content: "";
+          }
+          .prosp_2{
+          margin-top:10px; 
+          }
+          .prosp_2i img{
+          border-radius:30px 0px;
+          }
+          
+          #plan{
+          padding-top:40px;
+          padding-bottom:40px; 
+          background: #ececec; 
+            }
+          .plan_1i ul li{
+          margin-top:8px; 
+           }
+          .plan_1i ul li i{
+          vertical-align:middle;
+          margin-right:5px;
+           }
+          .plan_1i1 span i{
+          font-size:80px; 
+           }
+          .plan_1i1i{
+          border-top:1px solid #ddd;  
+          border-bottom:1px solid #ddd;
+          margin-top:15px;
+          padding-top:15px;
+          padding-bottom:25px;
+            }
+          .plan_1i1i h1{
+          font-size:60px;
+          font-weight:bold;
+            }
+          .plan_1i1 ul{
+          margin-top:20px; 
+           }
+          .plan_1i1 ul li{
+          margin-top:8px; 
+           }
+          .plan_1i1 ul li i{
+          margin-right:5px;
+          vertical-align:middle; 
+           }
+          .plan_1i1 h4{
+          margin-top:20px; 
+           }
+          
+          .plan_1i1 h4:after {
+          display: inline-block;
+          width: 10%;
+          height: 2px;
+          background-color: #ddd;
+          vertical-align: middle;
+          margin-left: 2%;
+          content: "";
+          }
+          .plan_1i1{
+           background:#fff;
+           padding:40px 30px;
+           border-radius:30px 0px; 
+           }
+          .plan_1i1_o{
+           background:#69A625;
+           }
+           
 /*footer*/
 body {
   margin: 0;
