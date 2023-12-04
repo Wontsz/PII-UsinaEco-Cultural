@@ -707,6 +707,13 @@ p#leia-mais1 {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .modal-content{
+    width: 30%;
+    height: 115%;
+  }
+}
+
 .conteudo-text {
   flex-direction: column;
   display: flex;
