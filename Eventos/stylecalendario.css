@@ -576,7 +576,7 @@ article:has(:hover, :focus) {
   text-align: center;
   color: white;
   font-size: 25px;
-  font-family: fantasy;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .control {
@@ -629,7 +629,7 @@ p {
   height: 100%;
 }
 
-.close-button1,
+.close-button,
 .close-button2,
 .close-button3,
 .close-button4,
@@ -648,6 +648,7 @@ p {
   align-items: center;
   top: 5px;
   left: 90%;
+  z-index: 3;
 }
 
 @media screen and (max-width: 767px) {
@@ -703,6 +704,13 @@ p#leia-mais1 {
   .modal-content {
     width: 30%;
     height: 115%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-content{
+    width: 35%;
+    height: 125%;
   }
 }
 
