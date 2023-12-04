@@ -95,8 +95,8 @@
                             <!-- Conteudo -->
                             <div class="modal-content">
                                 <div class="main-banner-content-back">24<br>Jun</div>
-                                <button class="close-button1" aria-label="Close alert" data-close>
-                                    <span class="span-close1">&times;</span>
+                                <button class="close-button" aria-label="Close alert" data-close>
+                                    <span class="span-close">&times;</span>
                                 </button>
                                 <div class="imgCont">
                                     <img src="/imgs/eventos-img/arraial_usina_back.png" alt="event">
@@ -136,8 +136,8 @@
                             <!-- Conteudo -->
                             <div class="modal-content">
                                 <div class="main-banner-content-back">27<br>Jul</div>
-                                <button class="close-button2" aria-label="Close alert" data-close>
-                                    <span class="span-close2">&times;</span>
+                                <button class="close-button aaa" aria-label="Close alert" data-close>
+                                    <span class="span-close">&times;</span>
                                 </button>
                                 <div class="imgCont">
                                     <img src="/imgs/eventos-img/aniversario_usina.png" alt="event">
@@ -178,8 +178,8 @@
                             <!-- Conteudo -->
                             <div class="modal-content">
                                 <div class="main-banner-content-back">19<br>Ago</div>
-                                <button class="close-button3" aria-label="Close alert" data-close>
-                                    <span class="span-close3">&times;</span>
+                                <button class="close-button aaa" aria-label="Close alert" data-close>
+                                    <span class="span-close">&times;</span>
                                 </button>
                                 <div class="imgCont">
                                     <img src="/imgs/eventos-img/14_acao_comunidade.png" alt="event">
@@ -227,8 +227,8 @@
                             <!-- Conteudo -->
                             <div class="modal-content">
                                 <div class="main-banner-content-back">17<br>Nov</div>
-                                <button class="close-button4" aria-label="Close alert" data-close>
-                                    <span class="span-close4">&times;</span>
+                                <button class="close-button aaa" aria-label="Close alert" data-close>
+                                    <span class="span-close">&times;</span>
                                 </button>
                                 <div class="imgCont">
                                     <img src="/Home/noticia4.png" alt="event">
@@ -267,8 +267,8 @@
                             <!-- Conteudo -->
                             <div class="modal-content">
                                 <div class="main-banner-content-back">17<br>Nov</div>
-                                <button class="close-button4" aria-label="Close alert" data-close>
-                                    <span class="span-close4">&times;</span>
+                                <button class="close-button aaa" aria-label="Close alert" data-close>
+                                    <span class="span-close">&times;</span>
                                 </button>
                                 <div class="imgCont">
                                     <img src="/imgs/eventos-img/festa_usina.png" alt="event">
@@ -309,8 +309,8 @@
                             <!-- Conteudo -->
                             <div class="modal-content">
                                 <div class="main-banner-content-back">9<br>Dez</div>
-                                <button class="close-button6" aria-label="Close alert" data-close>
-                                    <span class="span-close6">&times;</span>
+                                <button class="close-button aaa" aria-label="Close alert" data-close>
+                                    <span class="span-close">&times;</span>
                                 </button>
                                 <div class="imgCont">
                                     <img src="/imgs/eventos-img/18_encontro_usina.png" alt="event">
@@ -482,113 +482,82 @@
     var body = document.body;
 
     //modal
-    var modal = document.getElementById("myModal1");
-    //botao
+    var modal = document.getElementById("myModal1"); //elemento <span> q fecha o modal clicando fora
+    //botao abrir modal
     var btn = document.getElementById("leia-mais1");
-    //elemento <span> q fecha o modal
-    var span = document.getElementsByClassName("close-button1");
+    //elemento <span> q fecha o modal no X
+    var spans = document.getElementsByClassName("span-close");
 
     var modal2 = document.getElementById("myModal2");
-    //botao
     var btn2 = document.getElementById("leia-mais2");
-    //elemento <span> q fecha o modal
-    var span2 = document.getElementsByClassName("button-close2");
-
 
     var modal3 = document.getElementById("myModal3");
-    //botao
     var btn3 = document.getElementById("leia-mais3");
-    //elemento <span> q fecha o modal
-    var span3 = document.getElementsByClassName("button-close3");
 
     var modal4 = document.getElementById("myModal4");
-    //botao
     var btn4 = document.getElementById("leia-mais4");
-    //elemento <span> q fecha o modal
-    var span4 = document.getElementsByClassName("button-close4");
 
     var modal5 = document.getElementById("myModal5");
-    //botao
     var btn5 = document.getElementById("leia-mais5");
-    //elemento <span> q fecha o modal
-    var span5 = document.getElementsByClassName("button-close5");
-
+    
     var modal6 = document.getElementById("myModal6");
-    //botao
     var btn6 = document.getElementById("leia-mais6");
-    //elemento <span> q fecha o modal
-    var span6 = document.getElementsByClassName("button-close6");
 
     // abre modal qnd clica no botao
     btn.onclick = function () {
         modal.style.display = "block";
         body.style.overflow = "hidden";
     }
-    // qnd clica em X fecha
-    span.onclick = function () {
-        modal.style.display = "none";
-        body.style.overflow = "auto";
-    }
-
     // BUTTON 2
     btn2.onclick = function () {
         modal2.style.display = "block";
         body.style.overflow = "hidden";
-    }
-    span2.onclick = function () {
-        modal2.style.display = "none";
-        body.style.overflow = "auto";
     }
     // BUTTON 3
     btn3.onclick = function () {
         modal3.style.display = "block";
         body.style.overflow = "hidden";
     }
-    span3.onclick = function () {
-        modal3.style.display = "none";
-        body.style.overflow = "auto";
-    }
     // BUTTON 4
     btn4.onclick = function () {
         modal4.style.display = "block";
         body.style.overflow = "hidden";
-    }
-    span4.onclick = function () {
-        modal4.style.display = "none";
-        body.style.overflow = "auto";
     }
 
     btn5.onclick = function () {
         modal5.style.display = "block";
         body.style.overflow = "hidden";
     }
-    span5.onclick = function () {
-        modal5.style.display = "none";
-        body.style.overflow = "auto";
-    }
 
     btn6.onclick = function () {
         modal6.style.display = "block";
         body.style.overflow = "hidden";
     }
-    span6.onclick = function () {
-        modal6.style.display = "none";
-        body.style.overflow = "auto";
-    }
-
 
     //qnd clica em qualquer lugar fora do modal ele fecha
-    window.onclick = function (event) {
-        if (event.target == modal || event.target == modal2 || event.target == modal3 || event.target == modal4 ||
-            event.target == modal5 || event.target == modal6) {
-            modal.style.display = "none";
-            modal2.style.display = "none";
-            modal3.style.display = "none";
-            modal4.style.display = "none";
-            modal5.style.display = "none";
-            modal6.style.display = "none";
-            body.style.overflow = "auto";
+    for (var i = 0; i < spans.length; i++) {
+    spans[i].onclick = function () {
+        var body = document.body;
+        var modal = document.getElementById("myModal1");
+        window.alert("fechando...");
+        modal.style.display = "none";
+        body.style.overflow = "auto";
+        console.log('fechando modal')
         }
+    }
+    
+    var modais = [modal, modal2, modal3, modal4, modal5, modal6];
+    window.onclick = function (event) {
+        for (var i = 0; i < modais.length; i++) {
+            if (event.target == modais[i]) {
+                fecharModal(modais[i]);
+            }
+        }
+    };
+
+    function fecharModal(modal) {
+        modal.style.display = "none";
+        body.style.overflow = "auto";
     }
 </script>
 </body>
