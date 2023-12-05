@@ -533,7 +533,7 @@
     var body = document.body;
 
     //modal
-    var modal = document.getElementById("myModal1"); //elemento <span> q fecha o modal clicando fora
+    var modal = document.querySelector("#myModal1"); //elemento <span> q fecha o modal clicando fora
     //botao abrir modal
     var btn = document.getElementById("leia-mais1");
     //elemento <span> q fecha o modal no X
@@ -585,27 +585,24 @@
         body.style.overflow = "hidden";
     }
 
-    //qnd clica em qualquer lugar fora do modal ele fecha
+    //qnd clica em X do modal ele fecha
     for (var i = 0; i < spans.length; i++) {
     spans[i].onclick = function () {
-        var body = document.body;
         var modal = document.getElementById("myModal1");
-        window.alert("fechando...");
-        modal.style.display = "none";
-        body.style.overflow = "auto";
-        console.log('fechando modal')
-        }
-    }
+        fecharModal(modal);
+        console.log('fechando modal');
+    };
+}
     
+    //qnd clica em qlqr lugar fora do modal ele fecha
     var modais = [modal, modal2, modal3, modal4, modal5, modal6];
     window.onclick = function (event) {
-        for (var i = 0; i < modais.length; i++) {
-            if (event.target == modais[i]) {
-                fecharModal(modais[i]);
+    for (var i = 0; i < modais.length; i++) {
+        if (event.target == modais[i]) {
+            fecharModal(modais[i]);
             }
         }
     };
-
     function fecharModal(modal) {
         modal.style.display = "none";
         body.style.overflow = "auto";

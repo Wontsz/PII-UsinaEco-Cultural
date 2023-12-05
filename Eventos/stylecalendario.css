@@ -482,6 +482,7 @@ article h2 {
   letter-spacing: 0.0em;
   color: var(--title-color);
   transition: color 0.3s ease-out;
+  font-family: 'bellota text';
 }
 
 figure {
@@ -576,7 +577,7 @@ article:has(:hover, :focus) {
   text-align: center;
   color: white;
   font-size: 25px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'bellota text';
 }
 
 .control {
@@ -688,20 +689,20 @@ p#leia-mais1 {
 @media screen and (max-width: 767px) {
   .modal-content {
     width: 95%;
-    height: 95vh;
+    height: 100vh;
   }
 }
 
 @media screen and (min-width: 900px) {
   .modal-content {
     width: 30%;
-    height: 100vh;
+    height: 95vh;
   }
 }
 
 @media screen and (min-width: 1541px){
   .modal-content{
-    height: 80vh;
+    height: 85vh;
   }
 }
 
