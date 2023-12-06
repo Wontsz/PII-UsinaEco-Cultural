@@ -1,45 +1,532 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <title>Usina EcoCultural Vergueiro</title>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
+
 <body>
-  <main>
-    <span>SLIDER</span>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/foto_01.png" alt="Foto 01">
-            </div>
+  <header>
+    <div class="container-fluid p-2 titulo">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 title" style="font-family: 'Bellota Text';">
+          <h1>USINA ECOCULTURAL VERGUEIRO</h1>
+        </div>
+
+        <div class="col-3 search-bar">
+          <input type="text" style="background-color: #ECECEC; margin: 0; min-width: 150px;" placeholder="Pesquisar..."
+            class="form-control">
+          <button class="btn-search">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid menu">
+      <nav class="navbar navbar-expand-xl nav-fill">
+        <a class="navbar-brand position " href="/Home/esqueleto.html">
+          <img src="/imgs/usina_outralogo.png" alt="" style="background-color: #ECECEC;" height="150px" ; width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-opcoes" id="navbarSupportedContent">
+          <ul class="container navbar-nav mr-auto">
+            <li class="nav-item"><a href="/Coletivo/index.html">Coletivo</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Historia/hist.html">História</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Loje/index.html">Loja</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Eventos/telacalendario.html">Eventos</a></li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item dropdown mt-0" style="padding-left: 15px; padding-right: 15px;">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="padding-left: 60px; padding-right: 60px;">
+                Apoios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ECECEC;">
+                <a class="dropdown-item" href="/Apoiadores/apoiadores_responsivo.html"
+                  style="font-size: 18px;">Apoiadores</a>
+                <a class="dropdown-item" href="/ApoieUsina/apoieUsina.html" style="font-size: 18px;">Apoie a Usina</a>
+              </div>
+            </li>
+            <div class="borda-cabecalho d-none d-xl-block"></div>
+            <li class="nav-item"><a href="/Noticias/noticias.html">Notícias</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <section id="center" class="clearfix">
+    <div class="container">
+     <div class="row">
+      <div class="center clearfix">
+       <div class="col-sm-6 center_left clearfix">
+        <div class="center_right_top clearfix">
+          <div class="col-sm-4 center_right_top_left clearfix">
+           <div class="center_right_top_left_inner clearfix">
+            <div class="grid clearfix">
+                       
+                       <figure class="effect-duke">
+                           <img src="img/23.jpg" alt="img17"/>
+                           <figcaption>					  </figcaption>			
+             </figure>
+         </div>
+           </div>
           </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/foto_02.png" alt="Foto 02">
-            </div>
+          <div class="col-sm-8 center_right_top_right clearfix">
+           <div class="center_right_top_right_inner clearfix">
+            <h2>FUSCE NEC TELLUS</h2>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum arcu, <a class="little_tab" href="#">Sagittis Ipsum</a>, <a class="little_tab" href="#">iNulla> at nibh at <a href="#">Integer nec odionec odio. Praesent libero torquent</a></p>
+           </div>
           </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/foto_03.png" alt="Foto 03">
+         </div>
+       </div>
+        <div class="col-sm-6 center_right clearfix">
+         <div class="center_right_top clearfix">
+          <div class="col-sm-4 center_right_top_left clearfix">
+           <div class="center_right_top_left_inner clearfix">
+            <div class="grid clearfix">
+                       
+                       <figure class="effect-duke">
+                           <img src="img/1.jpg" alt="img17"/>
+                           <figcaption>					  </figcaption>			
+             </figure>
+         </div>
+           </div>
+          </div>
+          <div class="col-sm-8 center_right_top_right clearfix">
+           <div class="center_right_top_right_inner clearfix">
+            <h2>FUSCE NEC TELLUS</h2>
+            <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum arcu, <a class="little_tab" href="#">Sagittis Ipsum</a>, <a class="little_tab" href="#">iNulla> at nibh at <a href="#">Integer nec odionec odio. Praesent libero torquent</a></p>
+           </div>
+          </div>
+         </div>
+        </div>
+      </div>
+      <div class="center_2 clearfix">
+       <div class="col-sm-5 center_2_left clearfix">
+        <div class="center_2_left_top clearfix">
+         <div class="col-sm-5 mobile_left clearfix">
+          <div class="mobile_left_inner clearfix">
+           <p><img src="img/2.jpg" width="100%" /></p>
+          </div>
+         </div>
+         <div class="col-sm-7 mobile_right clearfix">
+          <h2>Ante dapibus diam </h2>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, inceptos C. Curabitursodales ligula<br /> Praesent mauris </p>
+         </div>
+        </div>
+        <div class="center_2_left_top_2 clearfix">
+         <p>Lorem, dolor sit amet, consectetur adipiscing,<br /> Sed nisi, quis sem at nibh elementum imperdiet<br /> sociosqu ad, litora torquent per conubia nostra,<br />  adipiscing elit. Integer nec odionec odio<br /> additional inventions. When will the madness<br /> Sed dignissim lacinia nunc.</p>
+        </div>
+       </div>
+        <div class="col-sm-7 center_2_right clearfix">
+         <div class="center_2_right_inner clearfix">
+          <h5>febuary 20, 2013 . <a href="#">158 comments</a></h5>
+          <h2>Integer nec odionec odio. Praesent libero  quis sem at</h2>
+          <ul>
+           <li><p><span class="cattring_1">737</span> <span class="cattring"># <a href="#"> Cursus</a></span></p></li>
+           <li><p><span class="cattring_1">381</span> <span class="cattring"># <a href="#">  NEC</a></span></p></li>
+           <li><p><span class="cattring_1">295</span> <span class="cattring"># <a href="#">   Vestibulum Nec Tellus</a></span></p></li>
+          </ul>
+          <ul>
+           <li><p><span class="cattring_1"> 9</span> <span class="cattring"># <a href="#"> Conubia Ipsum</a></span></p></li>
+          </ul>
+         </div>
+        </div>
+      </div>
+      <div class="center_3 clearfix">
+       <div class="col-sm-6 center_3_left clearfix">
+        <div class="center_3_left_inner clearfix">
+         <div class="grid clearfix">
+                       <figure class="effect-jazz">
+                           <img src="img/3.jpg" alt="img25"/>
+                           <figcaption>					  </figcaption>			
+             </figure>
+                       
+         </div>
+        </div>
+       </div>
+       <div class="col-sm-6 center_3_right clearfix">
+        <div class="center_3_right_inner clearfix">
+         <h4>Ad Titora Torquent</h4>
+         <p>01<a href="#"><span class="table_tab">What is Vestibulum lacinia arcu?</span></a></p>
+         <p>02<a href="#"><span class="table_tab">Aptent taciti sociosqu  litora:</span></a></p>
+         <p>03<a href="#"><span class="table_tab">Quis sem at nibh elementum imperdiet</span></a></p>
+         <p>04<a href="#"><span class="table_tab">Lacinia arcu eget nulla</span></a></p>
+         <p>05<a href="#"><span class="table_tab">Praesent libero</span></a></p>
+         <p>06<a href="#"><span class="table_tab">Ipsum dolor sit amet sit</span></a></p>
+        </div>
+       </div>
+      </div>
+      <div class="center_4 clearfix">
+       <div class="col-sm-7 center_4_left clearfix">
+        <div class="center_4_left_inner clearfix">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero. 
+   Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+   Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in?</p>
+         <h4><a href="#"><i class="fa fa-link"></i></a>Fusce nec tellus sed augue semper porta.</h4>
+         <h3>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris Vestibulum lacinia.</h3>
+        </div>
+       </div>
+       <div class="col-sm-5 center_4_right clearfix">
+         <div class="center_4_right_inner clearfix">
+          <div class="col-sm-4 center_4_right_inner_left clearfix">
+           <p><a href="#"><img src="img/4.jpg" class="img-circle" /></a></p>
+          </div>
+           <div class="col-sm-8 center_4_right_inner_right clearfix">
+            <h2>Dapibus Lacinia Inceptos</h2>
+           </div>
+         </div>
+         <div class="center_4_right_inner_2 clearfix">
+          <p>Taciti sociosqu, litora torquent per conubia nostra, per inceptos <span class="broom">per conubia</span> dolor sit.</p>
+          <h2><a href="#">Sem nec sociosqu, too?<i class="fa fa-arrow-right"></i></a></h2>
+         </div>
+       </div>
+      </div>
+      <div class="center_5 clearfix">
+       <div class="col-sm-9 center_5_left clearfix">
+        <div class="center_5_left_inner clearfix">
+         <p>�Lorem ipsum dolor sit amet" consectetur adipiscing elit. <span class="packid">Integer nec odionec odio</span>.<a href="#">Litora torquent per conubia nostra,</a> per inceptos C. Curabitursodales ligula in libero, Nulla quis sem ,at nibh elementum ,imperdiet. Sed cursus dapibus. March 12-15.</p>
+         <h4><a href="#">Duis sagittis ipsum<i class="fa fa-arrows-h"></i></a></h4>
+        </div>
+       </div>
+       <div class="col-sm-3 center_5_right clearfix">
+        <div class="center_5_right_inner clearfix">
+         <div class="grid clearfix">
+                       <figure class="effect-sadie">
+                           <img src="img/5.jpg" alt="img02"/>
+                           <figcaption>
+                               <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                           <a href="#">View more</a>						</figcaption>			
+           </figure>
+                       
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="center_6 clearfix">
+       <h5>continue reading fullscreen<i class="fa fa-arrow-down"></i></h5>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+   <section id="middle" class="clearfix">
+    <div class="container">
+     <div class="row">
+      <div class="middle clearfix">
+       <div class="middle_1 clearfix">
+        <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+   Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C.ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero. 
+   Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+        <h1><a href="#"><i class="fa fa-link"></i></a><span class="rider_1">Integer Odionec</span> <span class="rider_2">on PerInceptos:</span></h1>
+        <h4><i class="fa fa-dot-circle-o"></i><a href="#"> Aptent taciti sociosqu ad litora, torquent per conubia</a></h4>
+        <h4><i class="fa fa-dot-circle-o"></i><a href="#"> Nulla quis sem at nibh elementum imperdiet.</a></h4>
+        <h4><i class="fa fa-dot-circle-o"></i><a href="#"> Integer nec odionec odio. Praesent libero.</a></h4>
+        <h4><i class="fa fa-dot-circle-o"></i><a href="#"> Nec tellus sed augue semper porta. Mauris massa</a></h4>
+        <h1><a href="#"><i class="fa fa-link"></i></a>Praesent mauris. Fusce nec tellus sed</h1>
+        <p><a href="#">Fusce Sagittis</a>  quis sem at nibh elementum imperdiet lacinia ad, <a href="#">Adipiscing Nec Cursus,</a> torquent per conubia nostra, per inceptos C. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla sociosqu eget:</p>
+        <h3>�Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra,elementum imperdiet. Duis sagittis ipsum. Praesent mauris. per inceptos C. Curabitursodales ligula in libero.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Sed odionec dignissim lacinia adipiscing dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio nunc.�</h3>
+        <p>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad. Vestibulum lacinia arcu eget nulla sociosqu eget</p>
+        <h2><img src="img/6.jpg" /></h2>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+   <section id="middle_2" class="clearfix">
+    <div class="container">
+     <div class="row">
+      <div class="middle_2 clearfix">
+       <div class="center_5 clearfix">
+       <div class="col-sm-9 center_5_left clearfix">
+        <div class="center_5_left_inner clearfix">
+         <p>�Lorem ipsum dolor sit amet" consectetur adipiscing elit. <span class="packid">Integer nec odionec odio</span>.<a href="#">Litora torquent per conubia nostra,</a> per inceptos C. Curabitursodales ligula in libero, Nulla quis sem ,at nibh elementum ,imperdiet. Sed cursus dapibus. March 12-15.</p>
+         <h4><a href="#">Duis sagittis ipsum<i class="fa fa-arrows-h"></i></a></h4>
+        </div>
+       </div>
+       <div class="col-sm-3 center_5_right clearfix">
+        <div class="center_5_right_inner clearfix">
+         <div class="grid clearfix">
+                       <figure class="effect-sadie">
+                           <img src="img/7.png" alt="img02"/>
+                           <figcaption>
+                               <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                           <a href="#">View more</a>						</figcaption>			
+           </figure>
+                       
+         </div>
+        </div>
+       </div>
+      </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+   <section id="comment" class="clearfix">
+    <div class="container">
+     <div class="row">
+      <div class="comment clearfix">
+       <div class="col-sm-7 comment_left clearfix">
+        <div class="comment_left_inner clearfix">
+         <h1> 322<span class="comment_tab"> � Comments</span></h1>
+        </div>
+        <div class="comment_left_inner_2 clearfix">
+         <div class="col-sm-2 comment_left_inner_2_left clearfix">
+          <div class="comment_left_inner_2_left_inner clearfix">
+           <div class="card">
+                   <div class="card-image">
+                       <img class="img-responsive" src="img/8.jpg" width="100%" height="100%">
+                       
+                   </div><!-- card image -->
+               </div>
+          </div>
+         </div>
+         <div class="col-sm-10 comment_left_inner_2_right clearfix">
+          <div class="comment_left_inner_2_right_inner clearfix">
+           <h4>SEM augue � <span class="dating">FebuarY 22, 2013 19:45</span></h4>
+           <h5>Ante dapibus diam! Nulla quis sem at nibh imperdiet. Duis sagittis :-)</h5>
+           <p><a href="#">reply<i class="fa fa-arrow-right"></i></a></p>
+          </div>
+         </div>
+        </div>
+        <div class="comment_left_inner_3 clearfix">
+         <div class="col-sm-2 comment_left_inner_2_left clearfix">
+          <div class="comment_left_inner_2_left_inner clearfix">
+           <div class="card">
+                   <div class="card-image">
+                       <img class="img-responsive" src="img/9.jpg" width="100%" height="100%">
+                       
+                   </div><!-- card image -->
+               </div>
+          </div>
+         </div>
+         <div class="col-sm-10 comment_left_inner_2_right clearfix">
+          <div class="comment_left_inner_2_right_inner clearfix">
+           <h4>Lorem ipsum dolor  (amet, consectetur adipiscing elit) Integer<span class="dating">� febuary 24, 2013 11:48</span></h4>
+           <h5>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum.</h5>
+           <p><a href="#">reply<i class="fa fa-arrow-right"></i></a></p>
+          </div>
+         </div>
+        </div>
+        <div class="comment_left_inner_4 clearfix">
+        <p><a href="#">Load all 165 comments <i class="fa fa-arrow-down"></i></a></p>
+        </div>
+       </div>
+       <div class="col-sm-5 comment_right clearfix">
+        <div class="comment_right_inner clearfix">
+         <h2>LEAVE A COMMENT</h2>
+         <input type="text" class="  search-query form-control form-control_new_1" placeholder="Your massage">
+         <input type="text" class="  search-query form-control form-control_new_2" placeholder="Your (real) name">
+         <input type="text" class="  search-query form-control form-control_new_3" placeholder="Your Twitter (e-g 'smashing')">
+         <p><a href="#">Post Comment</a></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+
+     
+     
+   <script type="text/javascript">
+         $("#menu-close").click(function(e) {
+       e.preventDefault();
+       $("#sidebar-wrapper").toggleClass("active");
+     });
+     $("#menu-toggle").click(function(e) {
+       e.preventDefault();
+       $("#sidebar-wrapper").toggleClass("active");
+     });
+       </script>
+   <script type="text/javascript">
+       $(function(){
+   
+       $('#show').on('click',function(){        
+           $('.card-reveal').slideToggle('slow');
+       });
+       
+       $('.card-reveal .close').on('click',function(){
+           $('.card-reveal').slideToggle('slow');
+       });
+   });
+       </script>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-blog">
+            <h3>Menu</h3>
+            <div>
+              <a href="/Home/esqueleto.html">Home</a>
+            </div>
+            <div>
+              <a href="/Coletivo/index.html">O coletivo</a>
+            </div>
+            <div>
+              <a href="/Historia/hist.html">História</a>
+            </div>
+            <div>
+              <a href="/Loje/index.html">Loja</a>
+            </div>
+            <div>
+              <a href="/ApoieUsina/apoieUsina.html">Apoie a Usina</a>
+            </div>
+            <div>
+              <a href="/Apoiadores/apoiadores_responsivo.html">Apoiadores</a>
+            </div>
+            <div>
+              <a href="/Eventos/telacalendario.html">Eventos</a>
+            </div>
+            <div>
+              <a href="/Noticias/noticias.html">Notícias</a>
             </div>
           </div>
         </div>
-      
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </main>
 
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="footer-tags">
+            <h3>Saiba mais + </h3>
+            <a href="https://linktr.ee/usinaecocultural">Link.tree</a>
+          </div>
+
+          <div class="footer-tags">
+            <h3>Reportagens sobre nós</h3>
+            <a
+              href="https://expresso.estadao.com.br/sao-paulo/2023/06/05/usina-eco-cultural-leva-arte-e-ecologia-a-antigo-incinerador/">Estadão</a>
+            <a
+              href="https://www.ipiranga22.com.br/2023/05/movimento-usina-eco-cultural-ganha-apoios-e-se-candidata-a-verba-de-r-6-milhoes/">Ipiranga
+              22</a>
+            <a
+              href="https://www.saopaulo.sp.leg.br/blog/comissao-de-politica-urbana-promove-audiencia-publica-no-sabado-sobre-usina-eco-cultural-no-ipiranga/">Câmara
+              Municipal de São Paulo</a>
+          </div>
+
+
+          <div class="footer-tags">
+            <h3>Deseja agendar um evento?</h3>
+            <a href="https://www.eventbrite.com.br/o/usina-eco-cultural-65214406553">Clique aqui para agendar seu
+              evento</a>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <h4 style="font-size: 15px; color: #ECECEC;">Newsletter nada mais é do que um jornal virtual que você irá
+              receber em seu e-mail, sem custo, sobre a Usina</h4>
+            <form id="newsletterForm" class="form" onsubmit="enviarEmail(); return false;">
+              <input class="campo" id="nomeInput" placeholder="Nome" required="">
+              <input class="campo" id="emailInput" placeholder="E-mail" required="">
+              <button type="submit" class="btn" id="assinarBtn">Assinar</button>
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="container">
+        <div class="footer-contact">
+          <div class="row align-items-center">
+
+
+            <div class="col-md-6">
+              <h4>E-mail</h4>
+              <p>usinaecocultural@gmail.com</p>
+            </div>
+
+            <div class="col-md-6">
+
+              <h4>Redes Sociais</h4>
+              <a href="https://www.facebook.com/usinaecocultural/" src="Facebook_Logo_Secondary.png"><i
+                  class="fab fa-facebook-f">Facebook</i></a>
+              <a href="https://www.instagram.com/usinaecocultural/?hl=en" src="Instagram_Glyph_White.svg"><i
+                  class="fab fa-instagram">Instagram</i></a>
+              <a href="https://www.youtube.com/channel/UC2t4GZA3OPjAFOL5xMXNwYw"
+                src="youtube_social_squircle_white.png"><i class="fab fa-youtube">YouTube</i></a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+
+          <div class="row align-items-center">
+
+            <div class="col-md-6">
+              <div class="copy-text">
+                <p>&copy; <a href="/Home/esqueleto.html">Usina EcoCultural Vergueiro</a> - Todos os Direitos Reservados.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="copy-menu">
+                <a href="/Home/termosdeuso.html">Termos de Uso</a>
+                <a href="/Home/privacidade.html">Privacidade</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+  </footer>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+
 </body>
+
 </html>
