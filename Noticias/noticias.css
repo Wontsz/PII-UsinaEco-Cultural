@@ -409,6 +409,15 @@ body {
     margin-bottom: 10px;
 }
 
+.recent__article-cover {
+  display: block;
+  align-self: baseline;
+
+  object-fit: cover;
+}
+
+
+
 /*footer */
 
 body {
