@@ -156,7 +156,7 @@ text-align: center;
 
 #maincontainer{
   position: relative;
-  width: 500px;
+  width: 200%;
 }
 
 #maincontainer::after{
