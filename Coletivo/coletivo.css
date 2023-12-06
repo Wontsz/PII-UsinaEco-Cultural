@@ -96,6 +96,15 @@
     margin-top: 22px;
   }
   
+  .background-image {
+    background-image: url('/imgs/coletivo/fundo-team-coletivo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    position: relative;
+  }
 
 #prosp{
     padding-top:40px;
