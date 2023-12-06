@@ -76,14 +76,52 @@
         <div style="width: 100%; height: 30px; background: #69A625; flex-shrink: 0; position: relative;"></div>
         <h1 style="text-align: center;" class="mb-0 p-3">Coletivo</h1>
 
-        <div class="container">
-            <p style="font-size: large; text-align: center;">Apresentação Usina Eco-Cultural Vergueiro: O coletivo</p>
-            <div id="video-container">
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/q12dSGr1JIE"
-                    frameborder="0" allowfullscreen></iframe>
+        <section id="prosp" style="color: white;">
+            <div class="container">
+              <div class="prosp_1 text-center row">
+               <div class="col-md-12">
+                <h4>Sobre o coletivo</h4>
+                <h1><span class="col_1">Nós queremos</span> <span>fazer a diferença</span></h1>
+                <p>Saiba quem somos, o que queremos, nossas porpostas e o que fazemos para revitalizar a Usina</p>
+               </div>
+              </div>
+              <div class="prosp_2 row">
+               <div class="col-md-4">
+                <div class="prosp_2i clearfix">
+                 <a href="#"><img src="foto1.png"  class="w-100" alt="abc"></a>
+                 <h5 class="mt-3">O que é o Coletivo?</h5>
+                 <h2>Pessoas que querem a diferença</h2>
+                 <p>O Coletivo Usina Eco-Cultural surgiu do descontentamento de moradores próximos à região do Ipiranga e do antigo Incinerador Vergueiro, que foi deixado ao abandono por mais de 20 anos. Arquitetos, urbanistas, ativistas, artistas e ambientalistas e pessoas de diversas profissões decidiram, desde 2019, se unir e discutir propostas de transformação e melhorias não apenas para o Incinerador, mas para a região como um todo. O coletivo é plural, multipartidário e horizontal.
+                </p>
+                 <h5 class="mb-0"><a href="#">Saiba mais sobre</a></h5>
+                </div>
+               </div>
+               <div class="col-md-4">
+                <div class="prosp_2i clearfix">
+                 <a href="#"><img src="foto5.png"  class="w-100" alt="abc"></a>
+                 <h5 class="mt-3">Quais são as propostas?</h5>
+                 <h2>Readequação</h2>
+                 <p>A proposta do movimento é readequar o espaço do que foi o Incinerador Vergueiro, transformando-o em um centro de cultura e estudos sobre o meio ambiente, mantendo viva a memória do que foi aquele espaço e proporcionando um local para reflexão sobre a cidade justa e democrática que desejamos no futuro.
+                </p>
+                 <h5 class="mb-0"><a href="#">Apoie nossas porpostas</a></h5>
+                </div>
+               </div>
+               <div class="col-md-4">
+                <div class="prosp_2i clearfix">
+                 <a href="#"><img src="foto6.png"  class="w-100" alt="abc"></a>
+                 <h5 class="mt-3">Nossos objetivos</h5>
+                 <h2>Alcançando resultados aos poucos</h2>
+                 <p>O objetivo principal é proporcionar à comunidade local um espaço revitalizado, representando não apenas um marco cultural, mas também um gesto de reparação histórica após décadas de abandono. A Usina Eco-Cultural surge como um ponto de encontro e convivência para a comunidade, contribuindo para fortalecer os laços sociais de quem vive na região.
+.                </p>
+                 <h5 class="mb-0"><a href="#">Ajude-nos</a></h5>
+                </div>
+               </div>
+              </div>
             </div>
-        </div>
+           </section>
 
+       
+   
 
 
         <section id="prosp" style="background-color: #ECECEC;">
@@ -121,6 +159,8 @@
                         <h5 class="mb-0"><a style="color: #69A625;" href="#">Saiba mais sobre a reforma</a></h5>
                     </div>
                 </div>
+
+                
             </div>
             </div>
         </section>
@@ -157,33 +197,62 @@
 
 
                             </div>
-                            <ul>
-                                <li><i class="fa fa-check col_1"></i> .</li>
-                                <li><i class="fa fa-check col_1"></i> .</li>
-                                <li><i class="fa fa-check col_1"></i>.</li>
-                                <li><i class="fa fa-check col_1"></i> </li>
-                            </ul>
-                            <h4 class="mb-0"><a style="color: #69A625;" href="#">Saiba mais sobre</a></h4>
+                            <h4 class="mb-0"><a style="color: #69A625; cursor: pointer;"   onclick="togglePopup('popup2')">Saiba mais sobre</a></h4>
+                            
                         </div>
+
+                        <button onclick="togglePopup('popup3')" style="border-radius: 10px; border-color: transparent; background-color: white; color: #69A625;">Descontaminação do espaço</button>
+                        <button onclick="togglePopup('popup4')" style="border-radius: 10px; border-color: transparent; background-color: white; color: #69A625;">Polo cultural Ipiranga</button>
                     </div>
                     <div class="col-md-4">
                         <div class="plan_1i1 plan_1i1_o clearfix">
                             <span><i class="fa fa-rupee text-white"></i></span>
                             <div class="plan_1i1i clearfix">
                                 <h1 class="text-white"><i class="fa fa-rupee"></i>Museu do meio ambiente</h1>
-
                             </div>
-                            <ul>
-                                <li class="text-white"><i class="fa fa-check text-white"></i>.</li>
-                                <li class="text-white"><i class="fa fa-check text-white"></i>.</li>
-                                <li class="text-white"><i class="fa fa-check text-white"></i>.</li>
-                                <li class="text-white"><i class="fa fa-check text-white"></i> .</li>
-                            </ul>
-                            <h4 class="mb-0"><a class="text-white" href="#">Saiba mais sobre</a></h4>
+                            <h4 class="mb-0"><a class="text-white"  onclick="togglePopup('popup1')" style="cursor: pointer;">Saiba mais sobre</a></h4>
                         </div>
+                        
                     </div>
                 </div>
             </div>
+           
+        
+            <div id="popup1" class="popup-container">
+                <img src="imagem1.jpg" alt="Imagem 1">
+                <p><strong>Museu do meio ambiente:</strong>Na Usina, a educação ambiental é protagonista. A ideia é que a área da Usina seja um local para o ensino de educação ambiental e experiências práticas, como o plantio de espécies nativas, hortas suspensas (sem conexão com o solo, devido à condição desconhecida do solo) e atividades de compostagem, ensinando a população a descartar corretamente o lixo orgânico.
+
+                    A proposta do Museu do Meio Ambiente é um sonho coletivo de todos aqueles que acreditam que o local deve ser ressignificado, devolvendo à população um espaço semelhante ao que foi feito no Incinerador de Pinheiros, próximo à praça Victor Civita. O Museu do Meio Ambiente faz parte de um Projeto de Lei que está na Câmara Municipal de São Paulo, que tem o objetivo de criar um Parque Linear que ligaria o Parque das Águas, no Jardim Botânico, ao Parque da Independência, no Museu do Ipiranga. Esse parque passaria pela Avenida Ricardo Jafet,  acompanhando o famoso riacho do Ipiranga, tão presente na história do nosso país e também no nosso hino.
+                    
+                    O museu fará parte do Corredor Verde, projeto que busca fazer um parque linear que passa ao lado do terreno da Usina, na Av. Ricardo Jafet.
+                    </p>
+                <button onclick="togglePopup('popup1')" style="color: red; border-radius: 10px; border-color: transparent;">Fechar</button>
+            </div>
+        
+            <div id="popup2" class="popup-container">
+                <img src="imagem2.jpg" alt="Imagem 2">
+                <p><strong>Movimento ruas abertas:</strong> Política pública que fecha a rua aos domingos e permite que a população use para brincadeiras, a ideia é que a Rua Breno Ferraz do Amaral em frente a Usina seja uma via dentro do programa Ruas Abertas.</p>
+                <button onclick="togglePopup('popup2')">Fechar</button>
+            </div>
+        
+            <div id="popup3" class="popup-container">
+                <img src="imagem3.jpg" alt="Imagem 3">
+                <p><strong>Modal 3:</strong> Este é o conteúdo do terceiro modal. Pode adicionar o texto ou elementos que desejar aqui.</p>
+                <button onclick="togglePopup('popup3')">Fechar</button>
+            </div>
+        
+            <div id="popup4" class="popup-container">
+                <img src="imagem4.jpg" alt="Imagem 4">
+                <p><strong>Modal 4:</strong> Este é o conteúdo do quarto modal. Pode adicionar o texto ou elementos que desejar aqui.</p>
+                <button onclick="togglePopup('popup4')">Fechar</button>
+            </div>
+        
+            <script>
+                function togglePopup(popupId) {
+                    var popup = document.getElementById(popupId);
+                    popup.style.display = (popup.style.display === "block") ? "none" : "block";
+                }
+            </script>
         </section>
 
 
@@ -216,7 +285,7 @@
             const leftArrow = document.querySelector(".arrow-left");
             const rightArrow = document.querySelector(".arrow-right");
             let currentIndex = 0;
-            let time = 7000; //Tempo padrão para apresentação de slides automática
+            let time = 7000; 
             const defClass = (startPos, index) => {
                 for (let i = startPos; i < imgs.length; i++) {
                     imgs[i].style.display = "none";
