@@ -96,7 +96,7 @@ text-align: center;
 }
 
 .background-image {
-background-image: url('historiafundo.jpg');
+background-image: url('/imgs/historia/historiafundo.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -259,7 +259,7 @@ img {
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 
   font-size: 80px;
