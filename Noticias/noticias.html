@@ -157,12 +157,13 @@
      <div class="center_4 clearfix">
       <div class="col-sm-4">
       <div class="center_2">
-       <a href="#"><img src="" width="100%"></a>
+      
       </div>
      </div>
       <div class="col-sm-8">
      <div class="center_3">
       <h1>Debate sobre a situação atual, 2021</h1>
+      <a href="#"><img class="mt-2 mb-2 rounded" src="noticias1.png" width="100%"></a>
      <h3><a href="#" style="color: chocolate; margin-top: 5%;">Situação atual e obras de modernização da Estação de Transbordo Vergueiro são debatidos em audiência pública</a></h3>
      <p>A Estação de Transbordo Vergueiro foi inaugurada em 1968 e passou por diversas transformações desde então. Em 2004, houve a concessão das operações do local por 20 anos para a empresa EcoUrbis Ambiental. No contrato, estava prevista a reforma e a modernização do equipamento. Contudo, até o momento, essas obras não foram realizadas, motivando as reclamações da população.</p>
     </div>
@@ -173,12 +174,13 @@
      <div class="center_4 clearfix">
       <div class="col-sm-4">
       <div class="center_2">
-       <a href="#"><img src="" width="100%"></a>
+       
       </div>
      </div>
       <div class="col-sm-8">
      <div class="center_3">
      <h1><a>Incinerador Vergueiro começa a ser fechado</a>, 2001</h1>
+     <a href="#"><img class="rounded mt-2 mb-2" src="noticia2.png" width="100%"></a>
      <h3><a href="#" style="color: chocolate;">Estudos apontam que a estrutura não queimava totalmente o lixo hospitalar e produzia substâncias cancerígenas</a></h3>
      <p>O Vergueiro começou a funcionar em 1968, com tecnologia alemã. Ele foi concebido para incinerar lixo doméstico, mas passou a receber resíduos do sistema de saúde em 77, depois que a Cetesb (agência ambiental do Estado de SP) lacrou os incineradores particulares dos hospitais.</br> Vestibulum lacinia …</p>
     </div>
@@ -194,31 +196,34 @@
      </div>
       <div class="col-sm-8">
      <div class="center_3">
-     <h1><a>Um documento com muito conteúdo, 2022</h1>
-     <h3><a href="#" style="color: chocolate;">MUSEU DE ARTE INSTITUTO VERGUEIRO
-    </a></h3>
-     <p>O presente trabalho visa a implantação de um Museu de Arte em uma parcela degradada do tecido urbano, aspirando reinterpretar o acesso da sociedade a fragmentos de sua história e desenvolvimento a respeito da coleta e do tratamento de lixo e limpeza pública da cidade, sobre o controle de poluentes emitidos na atmosfera, como também a cerca da pesquisa e recuperação de áreas degradadas da cidade de São Paulo. Incorporando- se de valores atuais, o programa arquitetônico do edifício do Museu também proverá o acesso a exposição e contato com a arte e questões culturais da atualidade, bem como o acesso a informação e convivência social. O trabalho abrangerá a pesquisa de fatos históricos, leituras e diagnósticos urbanos, assim como o estudo de caso e exploração de projetos arquitetônicos como referências projetuais.</p>
-    </div>
-   </div>
-     </div>
-    </div>
-    <div class="col-sm-12 padding_all">
-     <div class="center_4 clearfix">
-      <div class="col-sm-4">
-      <div class="center_2">
-       <a href="#"><img src="" width="100%"></a>
-      </div>
-     </div>
-      <div class="col-sm-8">
-     <div class="center_3">
      <h1><a>A Usina já foi trabalho de TCC</h1>
      <h3><a href="#" style="color: chocolate;">Um local com tanta história, biologia e arte, foi pauta de diversos TCC's</a></h3>
-     <p>Nos botões a baixo você consegue encontrar o TCC de cada pessoa pelo nome.</p>
+     <p>No botão abaixo você consegue acessar todos os trabalhos.</p>
      <ul>
-        <li class="mt-2"><button class="button-tcc">Larissa Candro</button></li> <li class="mt-2"><button class="button-tcc">Nathalia de Siena</button></li>
         
-        <li class="mt-2"><button class="button-tcc">Diogo Horvath</button></li>
-        <li class="mt-2"><button class="button-tcc">Abner Juan </button></li>
+        <li class="mt-2">
+          <button class="button-tcc" onclick="togglePopup('externalModal')"> 
+              <img src="paper.png" style="height: 100px;">
+          </button>
+      </li>
+
+      <div id="externalModal" class="popup-container">
+          <div class="popup-content">
+              <button class="button-popup" onclick="togglePopup('internalModal1')"> Abner Juan Bobato</button> 
+              <button class="button-popup" onclick="togglePopup('internalModal2')"> Larissa Candro </button> 
+              <button class="button-popup" onclick="togglePopup('internalModal3')">Nathalia de Siena Haga </button> 
+              <button class="button-popup" onclick="togglePopup('internalModal4')"> Diogo Horvath</button> 
+              <button onclick="togglePopup('externalModal')" style="background-color: transparent; color: red; border-color: transparent;">X</button> 
+          </div>
+      </div>
+
+      <script>
+          function togglePopup(popupId) {
+              var popup = document.getElementById(popupId);
+              popup.style.display = (popup.style.display === "block") ? "none" : "block";
+          }
+      </script>
+
      </ul>
     </div>
    </div>
@@ -257,7 +262,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="titlepage text_align_center ">
-          <h2>REPORTAGENS E VÍDEOS SOBRE A USINA</h2>
+          <h2 class="mt-4">REPORTAGENS E VÍDEOS SOBRE A USINA</h2>
           <p>Confira registros e reportagens sobre a Usina, as mais atualizadas. </p>
         </div>
       </div>
@@ -313,6 +318,7 @@
     </div>
   </div>
 </div>
+
 
 
   <footer class="footer">
