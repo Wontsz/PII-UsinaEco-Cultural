@@ -517,7 +517,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
-<script src="TelaCalendario/modalBox.js"></script>
+<script src="/Eventos/telacalendario.html"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -585,11 +585,25 @@
         body.style.overflow = "hidden";
     }
 
+    // var buttons = [btn, btn2, btn3, btn4, btn5, btn6];
+    // buttons.onclick = function (event) {
+    //     for (var i=0; i <buttons.length; i++){
+    //         if (event.target == buttons[i]){
+    //             abrirModal(buttons[i]);
+    //         }
+    //     }
+    // };
+
     //qnd clica em X do modal ele fecha
     for (var i = 0; i < spans.length; i++) {
-    spans[i].onclick = function () {
+        var spans = document.getElementsByClassName("span-close");
+    spans[i].onclick = function (event) {
         var modal = document.getElementById("myModal1");
-        fecharModal(modal);
+        var spans = document.getElementsByClassName("span-close");
+        if (event.target == spans){
+            fecharModal(modais[i]);
+        };
+        fecharModal();
         console.log('fechando modal');
     };
 }
@@ -603,6 +617,10 @@
             }
         }
     };
+    function abrirModal(buttons){
+        modal.style.display = "block";
+        body.style.overflow = "hidden";
+    }
     function fecharModal(modal) {
         modal.style.display = "none";
         body.style.overflow = "auto";
