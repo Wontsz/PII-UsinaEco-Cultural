@@ -562,6 +562,25 @@ font-style: normal;
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1200px){
+  .btn-site-fotos{
+  margin-left: 47%;
+  }
+}
+.btn-site-fotos{
+  margin-left: 43%;
+}
+@media screen and (max-width: 767px){
+  .btn-site-fotos{
+  margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .journal-button{
+    margin-left: 42%;
+  }
+}
 #serv{
   padding-top:40px;
   padding-bottom:40px;
