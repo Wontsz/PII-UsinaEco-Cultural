@@ -71,34 +71,115 @@
 
 
 
-  <main>
+  <main style="background-color: #ECECEC;">
     <div class="container-fluid p-0 background-image"></div>
     <div style="width: 100%; height: 25px; background:#C3EE92; flex-shrink: 0; position: relative;"></div>
     <div style="width: 100%; height: 30px; background: #69A625; flex-shrink: 0; position: relative;"></div>
     <h1 style="text-align: center;" class="mb-0 p-3">Apoie a Usina</h1>
     <div class="container p-5">
-      <br>
-      <p class="pix">Nos ajude a continuar com o projeto e melhorias para a Usina Ecocultural Vergueiro e nossa
-        sociedade!</p>
-      <br>
-      <p class="pix">Através de sua doação seremos capazes de aumentar a quantidade de eventos e recebê-los com uma
-        maior infraestrutura, permitindo o progressoo de nossos projetos.</p>
-      <br>
-      <p class="pix">Acesse o link para contribuir com ação monetária através de nosso
-        <a
-          href="00020126580014BR.GOV.BCB.PIX013681f6ba95-0e9f-49d2-b79c-7aef5d70acd55204000053039865802BR5925Fernanda Beatriz Teixeira6009SAO PAULO61080540900062250521xg84561l2MkfYJF1406d263044010">Pix</a>
-        ou leia o QR Code abaixo:
-      </p>
-    </div>
-    <div class="QRCode">
-      <div class="container-fluid p-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <img src="/imgs/apoieUsina/QRCode_Fácil.jpg" class="img-fluid" alt="QR CODE">
+   
+      <section id="exep" >
+        <div class="container">
+         <div class="row exep_1">
+           <div class="col-md-6">
+          <div class="exep_1lm position-relative">
+            <div class="exep_1lm1">
+           <img class="rounded" src="/imgs/coletivo/foto2.png" alt="abc">
           </div>
+          
+          </div>
+         </div>
+         <div class="col-md-6">
+          <div class="exep_1r">
+            <h5 class="col_1">Descubra</h5>
+          <h2>Quais são as formas de apoiar a Usina:</h2>
+          <span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
+          <p>Financeiramente e assinando abaixo assinado</p>
+          <div class="exep_1ri row mt-3">
+            <div class="col-md-2">
+           <div class="exep_1ril">
+            <span style="font-size:40px;" class="col_1"><i class="fa fa-shopping-basket"></i></span>
+           </div>
+          </div>
+          <div class="col-md-10">
+           <div class="exep_1rir">
+            <h3>Para onde seu apoio vai?</h3>
+           </div>
+          </div>
+           </div>
+            <div class="exep_1ri row mt-3">
+            <div class="col-md-2">
+           <div class="exep_1ril">
+            <span style="font-size:40px;" class="col_1"><i class="fa fa-apple"></i></span>
+           </div>
+          </div>
+          <div class="col-md-10">
+           <div class="exep_1rir">
+            <h3>Ele é visto!</h3>
+           </div>
+          </div>
+           </div>
+           <p>Ajudando a usina você está ajudando a reconstrução e a vida de um local esquecido por muitos anos. Seu dinheiro vai para o coletivo, que garante que tudo seja gasto com a Usina</p>
+          
+           <button onclick="openModal('modal1')">Pix</button>
+           <button onclick="openModal('modal2')">Abaixo assinado</button>
+
+           <h1 class="mt-4">Deseja acompanhar os apoios que a Usina recebe?</h1>
+           <h2>Conheça nossos<a href="#"> apoiadores</a></h2>
+         
+           <div id="modal1" class="modal">
+             <div class="modal-content">
+               <p style="text-align: center;">Pix</p>
+               <img src="Example-QR-code.webp" style="width: 20%; height: 20%; margin-left: 40%;">
+               <button class="close-button" onclick="closeModal('modal1')">x</button>
+             </div>
+           </div>
+         
+           <div id="modal2" class="modal">
+             <div class="modal-content">
+               <form class="form" action="#">
+                <h1 class="titulo-form">Assine o abaixo assinado</h1>
+                <p>Um grupo de pessoas do bairro e outras ligadas ao Conselho de Meio Ambiente, Desenvolvimento Sustentável e Cultura de Paz - CADES da Subprefeitura Ipiranga iniciou, em 2019, o movimento Usina Verde para fomentar que este imóvel cumpra sua função social, seja reabilitado e destinado para implantação de um espaço dedicado à localização dos Objetivos de Desenvolvimento Sustentável.</p>
+                <div class="input-group">
+                
+                    
+                    <label class="user-label">Nome</label>
+                
+                </div>
+                <div class="input-group">
+                
+                    <input style="border-radius: 10px; border-color: orange; background-color: #ECECEC;" type="text" name="email" class="input"  autocomplete="off" required="">
+                    <label class="user-label">E-mail</label>
+                
+                </div>
+                <div class="input-group">
+                
+                    <input style="border-radius: 10px; border-color: orange; background-color: #ECECEC;" type="text" name="assunto" class="input"  autocomplete="off" required="">
+                   
+                
+                </div>
+                
+             
+                <button class="btn-gradient">Eu desejo assinar!</button>
+              </form>
+               <button class="close-button" onclick="closeModal('modal2')">x</button>
+             </div>
+           </div>
+         
+           <script>
+             function openModal(modalId) {
+               document.getElementById(modalId).style.display = 'flex';
+             }
+         
+             function closeModal(modalId) {
+               document.getElementById(modalId).style.display = 'none';
+             }
+           </script>
+          </div>
+         </div>
+         </div>
         </div>
-      </div>
-    </div>
+      </section>
 
 
   </main>
