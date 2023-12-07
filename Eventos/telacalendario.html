@@ -592,33 +592,32 @@
     //     }
     // };
 
-    //qnd clica em X do modal ele fecha
+    var modais = [modal, modal2, modal3, modal4, modal5, modal6];
+
+//qnd clica em X do modal ele fecha
     for (var i = 0; i < spans.length; i++) {
     spans[i].onclick = function (event) {
-        var modal = document.getElementById("myModal1");
-        var spans = document.getElementsByClassName("span-close");
         fecharModal(modal);
         console.log('fechando modal');
     };
 }
-    
-    //qnd clica em qlqr lugar fora do modal ele fecha
-    var modais = [modal, modal2, modal3, modal4, modal5, modal6];
-    window.onclick = function (event) {
-    for (var i = 0; i < modais.length; i++) {
-        if (event.target == modais[i]) {
-            fecharModal(modais[i]);
-            }
-        }
-    };
-    function abrirModal(buttons){
-        modal.style.display = "block";
-        body.style.overflow = "hidden";
+
+//qnd clica em qlqr lugar fora do modal ele fecha
+window.onclick = function (event) {
+  for (var i = 0; i < modais.length; i++) {
+    if (event.target == modais[i]) {
+      fecharModal(modais[i]);
     }
-    function fecharModal(modal) {
-        modal.style.display = "none";
-        body.style.overflow = "auto";
-    }
+  }
+};
+function abrirModal(buttons) {
+  modal.style.display = "block";
+  body.style.overflow = "hidden";
+}
+function fecharModal(modal) {
+  modal.style.display = "none";
+  body.style.overflow = "auto";
+}
 </script>
 </body>
 
