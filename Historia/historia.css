@@ -255,7 +255,6 @@ img {
   background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
