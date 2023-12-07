@@ -30,6 +30,87 @@
     box-shadow: 10px 10px lightblue;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close-button {
+  color: red;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.close-button:hover {
+  color: red;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.btn-gradient {
+  width: auto;
+  font-size: 1em;
+  padding: 12px 25px;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  box-shadow: none;
+}
+.btn-gradient::before {
+  border-radius: 10px;
+position: absolute;
+content: "";
+width: calc(100% + 6px);
+height: calc(100% + 6px);
+left: -3px;
+top: -3px;
+background: linear-gradient(124deg, #e72100, #f36161, #eec647, #dfe404, #35e854, #32dfe9, #4a3df1, #e549f5, #ae07bf );
+background-size: 400%;
+z-index: -1;
+filter: blur(0px);
+animation: move 20s linear infinite;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+box-shadow: none;
+}
+.btn-gradient:hover::before { opacity: 1; }
+.btn-gradient::after {
+z-index: -1;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: #3f3f3f;;
+left: 0;
+top: 0;
+border-radius: 10px;
+box-shadow: none;
+}
+
 /*menu e logo - header*/
 
 .menu {
@@ -156,112 +237,6 @@ button:hover {
 }
 
 
-
-
-
-.container-cards {
-  height: 400px;
-  width: 800px;
-  top: 100px; 
-  left: calc(50% - 300px);
-  display: flex;
-  margin-left: 430px;
-  text-align: center;
-}
-
-.card {
-  display: flex;
-  height: 280px;
-  width: 200px;
-  background-color: #ECECEC;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem rgb(129, 129, 129);
-  margin-left: -50px; /* Mudei o seletor para ser específico e removi a pseudo-classe ':not(:first-child)' */
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
-
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-}
-
-.title-card {
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
-
-.bar {
-  position: absolute;
-  top: 120px; /* Ajuste da posição para baixo */
-  left: 20px;
-  height: 5px;
-  width: 150px;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%;
-}
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0, 154, 217);
-  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
-  transition: 0.6s ease-out;
-}
-
-.card:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 170px; /* Ajuste da posição para baixo */
-  left: calc(50% - 60px);
-}
-
-.stroke {
-  stroke: white;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-
-
-.square-holder {
-  align-items: center;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-}
 
 /*footer*/
 body {
