@@ -821,3 +821,13 @@ a:focus {
   }
 
 }
+@media screen and (max-width: 767px){
+  .debate-atual{
+    justify-content: center;
+    padding: 10%;
+  }
+  .TCC{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
