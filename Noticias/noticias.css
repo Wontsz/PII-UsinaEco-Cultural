@@ -416,6 +416,117 @@ body {
   object-fit: cover;
 }
 
+.boxed {
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	background: url(images/img06.gif) no-repeat center bottom;
+}
+
+.boxed .title {
+	background: url(images/img05.gif) no-repeat right;
+	font-size: 1.6em;
+}
+
+.boxed .content {
+	border-bottom: 1px dotted #C7894C;
+}
+
+
+#main {
+  margin-top: 9%;
+  padding: 15px;
+  box-shadow: 10px 10px 10px #808080; /* Corrigido aqui */
+  margin-top: 10%;
+  border-radius: 10px;
+  background-color: #ececec;
+}
+
+#extra {
+  height: 31px;
+  margin: 0 260px 0 20px;
+  background: url('/imgs/apoiadores/apoiadores_fundo.jpeg') repeat-x;
+}
+
+#background-container {
+  background-image: url('/imgs/apoiadores/apoiadores_fundo.jpeg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font-size: x-small;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+
+#partners .content {
+	padding: 10px 0;
+}
+
+#partners ul {
+	margin: 0;
+	border-bottom: 1px solid #D1BC5C;
+	list-style: none;
+	line-height: normal;
+}
+
+#partners li {
+	padding: 10px;
+	border-top: 1px solid #D1BC5C;
+}
+
+
+#expandButton {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #C7894C;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20%;
+}
+
+#expandButton:hover {
+  background-color: chocolate;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 10px 10px rgb(230, 210, 173);
+}
+
+.gallery {
+  display: none;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
 
 
 /*footer */
