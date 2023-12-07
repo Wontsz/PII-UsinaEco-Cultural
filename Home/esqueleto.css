@@ -273,11 +273,16 @@ svg {
 
 
 .square-holder {
-  align-items: center;
   display:flex;
   align-items: center;
   justify-content: center;
   width: 60%;
+}
+
+@media screen and (max-width: 767px){
+  .square-holder{
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
