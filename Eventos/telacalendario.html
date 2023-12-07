@@ -259,9 +259,7 @@
                                     <p>Convidamos todo movimento da Usina pra vir com a gente sexta-feira, dia 17/11, no
                                         nosso 17º encontro da Comunidade, vamos fazer uma panfletagem na porta do metrô
                                         Santos-Imigrantes, pra dialogar com os moradores sobre a nossa mobilização.
-                                        Então vem com a gente, com a camiseta da Usina pra conversarmos sobre a
-                                        importância da revitalização do prédio transformado em Museu do
-                                        Meio-Ambiente.<br>
+                                        Então vem com a gente, com ou sem a camiseta da Usina!<br>
                                     <p>Nossa proposta é de construir junto a comunidade a revitalização desse prédio
                                         transformado em um Museu do Meio-Ambiente.</p>
                                     <p><strong>Data: 17 de Novembro, 16h-20h</strong></p>
@@ -596,14 +594,10 @@
 
     //qnd clica em X do modal ele fecha
     for (var i = 0; i < spans.length; i++) {
-        var spans = document.getElementsByClassName("span-close");
     spans[i].onclick = function (event) {
         var modal = document.getElementById("myModal1");
         var spans = document.getElementsByClassName("span-close");
-        if (event.target == spans){
-            fecharModal(modais[i]);
-        };
-        fecharModal();
+        fecharModal(modal);
         console.log('fechando modal');
     };
 }
