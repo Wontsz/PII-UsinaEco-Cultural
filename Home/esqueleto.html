@@ -137,8 +137,8 @@
       <h1 style="text-align: center; margin-top: 3%;">JORNAL DIGITAL</h1>
       <h2 style="text-align: center;">Quer saber mais?</h2>
 
-      <button class="journal-button">
-        <img src="newspaper.png" alt="Ícone de Jornal" class="journal-icon" alt="#">
+      <button class="journal-button" onclick="irParaNoticias()">
+        <img src="newspaper.png" alt="Ícone de Jornal" class="journal-icon" alt="jornal">
         <p style=" margin-top: 2%;">Clique aqui</p>
       </button>
 
@@ -251,7 +251,10 @@
 
       <script>
         function irParaGaleria() {
-          window.location.href = 'galeria.html';
+          window.location.href = '/home/galeria.html';
+        }
+        function irParaNoticias() {
+          window.location.href = '/noticias/noticias.html';
         }
       </script>
 
