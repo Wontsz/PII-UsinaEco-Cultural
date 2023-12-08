@@ -30,6 +30,20 @@
   box-shadow: 10px 10px lightblue;
 }
 
+.btn-saibamais{
+  background-color: #0085ff;
+  color: white;
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.btn-saibamais:hover{
+  background-color: #032e59;
+  color: white;
+  box-shadow: 10px 5px #184c83;
+  transition: .3s;
+}
+
 /*menu e logo - header*/
 
 .menu {
